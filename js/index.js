@@ -33,7 +33,7 @@ var chLesson = {
 		'lesson': 'Музичне мистецтво',
 		'teacher': 'Кериченко Наталія Миколаївна',
 		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
-		'meet': 'https://meet.google.com/nfa-usas'
+		'meet': 'https://meet.google.com/nfa-usas-xei'
 	},
 	'hist': {
 		'lesson': 'Історія',
