@@ -188,8 +188,8 @@ h3 {
 
 .lesson_link {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 70px;
-          flex: 0 0 70px;
+      -ms-flex: 0 0 75px;
+          flex: 0 0 75px;
 }
 
 .lesson {
@@ -240,11 +240,11 @@ h3 {
 }
 
 .lesson__link_meet {
-  margin: 10px 0px 0 20px;
+  margin: 10px 0px 0 10px;
 }
 
 .lesson__link_classroom a img, .lesson__link_meet a img {
-  width: 48px;
+  width: 30px;
   border: 0;
 }
 
