@@ -32,7 +32,7 @@ h3 {
 }
 
 .conteiner {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: 0px auto;
 }
 
@@ -57,11 +57,11 @@ h3 {
 
 	&__days {
 		margin: 10px 0 0px 10px;
-		flex: 0 0 48%;
+		flex: 0 0 450px;
 	}
 
 	&__card {
-		flex: 0 0 50%;
+		flex: 0 0 auto;
 		border: 1px solid #ddd;
 		border-radius: 2px;
 		box-shadow: 0 0 10px #ddd;
