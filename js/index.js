@@ -27,7 +27,8 @@ var chLesson = {
 		'lesson': 'Математика',
 		'teacher': 'Карабаджак Ірина Анатоліївна',
 		'classroom': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz',
-		'meet': 'https://meet.google.com/wwy-pvek-fpm'
+		//'meet': 'https://meet.google.com/wwy-pvek-fpm' //2022-09-07
+		'meet': 'https://meet.google.com/kcp-tbxz-khb'   //2022-09-08
 	},
 	'mus': {
 		'lesson': 'Музичне мистецтво',
