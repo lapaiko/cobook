@@ -32,7 +32,7 @@ h3 {
 }
 
 .conteiner {
-	max-width: 870px;
+	max-width: 880px;
 	margin: 0px auto;
 }
 
@@ -49,10 +49,11 @@ h3 {
 .shedule {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: space-around;
 
 	//Карточка розкладу одного дня
 	&__days {
-		margin: 10px 0 0px 10px;
+		margin: 0px 0 10px 0px;
 		flex: 0 0 390px;
 	}
 
