@@ -70,7 +70,7 @@ var chLesson = {
 		'lesson': 'Основи здоровя',
 		'teacher': 'Щепанська Алла Борисівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
-		'meet': 'https://meet.google.com/ikr-ftgg-jgq'
+		'meet': 'https://meet.google.com/pkt-dgom-uzx'
 	},
 	'tec': {
 		'lesson': 'Технологія',
