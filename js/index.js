@@ -118,7 +118,7 @@ function CardLesson(num, lesson, teacher, time, classroom, meet) {
 	cardslesson = cardslesson + '<div class="lesson">';
 
 	cardslesson = cardslesson + '<div class="lesson__number">';
-	cardslesson = cardslesson + '<div class="lesson__number_val">' + num + '..</div>';
+	cardslesson = cardslesson + '<div class="lesson__number_val">' + num + '.</div>';
 	cardslesson = cardslesson + '<div class="lesson__number_time">' + time + '</div>';
 	cardslesson = cardslesson + '</div>';
 	cardslesson = cardslesson + '<div class="lesson__caption">';
