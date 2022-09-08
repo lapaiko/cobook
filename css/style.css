@@ -120,7 +120,7 @@ h3 {
 }
 
 .conteiner {
-  max-width: 840px;
+  max-width: 800px;
   margin: 0px auto;
 }
 
@@ -148,8 +148,8 @@ h3 {
 .shedule__days {
   margin: 10px 0 0px 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 410px;
-          flex: 0 0 410px;
+      -ms-flex: 0 0 390px;
+          flex: 0 0 390px;
 }
 
 .shedule__card {
