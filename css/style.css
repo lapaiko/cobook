@@ -145,15 +145,11 @@ h3 {
       flex-wrap: wrap;
 }
 
-.shedule__days:first {
-  margin: 10px;
-}
-
 .shedule__days {
   margin: 10px 0 0px 10px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 440px;
-          flex: 0 0 440px;
+      -ms-flex: 0 0 400px;
+          flex: 0 0 400px;
 }
 
 .shedule__card {
@@ -168,30 +164,6 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-}
-
-.lesson_number {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
-}
-
-.lesson_caption {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.lesson_link {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 75px;
-          flex: 0 0 75px;
-}
-
-.lesson {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   border-bottom: 1px solid #ddd;
   margin: 0 5px;
 }
@@ -232,16 +204,10 @@ h3 {
   color: #777;
 }
 
-.lesson__time {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45px;
-          flex: 0 0 45px;
-}
-
 .lesson__link {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 80px;
-          flex: 0 0 80px;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

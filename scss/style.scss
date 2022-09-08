@@ -51,17 +51,12 @@ h3 {
 	flex-wrap: wrap;
 
 	//Карточка розкладу одного дня
-	&__days:first {
-		margin: 10px;
-	}
-
 	&__days {
 		margin: 10px 0 0px 10px;
-		flex: 0 0 440px;
+		flex: 0 0 400px;
 	}
 
 	&__card {
-		//flex: 1 1 auto;
 		border: 1px solid #ddd;
 		border-radius: 2px;
 		box-shadow: 0 0 10px #ddd;
@@ -69,26 +64,8 @@ h3 {
 }
 
 .lesson {
-
 	display: flex;
 	padding: 10px;
-	//margin: 0 0 100px 0;
-
-	&_number {
-		flex: 0 0 20px;
-	}
-
-	&_caption {
-		flex: 1 1 auto;
-	}
-
-	&_link {
-		flex: 0 0 75px;
-	}
-}
-
-.lesson {
-	display: flex;
 	border-bottom: 1px solid #ddd;
 	margin: 0 5px;
 
@@ -124,12 +101,8 @@ h3 {
 		}
 	}
 
-	&__time {
-		flex: 0 0 45px;
-	}
-
 	&__link {
-		flex: 0 0 80px;
+		flex: 0 0 70px;
 		display: flex;
 
 		&_classroom {
