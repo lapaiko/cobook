@@ -168,7 +168,6 @@ h3 {
   display: -ms-flexbox;
   display: flex;
   padding: 10px;
-  margin: 0 0 5px 0;
 }
 
 .lesson_number {
@@ -203,8 +202,18 @@ h3 {
 
 .lesson__number {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+}
+
+.lesson__number_val {
+  text-align: center;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.lesson__number_time {
+  font-size: 12px;
 }
 
 .lesson__caption {
@@ -221,6 +230,12 @@ h3 {
 .lesson__caption_teacher {
   font-size: 12px;
   color: #777;
+}
+
+.lesson__time {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 45px;
+          flex: 0 0 45px;
 }
 
 .lesson__link {

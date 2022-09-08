@@ -93,6 +93,7 @@ var arSсhedule = [
 	['fiz', 'nat', 'mat', 'uklen', 'zarlit', 'eng', 'oz'],
 	['mat', 'tec', 'tec', 'hist', 'uklit', 'eng']
 ];
+var arTime = ['08:30', '09:25', '10:25', '11:25', '12:25', '13:25'];
 
 var arWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', 'Пятниця'];
 
@@ -111,12 +112,14 @@ function CardDay(day, cardslesson) {
 	return cardday;
 }
 
-function CardLesson(num, lesson, teacher, classroom, meet) {
+function CardLesson(num, lesson, teacher, time, classroom, meet) {
 	var cardslesson = '';
 
 	cardslesson = cardslesson + '<div class="lesson">';
+
 	cardslesson = cardslesson + '<div class="lesson__number">';
-	cardslesson = cardslesson + '<p>' + num + '</p>';
+	cardslesson = cardslesson + '<div class="lesson__number_val">' + num + '.</div>';
+	cardslesson = cardslesson + '<div class="lesson__number_time">' + time + '</div>';
 	cardslesson = cardslesson + '</div>';
 	cardslesson = cardslesson + '<div class="lesson__caption">';
 	cardslesson = cardslesson + '<div class="lesson__caption_name">' + lesson + '</div>';
@@ -142,10 +145,11 @@ function Shedule() {
 		for (let l = 0; l < arSсhedule[d].length; l++) {
 			let num = l + 1, idLesson = arSсhedule[d][l], Lesson = chLesson[idLesson];
 			let lesson = Lesson.lesson, teacher = Lesson.teacher, classroom = Lesson.classroom, meet = Lesson.meet;
-			lessons = lessons + CardLesson(num, lesson, teacher, classroom, meet);
+			let time = arTime[l];
+			lessons = lessons + CardLesson(num, lesson, teacher, time, classroom, meet);
 		}
 		// Формуємо карточку одного дня
-		nmWeek = arWeek[d];
+		let nmWeek = arWeek[d];
 		shedule = shedule + CardDay(nmWeek, lessons);
 	}
 	document.getElementById('shedule').innerHTML = shedule;
