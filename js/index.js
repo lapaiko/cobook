@@ -67,7 +67,7 @@ var chLesson = {
 		'meet': 'https://meet.google.com/knk-wynn-myc'
 	},
 	'oz': {
-		'lesson': 'Основи здоровя',
+		'lesson': 'Основи здоров\'я',
 		'teacher': 'Щепанська Алла Борисівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
 		'meet': 'https://meet.google.com/pkt-dgom-uzx'
@@ -95,7 +95,7 @@ var arSсhedule = [
 ];
 var arTime = ['08:30', '09:25', '10:25', '11:25', '12:25', '13:25', '14:20'];
 
-var arWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', 'Пятниця'];
+var arWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', 'П\'ятниця'];
 
 function CardDay(day, cardslesson) {
 	let cardday = '';
