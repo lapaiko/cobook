@@ -6,7 +6,7 @@ var chLesson = {
 		'meet': 'https://meet.google.com/qte-iqxy-dcs'
 	},
 	'uklit': {
-		'lesson': 'Українська мова',
+		'lesson': 'Українська література',
 		'teacher': 'Волк Світлана Віталіївна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
 		'meet': 'https://meet.google.com/zrm-ipgh-oxb'
