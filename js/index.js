@@ -76,7 +76,7 @@ var chLesson = {
 		'lesson': 'Технологія',
 		'teacher': 'Іванова Алла Опанасівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
-		'meet': '#'
+		'meet': 'https://meet.google.com/uwr-mgkm-nnc'
 	},
 	'nat': {
 		'lesson': 'Пізнаємо природу',
