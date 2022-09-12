@@ -3,30 +3,35 @@ var chLesson = {
 		'lesson': 'Українська мова',
 		'teacher': 'Волк Світлана Віталіївна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy',
+		'homework': 'https://classroom.google.com/w/NTQ1MjMyODExMjEy/t/all',
 		'meet': 'https://meet.google.com/qte-iqxy-dcs'
 	},
 	'uklit': {
 		'lesson': 'Українська література',
 		'teacher': 'Волк Світлана Віталіївна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
+		'homework': 'https://classroom.google.com/w/NTQ1MjMzNDAzMDE0/t/all',
 		'meet': 'https://meet.google.com/zrm-ipgh-oxb'
 	},
 	'zarlit': {
 		'lesson': 'Зарубіжна література',
 		'teacher': 'Солодка Ірина Петрівна',
 		'classroom': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1',
+		'homework': 'https://classroom.google.com/w/NTQ0NzUwODYxNzA1/t/all',
 		'meet': 'https://meet.google.com/try-xbxe-eax'
 	},
 	'eng': {
 		'lesson': 'Англійська мова',
 		'teacher': 'Задоянчук Оксана Василівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5',
+		'homework': 'https://classroom.google.com/w/NTQ1NTY3Mjk4ODQ5/t/all',
 		'meet': 'https://meet.google.com/zvd-crbk-vgb'
 	},
 	'mat': {
 		'lesson': 'Математика',
 		'teacher': 'Карабаджак Ірина Анатоліївна',
 		'classroom': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz',
+		'homework': 'https://classroom.google.com/w/NTI2OTIzMTIyMzUz/t/all',
 		//'meet': 'https://meet.google.com/wwy-pvek-fpm' //2022-09-07
 		//'meet': 'https://meet.google.com/kcp-tbxz-khb' //2022-09-08
 		'meet': 'https://meet.google.com/kzz-cugu-smk' //2022-09-09
@@ -35,54 +40,63 @@ var chLesson = {
 		'lesson': 'Музичне мистецтво',
 		'teacher': 'Кериченко Наталія Миколаївна',
 		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
+		'homework': 'https://classroom.google.com/w/NTI2OTIxMzY1NjM3/t/all',
 		'meet': 'https://meet.google.com/nfa-usas-xei'
 	},
 	'hist': {
 		'lesson': 'Історія',
 		'teacher': 'Дідур Оксана Володимирівна',
 		'classroom': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw',
+		'homework': 'https://classroom.google.com/w/NTQ0NzkyOTQ2MTgw/t/all',
 		'meet': 'https://meet.google.com/gkd-tmfp-gfs'
 	},
 	'fiz': {
 		'lesson': 'Фізична культура',
 		'teacher': 'Стеблюк Олександра Петрівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
+		'homework': 'https://classroom.google.com/w/NTI3MjA4NzU0NjU1/t/all',
 		'meet': 'https://meet.google.com/zhz-eesi-pif'
 	},
 	'pain': {
 		'lesson': 'Образотворче мистецтво',
 		'teacher': 'Шклярук Світлана Олександрівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5',
+		'homework': 'https://classroom.google.com/w/NTI3MTc4MTYzNjQ5/t/all',
 		'meet': 'https://meet.google.com/cny-cwqt-dxb'
 	},
 	'prog': {
 		'lesson': 'Інформатика',
 		'teacher': 'Шевчук Андрій Григорович',
 		'classroom': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx',
+		'homework': 'https://classroom.google.com/w/NTQ1MTU5NzIwMDMx/t/all',
 		'meet': 'https://meet.google.com/tvf-poiw-qym'
 	},
 	'dram': {
 		'lesson': 'Драматургія і театр',
 		'teacher': 'Рахнянська Наталія Федорівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx',
+		'homework': 'https://classroom.google.com/w/NTI3MTI3NTg1MjMx/t/all',
 		'meet': 'https://meet.google.com/knk-wynn-myc'
 	},
 	'oz': {
 		'lesson': 'Основи здоров\'я',
 		'teacher': 'Щепанська Алла Борисівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
+		'homework': 'https://classroom.google.com/w/NTQ1MDE1NTYzNDM2/t/all',
 		'meet': 'https://meet.google.com/pkt-dgom-uzx'
 	},
 	'tec': {
 		'lesson': 'Технологія',
 		'teacher': 'Іванова Алла Опанасівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
+		'homework': 'https://classroom.google.com/w/NTQ1NTc3MDc3MTYz/t/all',
 		'meet': 'https://meet.google.com/uwr-mgkm-nnc'
 	},
 	'nat': {
 		'lesson': 'Пізнаємо природу',
 		'teacher': 'Касяненко Світлана Володимирівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1',
+		'homework': 'https://classroom.google.com/w/NTQ1MDc1MDgxMzg1/t/all',
 		'meet': 'https://meet.google.com/hfo-mkni-seh'
 	}
 };
