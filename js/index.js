@@ -34,7 +34,8 @@ var chLesson = {
 		'homework': 'https://classroom.google.com/w/NTI2OTIzMTIyMzUz/t/all',
 		//'meet': 'https://meet.google.com/wwy-pvek-fpm' //2022-09-07
 		//'meet': 'https://meet.google.com/kcp-tbxz-khb' //2022-09-08
-		'meet': 'https://meet.google.com/kzz-cugu-smk' //2022-09-09
+		//'meet': 'https://meet.google.com/kzz-cugu-smk' //2022-09-09
+		'meet': 'https://meet.google.com/kcp-tbxz-khb' //2022-09-12
 	},
 	'mus': {
 		'lesson': 'Музичне мистецтво',
