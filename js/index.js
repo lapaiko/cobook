@@ -1,4 +1,5 @@
-var chLesson = {
+//Перелік уроків
+let chLesson = {
 	'uklen': {
 		'lesson': 'Українська мова',
 		'teacher': 'Волк Світлана Віталіївна',
@@ -79,7 +80,8 @@ var chLesson = {
 		'teacher': 'Шклярук Світлана Олександрівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5',
 		'homework': 'https://classroom.google.com/w/NTI3MTc4MTYzNjQ5/t/all',
-		'meet': 'https://meet.google.com/cny-cwqt-dxb',
+		//'meet': 'https://meet.google.com/cny-cwqt-dxb',
+		'meet': 'https://meet.google.com/iyg-eygc-tdm', //2022-09-14
 		'booklink': '-',
 		'book': '-'
 	},
@@ -130,6 +132,7 @@ var chLesson = {
 	}
 };
 
+//Розклад уроків - на тиждень
 var arSсhedule = [
 	['uklen', 'uklen', 'zarlit', 'eng', 'mat', 'mus'],
 	['eng', 'hist', 'mat', 'nat', 'uklit', 'fiz'],
@@ -137,8 +140,11 @@ var arSсhedule = [
 	['fiz', 'nat', 'mat', 'uklen', 'zarlit', 'eng', 'oz'],
 	['mat', 'tec', 'tec', 'hist', 'uklit', 'eng']
 ];
+
+//Розклад дзвінків
 var arTime = ['08:30', '09:25', '10:25', '11:25', '12:25', '13:25', '14:20'];
 
+//Дні тижня
 var arWeek = ['Понеділок', 'Вівторок', 'Середа', 'Четверг', 'П\'ятниця'];
 
 function CardDay(day, cardslesson) {
