@@ -205,4 +205,8 @@ function Shedule() {
 	document.getElementById('shedule').innerHTML = shedule;
 }
 
+//Отримуємо домашні завданя
+GetHomework();
+
+//Виводимо розклад уроків
 Shedule();

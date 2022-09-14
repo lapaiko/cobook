@@ -1,23 +1,20 @@
 //Домашні завдання - день виконання
 var chHomework = {
-	'uklen': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'uklit': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'zarlit': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'eng': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'mat': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'mus': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'hist': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'fiz': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'pain': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'prog': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'dram': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'oz': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'tec': { 'direct': { '0000-00-00': 0 }, 'back': [0] },
-	'nat': { 'direct': { '0000-00-00': 0 }, 'back': [0] }
+	'uklen': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'uklit': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'zarlit': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'eng': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'mat': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'mus': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'hist': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'fiz': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'pain': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'prog': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'dram': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'oz': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'tec': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
+	'nat': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] }
 };
-
-
-
 
 //Домашні завдання - день видачі
 var chHomeworkGive = {
@@ -45,7 +42,14 @@ var chHomeworkGive = {
 		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTQ3MzY2MDQyNzY3/details||1. Виразно читати с. 113-117 (старий підручник)|2. Скласти три власних загадки та намалювати до них ілюстрації.',
 		'fiz': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1/a/NTI3NjMwNDI2NTEy/details||Працюємо асинхронно, повторюємо минулу схему уроку:|1. Суглобова розминка|2. 3 х|Присід 12|Зірка 12|Сетапи 12|Джампінг Джек 12|3. Заминка, відновлення дихання.'
 	},
-	'2022-09-14': { 'fiz': '', 'pain': '', 'prog': '', 'uklen': '', 'dram': '', 'mat': '' },
+	'2022-09-14': {
+		'prog': '1. Читати підручник сторінка 9-10.|2. Виконати вправу 3 сторінка 10.',
+		'pain': '',
+		'fiz': '',
+		'uklen': '',
+		'dram': '',
+		'mat': ''
+	},
 	'2022-09-15': { 'fiz': '', 'nat': '', 'mat': '', 'uklen': '', 'zarlit': '', 'eng': '', 'oz': '' },
 	'2022-09-16': { 'mat': '', 'tec': '', 'hist': '', 'uklit': '', 'eng': '' },
 
@@ -83,32 +87,25 @@ var chHomeworkGive = {
 	'2022-10-25': { 'eng': '', 'hist': '', 'mat': '', 'nat': '', 'uklit': '', 'fiz': '' },
 	'2022-10-26': { 'fiz': '', 'pain': '', 'prog': '', 'uklen': '', 'dram': '', 'mat': '' },
 	'2022-10-27': { 'fiz': '', 'nat': '', 'mat': '', 'uklen': '', 'zarlit': '', 'eng': '', 'oz': '' },
-	'2022-10-28': { 'mat': '', 'tec': '', 'hist': '', 'uklit': '', 'eng': '' },
+	'2022-10-28': { 'mat': '', 'tec': '', 'hist': '', 'uklit': '', 'eng': '' }
 };
 
-function GetHomework() {
-	let chCount = {
-		'uklen': 0,
-		'uklit': 0,
-		'zarlit': 0,
-		'eng': 0,
-		'mat': 0,
-		'mus': 0,
-		'hist': 0,
-		'fiz': 0,
-		'pain': 0,
-		'prog': 0,
-		'dram': 0,
-		'oz': 0,
-		'tec': 0,
-		'nat': 0
-	};
 
-	for (let kDate in chHomeworkGive) {
-		for (let kLesson in chHomeworkGive[kDate]) {
-			let Task = chHomeworkGive[kDate][kLesson];
-			//chCount[Task]
-			//chHomework
+function GetHomework() {
+	for (let kDate in chHomeworkGive) { // отримуємо дату видачі завдання
+		for (let kLesson in chHomeworkGive[kDate]) { // отримуємо назву уроку
+			// Отримуємо дамашнє завдання
+			//let Task = chHomeworkGive[kDate][kLesson];
+
+			// Зберігаємо номер дати домашнього завдання з попереднього уроку
+			let iHw = chHomework[kLesson].chDataHw.count;
+			// Присвоюємо даті видачі домашнього завдання - номер
+			chHomework[kLesson].chDataHw[kDate] = iHw; //Якщо iLesson = 0 - дрмашнє завдання не задано
+
+			// Інкремент номеру дати видачі домашнього завданя
+			chHomework[kLesson].chDataHw.count++;
+			// Присвоюємо номер - даті видачі домашнього завдання 
+			chHomework[kLesson].arIHw[iHw] = kDate;
 		}
 	}
 
