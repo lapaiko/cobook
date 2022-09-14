@@ -133,7 +133,7 @@ var chLesson = {
 var arSсhedule = [
 	['uklen', 'uklen', 'zarlit', 'eng', 'mat', 'mus'],
 	['eng', 'hist', 'mat', 'nat', 'uklit', 'fiz'],
-	['fiz', 'pain', 'prog', 'uklen', 'dram', 'mat'],
+	['prog', 'pain', 'fiz', 'uklen', 'dram', 'mat'],
 	['fiz', 'nat', 'mat', 'uklen', 'zarlit', 'eng', 'oz'],
 	['mat', 'tec', 'tec', 'hist', 'uklit', 'eng']
 ];
