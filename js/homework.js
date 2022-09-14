@@ -1,23 +1,23 @@
-//Домашні завдання - день виконання
-var chHomework = {
-	'uklen': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'uklit': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'zarlit': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'eng': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'mat': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'mus': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'hist': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'fiz': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'pain': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'prog': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'dram': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'oz': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'tec': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] },
-	'nat': { 'chDataHw': { 'count': 0 }, 'arIHw': [0] }
+// Дати попередніх уроків
+var chLessonDate = {
+	'uklen': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'uklit': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'zarlit': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'eng': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'mat': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'mus': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'hist': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'fiz': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'pain': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'prog': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'dram': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'oz': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'tec': { 'chDate': { 'count': 0 }, 'arI': [0] },
+	'nat': { 'chDate': { 'count': 0 }, 'arI': [0] }
 };
 
-//Домашні завдання - день видачі
-var chHomeworkGive = {
+//Домашні завдання - по дням їх видачі
+var chHomework = {
 	'2022-09-01': { 'fiz': '', 'nat': '', 'mat': '', 'uklen': '', 'zarlit': '', 'eng': '', 'oz': '' },
 	'2022-09-02': { 'mat': '', 'tec': '', 'hist': '', 'uklit': '', 'eng': '' },
 
@@ -43,12 +43,12 @@ var chHomeworkGive = {
 		'fiz': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1/a/NTI3NjMwNDI2NTEy/details||Працюємо асинхронно, повторюємо минулу схему уроку:|1. Суглобова розминка|2. 3 х|Присід 12|Зірка 12|Сетапи 12|Джампінг Джек 12|3. Заминка, відновлення дихання.'
 	},
 	'2022-09-14': {
-		'prog': '1. Читати підручник сторінка 9-10.|2. Виконати вправу 3 сторінка 10.',
-		'pain': '',
-		'fiz': '',
-		'uklen': '',
-		'dram': '',
-		'mat': ''
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NDg5NzA0NTAwNjA0/details}}1. Читати підручник сторінка 9-10.|2. Виконати вправу 3 сторінка 10.',
+		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NDg5NzA1MDI1MzUz/details||1. Переглянути відеоурок.|2. Дібрати необхідні матеріали|3. Створити свою композицію з осіннього листя, продумай на що схожа твоя композиція, доопрацюй маркером, або фломастером. Фото твоєї роботи прикріпи в класрум.',
+		'fiz': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1/a/NTI3NzAzOTMxMDMw/details||Схема уроку:|1. Суглобова розминка|2. 3 х|Ангели стоячи 10|Бар’єрист 12|Підйом ніг в упорі сидячи 12|Стрибки на місці 12|3. Заминка, відновлення дихання.',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NDg5NzA4OTA0MDUx/details|||Самостійна робота|1. Утворити синонімічний ряд до слова: розумний|2. До поданих слів підіьрати антоніми: |молодість - |далеко - |либокий -|попереду - |3. Скласти два речення з поданими омонімами, щоб позначали різні значення: ніс і ніс|4. Скласти два речення із паронімами: незгода - негода',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NDg5NzA2NzkyMjMy/details||Виразно читати пєси',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTQ3NjIxMDUyNDg5/details||Самостійна робота|1 варіант- Ачкасов, Бажан,Бойко, Данилюк,Дудка,Дудник,Дяденко, Жмурко, Журбенко,Засаднюк, Іванова, Канишина, Коханчук|2 варіант- Кошляк, Лапайко, Нікітюк, Одайський, Пасічник, Рвачов,Сорока,Сорохманюк, Спеней, Спицька, Шарай, Юзько.'
 	},
 	'2022-09-15': { 'fiz': '', 'nat': '', 'mat': '', 'uklen': '', 'zarlit': '', 'eng': '', 'oz': '' },
 	'2022-09-16': { 'mat': '', 'tec': '', 'hist': '', 'uklit': '', 'eng': '' },
@@ -92,22 +92,28 @@ var chHomeworkGive = {
 
 
 function GetHomework() {
-	for (let kDate in chHomeworkGive) { // отримуємо дату видачі завдання
-		for (let kLesson in chHomeworkGive[kDate]) { // отримуємо назву уроку
-			// Отримуємо дамашнє завдання
-			//let Task = chHomeworkGive[kDate][kLesson];
+	let previosDate = '-';
+	for (let keyDate in chHomework) { // отримуємо дату видачі завдання
+		for (let keyLesson in chHomework[keyDate]) { // отримуємо назву уроку
 
-			// Зберігаємо номер дати домашнього завдання з попереднього уроку
-			let iHw = chHomework[kLesson].chDataHw.count;
-			// Присвоюємо даті видачі домашнього завдання - номер
-			chHomework[kLesson].chDataHw[kDate] = iHw; //Якщо iLesson = 0 - дрмашнє завдання не задано
+			// Отримуємо номер дати попереднього уроку
+			let previosI = chLessonDate[keyLesson].chDate.count;
+			// Інкремент номеру дати уроку
+			chLessonDate[keyLesson].chDate.count++;
+			// Отримуємо номер дати цього уроку 
+			let nowI = chLessonDate[keyLesson].chDate.count;
 
-			// Інкремент номеру дати видачі домашнього завданя
-			chHomework[kLesson].chDataHw.count++;
-			// Присвоюємо номер - даті видачі домашнього завдання 
-			chHomework[kLesson].arIHw[iHw] = kDate;
+			// Присвоюємо номер - даті цього уроку 
+			chLessonDate[keyLesson].arI[nowI] = keyDate;
+
+			// Отримуємо дату поперднього уроку  
+			previosDate = '-';
+			if (previosI > 0) {
+				previosDate = chLessonDate[keyLesson].arI[previosI];
+			}
+			// Присвоюємо даті уроку - попередню дату цього уроку
+			chLessonDate[keyLesson].chDate[keyDate] = previosDate;
 		}
 	}
-
 }
 
