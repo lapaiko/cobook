@@ -108,7 +108,8 @@ let chLesson = {
 		'teacher': 'Щепанська Алла Борисівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
 		'homework': 'https://classroom.google.com/w/NTQ1MDE1NTYzNDM2/t/all',
-		'meet': 'https://meet.google.com/pkt-dgom-uzx',
+		//'meet': 'https://meet.google.com/pkt-dgom-uzx',
+		'meet': 'https://meet.google.com/feh-sygz-vig', //2022-09-15
 		'booklink': '-',
 		'book': '-'
 	},
