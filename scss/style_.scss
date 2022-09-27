@@ -135,7 +135,7 @@ body {
 	&__body {
 		display: flex;
 		flex-wrap: wrap;
-		margin: 0 -15px; // Відступ в контейнері 1
+		margin: 0 -10px; // Відступ в контейнері 1
 		//border: 1px solid green;
 	}
 }
@@ -143,7 +143,7 @@ body {
 .shedule {
 
 	flex: 0 0 50%;
-	padding: 0 15px; // Відступ в контейнері 1
+	padding: 0 10px; // Відступ в контейнері 1
 	//border: 1px solid red;
 
 	&__body {
@@ -163,6 +163,10 @@ body {
 		}
 	}
 
+	&__lessons:nth-child(2) {
+		border-top: 1px solid #777;
+	}
+
 	&__lessons {
 		border-bottom: 1px solid #777;
 	}
@@ -175,7 +179,7 @@ body {
 	//align-items: center;
 
 	&__number {
-		border: 1px solid rebeccapurple;
+		//border: 1px solid rebeccapurple;
 
 		flex: 0 1 50px;
 		padding: 0 5px;
@@ -193,7 +197,7 @@ body {
 	}
 
 	&__info {
-		border: 1px solid blue;
+		//border: 1px solid blue;
 		flex: 1 1 auto;
 		padding: 0 5px;
 
@@ -209,22 +213,24 @@ body {
 	}
 
 	&__link {
-		border: 1px solid red;
+		flex: 0 0 40px;
+		//border: 1px solid red;
 		padding: 0 5px;
 
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		justify-content: space-around;
 		align-items: center;
 		//margin: 0 -5px;
 
 		&_classroom,
 		&_meet {
-			//flex: 0 0 30px;
+			//
 			//height: 30px;
 			//padding: 0 5px;
 			overflow: hidden;
 			border-radius: 3px;
-			width: 40px;
+			//width: 24px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -244,36 +250,36 @@ body {
 	}
 
 	&__task {
-		border: 1px solid green;
+		//border: 1px solid green;
 		padding: 0 5px;
-		flex: 0 1 40px;
+		flex: 0 1 45px;
 		//height: 100%;
 		position: relative;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		//margin: 0 -5px;
+		//margin: 0 -10px;
 
 
 		&_button::before,
 		&_button::after {
 			content: "";
-			//padding: 0 5px;
+			//padding: 0 10px;
 			position: absolute;
-			width: 60%;
+			width: 45%;
 			height: 2px;
 			background-color: #000;
 			transition: all 0.3s ease 0s;
 		}
 
 		&_button::before {
-			left: 0;
+			left: 11%;
 			transform: rotate(45deg);
 		}
 
 		&_button::after {
-			right: 0;
+			right: 11%;
 			transform: rotate(-45deg);
 
 		}

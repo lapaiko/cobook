@@ -249,14 +249,14 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0 -15px;
+  margin: 0 -10px;
 }
 
 .shedule {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
-  padding: 0 15px;
+  padding: 0 10px;
 }
 
 .shedule__body {
@@ -282,6 +282,10 @@ body {
   font-size: 30px;
 }
 
+.shedule__lessons:nth-child(2) {
+  border-top: 1px solid #777;
+}
+
 .shedule__lessons {
   border-bottom: 1px solid #777;
 }
@@ -294,7 +298,6 @@ body {
 }
 
 .lesson__number {
-  border: 1px solid rebeccapurple;
   -webkit-box-flex: 0;
       -ms-flex: 0 1 50px;
           flex: 0 1 50px;
@@ -313,7 +316,6 @@ body {
 }
 
 .lesson__info {
-  border: 1px solid blue;
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -331,14 +333,19 @@ body {
 }
 
 .lesson__link {
-  border: 1px solid red;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
   padding: 0 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -347,7 +354,6 @@ body {
 .lesson__link_classroom, .lesson__link_meet {
   overflow: hidden;
   border-radius: 3px;
-  width: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -372,11 +378,10 @@ body {
 }
 
 .lesson__task {
-  border: 1px solid green;
   padding: 0 5px;
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 40px;
-          flex: 0 1 40px;
+      -ms-flex: 0 1 45px;
+          flex: 0 1 45px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -392,7 +397,7 @@ body {
 .lesson__task_button::before, .lesson__task_button::after {
   content: "";
   position: absolute;
-  width: 60%;
+  width: 45%;
   height: 2px;
   background-color: #000;
   -webkit-transition: all 0.3s ease 0s;
@@ -400,13 +405,13 @@ body {
 }
 
 .lesson__task_button::before {
-  left: 0;
+  left: 11%;
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
 }
 
 .lesson__task_button::after {
-  right: 0;
+  right: 11%;
   -webkit-transform: rotate(-45deg);
           transform: rotate(-45deg);
 }
