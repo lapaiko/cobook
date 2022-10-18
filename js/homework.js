@@ -44,7 +44,8 @@ var chLesson = {
 		//'meet': 'https://meet.google.com/wwy-pvek-fpm' //2022-09-07
 		//'meet': 'https://meet.google.com/kcp-tbxz-khb' //2022-09-08
 		//'meet': 'https://meet.google.com/kzz-cugu-smk' //2022-09-09
-		'meet': 'https://meet.google.com/kcp-tbxz-khb', //2022-09-12
+		//'meet': 'https://meet.google.com/kcp-tbxz-khb', //2022-09-12
+		'meet': 'https://meet.google.com/kcp-tbxz-khb', //2022-10-18
 		'booklink': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTQ1NTY1NDEzNzky/details',
 		'book': '5_mathematics.pdf'
 	},
@@ -71,6 +72,7 @@ var chLesson = {
 		'teacher': 'Стеблюк Олександра Петрівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
 		'homework': 'https://classroom.google.com/w/NTI3MjA4NzU0NjU1/t/all',
+		//'meet': 'https://meet.google.com/zhz-eesi-pif',
 		'meet': 'https://meet.google.com/zhz-eesi-pif',
 		'booklink': '-',
 		'book': '-'
