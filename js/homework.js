@@ -346,10 +346,38 @@ var chHomework = {
 	'2022-10-13': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
 	'2022-10-14': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
 
-	'2022-10-17': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
-	'2022-10-18': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
-	'2022-10-19': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2022-10-20': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
+	'2022-10-17': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Впр. 146(1) письмово (електронний підручник).',
+		'zarlit': '||1. Придумати історію про пригоди улюбленої іграшки (за бажанням)|2. Повторити харатерні ознакилітературної казки (стор. 75)',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Переглядаєм презентацію, вставляємо (усно is/ are) та читаєм вголос.|2. Стор.-23 впр. 4 (електронного підручника) виконати письмово(списати речення)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. 328. Обчисли зручним способом:||1) 4 ⋅ 89 ⋅ 25|2) 2 ⋅ 472 ⋅ 5|3) 5 ⋅ 61 ⋅ 4|4) 50 ⋅ 15 ⋅ 2|5) 125 ⋅ 14 ⋅ 8|6) 8 ⋅ 36 ⋅ 25.',
+		'mus': '||!!!'
+	},
+	'2022-10-18': {
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Опрацюйте самостійно з електронним підручником на ст.24, 25|2. Стор.-24 впр. 1,2 (УСНО)|3. Стор.-25 впр. 3 (ПИСЬМОВО)',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/m/NTU3NDY3ODM3ODcx/details||Опрацювати матеріал уроку.|1. Презентаційний|2. Підручник (електронний), п.5 (стор.29 -33)|3. Завд. 2, стор.34',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. №345(1) (електронний підручник)',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTU3MzYwNjE2MTc0/details||1. Прочитати електронний підручник с.30 - 31.|2.  Спробувати створити моделі молекул з пластиліну кисню, водню, вуглекислого газу, води за схемами цих речовин, що зображені на с.31',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0||1. Останній слайд у презентації.',
+		'fiz': '||1. Форма'
+	},
+	'2022-10-19': {
+		'fiz': '||1. Форма',
+		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NTU3Nzg4NTUzNTU3/details||1. Розглянь форми овочів та фруктів та переглянь відеоурок.|2. Добери пластилін, стеки, дощечку для ліплення та серветки(сухі).|3. Створи обємну композицію "Овочі та фрукти" із пластиліну. Намагайся передати форму і фактуру кожного предмета, який будеш ліпити. Після роботи ретельно витри руки сухою серветкою. Фото своєї композиції прикріпи в класрум.',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTU3NzkzMzg4OTgz/details||1. читати підручник сторінка 24-27|2. переглянути презентацію|3. переглянути відеоурок за посиланням https://cutt.ly/iB1DxR4',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Вправу 150 с.65 (письмово)|2. Вивчити правила с.64.',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTU3Njc0NTM3NjEx/details||1. Правила поведінки дітей у театрі',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTU3ODI5ODA3NjE4/details||Дистанційна робота|1 Степінь натурального числа. Квадрат і куб натурального числа|2. Перейти за посиланням і переглянути відео урок https://www.youtube.com/watch?v=qrk4qEs1m4Q|3. Усі 5 номерів, розвязані у відео уроці записати в зошит|4. Д.З. параграф 8-опрацювати, №361-письмово'
+	},
+	'2022-10-20': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTU4MDU2NDU2ODQx/details||1. Опрацювати с. 28 - 31 старого підручника, дати відповіді на запитання на 33',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Повторити тему "Степінь натурального числа. Квадрат і куб числа", параграф 8',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Вивчити значення поняття афоризм с.67|2. Усно опрацювати таблицю вправи 157 с.67|3. Стор. - 68, впр. 159',
+		'zarlit': '||1. Стор. 100-103 перказати казку Хлопчик зірка',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercise 3 page 25(written)|2. Listen to the recording and then train reading the sentences of ex. 1 p.25',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||1. Параграф 6 с.47-55 (електронний підручник)|2. виконати завдання на с. 55(електронний підручник)'
+	},
 	'2022-10-21': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
 
 	'2022-10-24': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
