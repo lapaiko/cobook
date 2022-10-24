@@ -378,9 +378,21 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercise 3 page 25(written)|2. Listen to the recording and then train reading the sentences of ex. 1 p.25',
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||1. Параграф 6 с.47-55 (електронний підручник)|2. виконати завдання на с. 55(електронний підручник)'
 	},
-	'2022-10-21': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
+	'2022-10-21': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NDkxMTQ3NTY1NjYy/details||1. №382(2,4) (електроний підручник)',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTU1MDQ0MjA4OTgx/details||1. Ознайомтесь з поданою інформацією, проаналізуйте, який оберіг ви зможете виготовити. Враховуйте наявність матеріалів та інструментів. Можливий пошук ідей в інтернеті. Роботу виконуєте до наступної пятниці',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTU4NDUyMzk1MTY2/details||1. Повторити матеріал уроку (презентаційни та підручник).|2. Підручник п.6, стор. 35, провести дослідження. Записати до зошити, сфотографувати, прикріпити до теми уроку. При виконанні дз - уважно прочитайте інформацію у презентаціях.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0||1. Написати 5-6 речень про те чого тебе навчила казка Лілея',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Впр.1, 2 ст.26 (електронного підручника) прослухайте, запамятайте слова, прочитайте розповіді;|2. Впр. 1 ст.27 (перепишіть речення собі в зошит, вставивши потрібні слова)'
+	},
 
-	'2022-10-24': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
+	'2022-10-24': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NDkxMjE5OTAwMjAy/details||1. Вправа 163 с.69 (виконати за варіантами) (електроний підручник)',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||1. Домашка ст.106-114',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercise 3 page 29 (as in the example)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTU4OTQ2MjczNDcy/details||1. Параграф 9-опрацювати, №397(1,3), №395(1,3,5)-виконати письмово',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTU4OTM0MzM5MTA2/details||1. Заспівати пісню "Ой у лузі червона калина" (тільки куплет 1 і приспів ), записавши себе на відео. |2. Заспівати пісню "Україно моя" (тільки куплет 1 і приспів), записавши себе на відео.'
+	},
 	'2022-10-25': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
 	'2022-10-26': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2022-10-27': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
