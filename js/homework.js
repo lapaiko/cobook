@@ -393,7 +393,14 @@ var chHomework = {
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTU4OTQ2MjczNDcy/details||1. Параграф 9-опрацювати, №397(1,3), №395(1,3,5)-виконати письмово',
 		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTU4OTM0MzM5MTA2/details||1. Заспівати пісню "Ой у лузі червона калина" (тільки куплет 1 і приспів ), записавши себе на відео. |2. Заспівати пісню "Україно моя" (тільки куплет 1 і приспів), записавши себе на відео.'
 	},
-	'2022-10-25': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
+	'2022-10-25': {
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Ex.7, 8 page 31 (written)',
+		'hist': '||!!!',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTU5MjQwMjY4NjY0/details||1. Параграф 9-повторити,|2. №408(1-3), №401- виконати письмово',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTU5MTUwOTI1NTk0/details||1. 1. Прочитати (старий підручник) параграф 5, дати відповіді на запитання на с. 25',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0||1. Прочитати казку "Чотири сестри"  с.74-86 (електронний підручник) або прослухати аудіокнигу|2. Скласти 5 запитань до казки (письмово).',
+		'fiz': '||1. Форма'
+	},
 	'2022-10-26': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2022-10-27': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
 	'2022-10-28': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' }
