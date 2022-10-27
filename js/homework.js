@@ -414,7 +414,7 @@ var chHomework = {
 		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTU5NzU0NjUwOTUx/details||1. Опрацювати матеріал підручника с. 32 - 33|2. Виконати завдання зі с. 33',
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. №434, №436-виконати письмово',
 		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Впр. 167 с.70 (електронний підручник)|2. Повторити все вивчене про фразеологізми.',
-		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||1. Домашка ст.106-114',
+		'zarlit': '||1. Повторити особливості літературної казки|2. Виконати підсумкові завдання за електроним підручником. Експркес тест 4',
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Діти, читаєте завдання до проєкту на ст.31; |2. Малюєте невеличкий малюнок нової спальні та описуєте її (на окремому аркуші паперу), як вказано у прєкті.',
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||1. переглядаємо відео та читаємо параграф 7 в ел підручнику і даємо відповіді на питання в кінці параграфа.'
 	},
