@@ -419,11 +419,11 @@ var chHomework = {
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||1. переглядаємо відео та читаємо параграф 7 в ел підручнику і даємо відповіді на питання в кінці параграфа.'
 	},
 	'2022-10-28': {
-		'mat': '-',
-		'tec': '-',
-		'hist': '-',
-		'uklit': '-',
-		'eng': '-'
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTYwMTQ1OTYxMjc4/details||1. Нижче знайдете завдання самостійної роботи. Виконуєте їх і прикріпляєте на перевірку.',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTYwMTUyNDMwNjY2/details||1. Рамка для фото',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTYwMTY5ODMzMTcx/details||1. Перейдіть за посиланням https://vseosvita.ua/test/start/ynq925 та вкажіть необхідну інформацію. Пройдіть тестування.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0||1. Скласти тестові завдання до казки (6 або 12 запитань і до них по три або чотири варіанти відповідей, позначте правильну відповідь).',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Працюєте з електронним підручником на сторінці 32;|2. Самостійно виконуєте вправи 2, 3 та 1 виконуєте за зразком.|3. Речення вправи 1, ст.32 списати собі в зошит'
 	},
 
 	'2022-10-31': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
