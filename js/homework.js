@@ -441,9 +441,30 @@ var chHomework = {
 		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0||1. Підготуватися до контрольної роботи за темами "Народні та літературні казки" (народна казка "Яйце-райце", І.Франко "Фарбований Лис", Леся Українка "Лілея", В.Шевчук "Чотири сестри")',
 		'fiz': '||1. Форма'
 	},
-	'2022-11-02': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2022-11-03': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
-	'2022-11-04': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
+	'2022-11-02': {
+		'fiz': '||1. Форма',
+		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NTYwOTg1MjI3MDA0/details||1. Ознойомся з мистецтвом дизайну та його видами. Уяви себе дизайнером. На основі відео-майстеркласу спробуй створити замальовку крісла, або торшера чи настільної лампи у вигляді соняшника.|2. Виконай руханку за посиланням. Фото своєї роботи надішли в класрум',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx||1. Проаналізувати стор. 34-39',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. КОНТРОЛЬНА РОБОТА https://vseosvita.ua/test/start/kht377',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTYwOTYwODQ4MjAw/details||1. Створити хмарку слів з теми "Вистава" (програма за посиланням https://wordart.com/  ). Створену хмарку прикріпити в гугл-класі',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTYxMDM3MTY4NTMw/details||1. Опрацювати параграфhttps://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTY3NzQzMzQ4Nzcy/details 11, письмово виконати № 443, №447'
+	},
+	'2022-11-03': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTY3NjY3OTc2MjIz/details||1. 1. Виконати завдання презентації ( письмово)|2. Ще раз продивитися параграфи 9, 10, 12|3. Ачкасову Владиславу підготувати доповідь на тему : "Вода як розчинник"; Данилюк Олені підготувати доповідь на тему : "Розчини в природі побуті та організмі людини"',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTY3NzQzMzQ4Nzcy/details||1. Параграф 11-повторити, №456-письмово',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Вивчити класифікацію звуків (у зошиті), виконати завдання зі слайду (останній).',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTYxNTA1OTM0NTQy/details||1. Контрольна робота Літературна казка',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Ex.1, 2 p.37',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||1. Намалювати дерево і на писати на листочках синього кольору те, що тобі не подобається, а червоних - подобається'
+	},
+	'2022-11-04': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTY4MDA4MjIxNzQ2/details||1. №481(3,4), №487(1,4)-письмово. І здаємо на перевірку|2. Параграф 12 -опрацювати',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTY4MDA4MTY5Njk2/details||1. Вигтовлення браслета в техніці макраме',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTY4MDI1MzYwMjM3/details||1. Практична робота. Писемні історичні джерела. Речові історичні джерела.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/m/NDkxODEyMTA3NzI2/details||1. КОНТРОЛЬНА РОБОТА https://vseosvita.ua/test/start/pds089',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Ex.1, 2 p.39'
+	},
 
 	'2022-11-07': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
 	'2022-11-08': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
