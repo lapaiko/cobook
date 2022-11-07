@@ -466,7 +466,13 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Ex.1, 2 p.39'
 	},
 
-	'2022-11-07': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
+	'2022-11-07': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/m/NTY4NDgzNzYwMzY2/details||1. Вивчити правила про склад і наголос за презентацією, правила с. 83 (електронний підручник),виконати вправу 206 (1) с. 85 (письмово).',
+		'zarlit': '||1. Казкові пригоди персонажів на шоколадні фабриці містера Волнки',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Today you work yourself.|1) read ex.3 page 39;|2) write ex.4 page 39;|3) do the tasks from the file',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTY4NTI4MDQwODc2/details||1. Номер 496(2,4,5), номер 501(2)',
+		'mus': '||1. Пройти гру Танці світу https://wordwall.net/play/32776/425/118'
+	},
 	'2022-11-08': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
 	'2022-11-09': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2022-11-10': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
