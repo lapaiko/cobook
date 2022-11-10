@@ -489,7 +489,15 @@ var chHomework = {
 		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTY4OTczNDYyNDUy/details||У зошиті пишете число, самостійна робота. Далі виконуєте завдання у визначеному порядку|1. Виконати онлайн-тести.|2. Дайте письмову відповідь на запитання.',
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTY5MTE5ODMwMDc5/details||1. Параграф 13-читати, номер 521(1), номер 526-письмово'
 	},
-	'2022-11-10': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
+	'2022-11-10': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTY5MzEyODY1MjYx/details||1. Тематичний залік №1. Контрольна робота №1. Виконати завдання заліку і здати в класрум до зазначеного терміну (до 10.15)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Номер 528',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/m/NTY5NDAzMzM3MzEx/details||1. Виконати вправу 217 с.89 письмово всім, а вправу 218 (1) - за бажанням.',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||Сторінка 100-116 читати та переказувати в електронному підручнику',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Вправа 1,2 сторінка 41-письмово.',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2||Параграф 9, ел.підручник, пройти крос-тест на с.76 (усно), в зошиті записати 5 порад для ефективного тайм - менеджменту.'
+	},
 	'2022-11-11': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
 
 	'2022-11-14': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
