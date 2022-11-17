@@ -530,13 +530,13 @@ var chHomework = {
 		'mat': '||1. № 607'
 	},
 	'2022-11-17': {
-		'fiz': '-',
-		'nat': '-',
-		'mat': '-',
-		'uklen': '-',
-		'zarlit': '-',
-		'eng': '-',
-		'oz': '-'
+		'fiz': '1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTcxNDc2OTIzOTk4/details||1. Опрацювати параграф 21, дати відповіді на запитання на с. 79 . № 4-5 виконати письмово',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTYxODkyODgzNjQw/details||1. виконати 2 завдання ( за бажанням) із запропонованих 4.',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTcxNDcwNjIxNjY4/details||1. Самостійна робота|1 варіант:  джерела, цілющої, сімя, підживити, вміння, ялинонька|2 варіант: джмелі, єдина, володіння, тьохкати, підземний, переміщатися|Домашнє завдання: підготуватися до контрольної роботи за темою "Фонетика" (класифікація звуків, транскрипція).',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTcxNDgzNDgzMjMy/details||1. Домашня робота Винаходи Віллі Вонка',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Діти, тему "Holidays" повторюєте, перечитуєте тексти на ст.44-45; списуєте слова впр.1 ст.46 в зошит та пишете букву який малюнок відповідає слову',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTYxODkzMjg0ODU1/details||1. прочитати і в зошиті виконати з мозаїки завдань №3 на с.83, потрібно написати три речі, які ви вивчили, дві речі, про які хотіли б ще дізнатися, одну річ, у якій треба повправлятися.'
 	},
 	'2022-11-18': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
 
