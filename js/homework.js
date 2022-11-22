@@ -546,8 +546,21 @@ var chHomework = {
 		'eng': '||!!!'
 	},
 
-	'2022-11-21': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
-	'2022-11-22': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
+	'2022-11-21': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTcyMzM2NTQ5NDM3/details||2. Виконати письмово, здати фото роботи на перевірку до кінця другого уроку',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTcyMzM4MDAwMzMy/details||Літературний диктант 10',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Look, listen to the recordings CD68 and do Exercises 4,5 page46; 2. CD69 Ex.6 p.47',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTcyMzc3MjgzNDk1/details||1. Д.з. підготуватися до к.р.',
+		'mus': '||'
+	},
+	'2022-11-22': {
+		'eng': '||!!!',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTcyNjQ2OTg2ODc2/details||1. Повтрити матеріал уроку (підручник, презентаця) Підручник стор.68.|2.виконати завдання: 2. Здійсни віртуальну екскурсію в один із музеїв. Запиши назву музею, його місцезнаходження та експонати, які ти побачив/побачила',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTcyNDkxMjY3NTA4/details||1. Контрольна робота',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTYyMDAyMTM3OTE5/details||1. РОБОТА НА УРОЦІ: Прочитати с. 78 - 79. Скласти коротеньку казку про метали або неметали ( завдання за бажанням)|2. ДОМАШНЄ ЗАВДАННЯ: повторити матеріал підручника с.78 - 79',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/m/NTcyNjQzMjY0ODY2/details||1. прочитати «Повість минулих літ» с.102 – 103 (електронний підручник), вміти переказувати.',
+		'fiz': '||1. Форма'
+	},
 	'2022-11-23': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2022-11-24': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
 	'2022-11-25': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
