@@ -578,7 +578,13 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Зайдіть за посиланням  https://www.liveworksheets.com/vz1891862io розгляньте завдання, спробуйте зробити онлайн(його можна перевірити), лише потім перепишіть собі в зошит.',
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTczMjI2MTg1NzQ0/details||1. Виконати завдання №3 на с. 89, написати дві речі, про які ви дізналися і одне питання, яке залишилося. Пишимо в зошиті і прикріпляєм в класрум.'
 	},
-	'2022-11-25': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
+	'2022-11-25': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/m/NTczMzQ4MjQ4NDA3/details||1. Тема: Розвязування вправ. Відрізок та його вимірювання https://m.youtube.com/watch?v=4bieDSM24JI',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTczMzUwNDQxMTM5/details||1. Ознайомитись з відео за посиланням. Записати в зошит тему уроку і план виготовлення  гольника по відео. Вибрати свій варіант виготовлення голь ниці. Підготувати матеріали, виготовити лекала з картону,  вирізати. За лекалами викроїти деталі майбутньої гольниці',
+		'hist': '||!!!',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTczMzUwMDEzMjU1/details||1) Ще раз переглянути прочитаний літопис с.102-103.|2) Виконати тести онлайн на уважність за посиланням https://vseosvita.ua/test/start/dze244|1. Навчитися виразно читати драму-казку «Микита Кожумяка» Олександра Олеся с.108-116 (електронний підручник).',
+		'eng': '||!!!'
+	},
 
 	'2022-11-28': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
 	'2022-11-29': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
