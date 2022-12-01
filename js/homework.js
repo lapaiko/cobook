@@ -601,9 +601,24 @@ var chHomework = {
 		'uklit': '||Казака "Микита Кожумяка", читати, перказувати, написати характеристику героя казки',
 		'fiz': '||1. Форма'
 	},
-	'2022-11-30': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2022-12-01': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
-	'2022-12-02': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
+	'2022-11-30': {
+		'fiz': '||1. Форма',
+		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NTc0OTI3MzI3NjA3/details||1. Створи за допомогою олівця образ Супермена в русі. Виконай малюнок у кольорі,(маркерами, олівцями чи фарбами) Фото свого малюнка надішли в класрум',
+		'prog': '||!!!',
+		'uklen': '||1. Вправа 226 стор. 93(старий пдручник)',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTc0NTUzNDI1NzMy/details||1. 1. Створити пєсу за оповіданням В. Сухомлинського "Покинуте кошеня".',
+		'mat': '||!!!'
+	},
+	'2022-12-01': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTc0ODM5NDM5MDE0/details||1. РОБОТА НА УРОЦІ:|1. Прочитайте параграфи 24, 25|2. Виконайте практичну роботу, за інструкцією в прикріпленому документі (скористуватися фізичною картою України можна на форзаці старого підручника)|3. Роботу відправити на перевірку, разом з нею відправити і попередню практичну роботу, яку робили в класі, а дома потрібно було дописати висновок. Обидві роботи будуть оцінені.|ДОМАШНЄ ЗАВДАННЯ:|1. Опрацювати параграфи 24, 25.',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTc0OTY3MjM3ODE0/details||1. Тема: Лінійні та стовпчасті діаграми Перейти за посиланням на відео урок https://m.youtube.com/watch?v=Wu1J_LJgirY|2. Опрацювати тему, розвязані завдання з рубрики "Працюємо разом" записати в зошит.',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTYyMTk2Mzk2ODcx/details||1. 1) Виконати тести на перевірку правил вживання апострофа за посиланням НАТИСКАЙТЕ НИЖЧЕ НА ПОСИЛАННЯ https://naurok.com.ua/test/join?gamecode=1484797|2. Опрацювати правила, подані в таблиці "Уживання м’якого знака", електронний підручник с.93 |3. Виконати вправу 226 с.93 (письмово).',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTYyMTk4MDkzMDkz/details||План роботи|1. Виконати тести на перевірку за твором "Микита Кожумяка" О.Олес НАТИСКАЙТЕ НИЖЧЕ НА ПОСИЛАННЯ https://naurok.com.ua/test/join?gamecode=9741879|2. Скинути сюди в класрум письмову характеристику Микити Кожум’яки і за бажанням намальовані  ілюстрації до уривку з драми, який найбільше сподобався.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Good afternoon!Get the task for tomorrow.|Watch a video, take part in the dialogue.|Listen to the Treck 79 and then read Ex.1, p.52| Do the ex.2 p.52 in written form',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTc1MDE3NDMzMzM4/details||1. Повторити параграф 10,11'
+	},
+	'2022-12-02': { 'mat': '-', 'tec': '-', 'hist': '-', 'zarlit': '-', 'eng': '-' },
 
 	'2022-12-05': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
 	'2022-12-06': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
