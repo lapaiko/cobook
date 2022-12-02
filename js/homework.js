@@ -618,7 +618,13 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Good afternoon!Get the task for tomorrow.|Watch a video, take part in the dialogue.|Listen to the Treck 79 and then read Ex.1, p.52| Do the ex.2 p.52 in written form',
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTc1MDE3NDMzMzM4/details||1. Повторити параграф 10,11'
 	},
-	'2022-12-02': { 'mat': '-', 'tec': '-', 'hist': '-', 'zarlit': '-', 'eng': '-' },
+	'2022-12-02': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Кут. Види кутів відео пояснення https://m.youtube.com/watch?v=dCy93brvxJQ Параграф 20 читати № 723 виконати',
+		'tec': '||!!!',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTc0ODY0OTI1NTU2/details||1. Опрацювати матеріал уроку (презентаці, підруник) Підручник п. 13, повотрити основні поняття та терміни.|2. Пройти тестування, перейшовши за посиланням (тест буде відкритим, можна пройти у зручний для вас час, але ПРОЙТИ!!!) Код доступу 3526410 Попросіть учнів використати цей код, відкривши посилання join.naurok.ua Прикріпити скрін результату (тесту)!!!',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||1. Працювати можна у будь-який зручний для вас час з електронним або паперовим підручником. Читайте уважно, виконуйте задання , тоді, коли вам буде зручно . Сподіваюся на зустріч у школі.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Get the task for tomorrow.Watch a video, take part in the dialogue. Listen to the Treck 79 and then read Ex.1, p.52 Do the ex.2 p.52 in written form'
+	},
 
 	'2022-12-05': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
 	'2022-12-06': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
