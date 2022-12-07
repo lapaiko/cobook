@@ -626,9 +626,29 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Get the task for tomorrow.Watch a video, take part in the dialogue. Listen to the Treck 79 and then read Ex.1, p.52 Do the ex.2 p.52 in written form'
 	},
 
-	'2022-12-05': { 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'mus': '-' },
-	'2022-12-06': { 'eng': '-', 'hist': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
-	'2022-12-07': { 'fiz': '-', 'pain': '-', 'prog': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
+	'2022-12-05': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTc2MjkzNjUxNzYw/details||1. Вправа 258, вивчити правила на с. 103',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||1. прочитати текст твору с.132-138.ДО зустрічі',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. впр.1 ст.53 (списати питальні слова, вивчити їх)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTc2MzA3NjQ4ODQz/details||1.  перейти за посиланням і виконати тестові завдання https://vseosvita.ua/test/start/pix796',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTcyNjY1MTgxOTU5/details||1. 1. Переглянути презентацію до уроку "Життя вирує! Динамічні образи в мистецтві" за посиланням |2. Перевір себе, виконавши завдання "Динамічні відтінки" за посиланням|3. Вивчити пісню Наталії Май "Пісня про чарівника" за посиланням'
+	},
+	'2022-12-06': {
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Перевірте себе, чи знаєте питальні слова, виконайте вправи 3, 4 сторінка 53(письмово) - на закріплення знань;- послухайте запис (Трек 81) до вправи 3 сторінка 54, тоді самі уважно прочитайте вправу;- випишіть тільки правдиві речення впрви 4 на сторінці 54',
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTc2NzE0NTg2MDEw/details||1. Перейдіть за посиланням вкажіть прізвище та імя. Виконайте тест.Прикріпити скрін результату.',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTc2NjY1ODg0NjEx/details||1. Відео пояснення, як побудувати кут за допомогою транспортира https://m.youtube.com/watch?v=i4ZzqGjYE_U Перегляньте, а потім спробуйте самостійно побудувати кути 35°, 130°, 78°, 111°. Назвіть побудовані кути. Виконати номер 772 з ел.підручника|Д.з. параграф 21, номер 763',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTc2NjYxMjc1NzQz/details||1.Повторити параграф 24.|2. Відповісти на запитання на с.90 ;  №3 і №4 - виконати письмово і здати в класрум.',
+		'uklit': '||',
+		'fiz': '||1. Форма'
+	},
+	'2022-12-07': {
+		'fiz': '||1. Форма',
+		'pain': '||1. Принести пластилін',
+		'prog': '||',
+		'uklen': '||1. Стор 107-108, впр. 272 (по варівнтам)',
+		'dram': '||',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. араграф 22 читати, крім сторінки 129. Виміряти транспортиром кути трикутника,який будували на уроці Для тих, хто на дистанційному навчанні. Прочитати параграф 22, крім ст.129. Побудувати довільний трикутник, виміряти довжини його сторін, знайти периметр. Виміряти транспортиром кути побудованого трикутника.'
+	},
 	'2022-12-08': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'oz': '-' },
 	'2022-12-09': { 'mat': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
 
