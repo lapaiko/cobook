@@ -70,9 +70,9 @@ var chLesson = {
 	'etika': {
 		'lesson': 'Етика',
 		'teacher': 'Дідур Оксана Володимирівна',
-		'classroom': '-',
-		'homework': '-',
-		'meet': '-',
+		'classroom': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4',
+		'homework': 'https://classroom.google.com/w/NTg1MzQ5ODM1ODQ4/t/all',
+		'meet': 'https://meet.google.com/gkd-tmfp-gfs',
 		'booklink': '-',
 		'book': '-'
 	},
@@ -772,7 +772,13 @@ var chHomework = {
 
 	//2023
 
-	'2023-01-23': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
+	'2023-01-23': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTg1NDc1OTkzMDMz/details||1. Вивчити правила с.119, 121 (електронний підручник).|2. Завершити вправу 1, подану у презентації): визначити головне і залежне слово, намалювати схему, поставити питання, визначити вид словосполучення. ',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTg1MzU1MzcyNjg4/details||1. прослухати текст за посиланням на с.190.|2. Усновідповісти на запитання до розділу «Битва»(с. 190).',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do ex.5 p.58(listen to treck88)|2. Ex.1,2 p.59(повторно)|3. Ex3 p.59(written)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTg1NTIwNzU2MDcw/details||1. Параграф 26-опрацювати, №926,№933-виконати письмово|2. Виконати завдання №929, №927, здати на перевірку',
+		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NTYyNjcwMDIzODcx/details||1. Переглянь відеоурок.|2. Підготуй: аркуш у клітинку, маркери або фломастери. |3.Розглянь візерунки на вишитих рушниках, серветках, вишиванках, які маєш вдома.|4. Спробуй відтворити візерунок за зразком, або створи свій оригінальний візерунок для вишивки.|5.Фото своєї роботи надішли на перевірку у класрум'
+	},
 	'2023-01-24': { 'etika': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
 	'2023-01-25': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2023-01-26': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
