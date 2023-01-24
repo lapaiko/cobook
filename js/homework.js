@@ -72,7 +72,7 @@ var chLesson = {
 		'teacher': 'Дідур Оксана Володимирівна',
 		'classroom': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4',
 		'homework': 'https://classroom.google.com/w/NTg1MzQ5ODM1ODQ4/t/all',
-		'meet': 'https://meet.google.com/gkd-tmfp-gfs',
+		'meet': 'https://meet.google.com/uob-rwtu-xgf',
 		'booklink': '-',
 		'book': '-'
 	},
@@ -779,7 +779,14 @@ var chHomework = {
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTg1NTIwNzU2MDcw/details||1. Параграф 26-опрацювати, №926,№933-виконати письмово|2. Виконати завдання №929, №927, здати на перевірку',
 		'pain': 'https://classroom.google.com/c/NTI3MTc4MTYzNjQ5/a/NTYyNjcwMDIzODcx/details||1. Переглянь відеоурок.|2. Підготуй: аркуш у клітинку, маркери або фломастери. |3.Розглянь візерунки на вишитих рушниках, серветках, вишиванках, які маєш вдома.|4. Спробуй відтворити візерунок за зразком, або створи свій оригінальний візерунок для вишивки.|5.Фото своєї роботи надішли на перевірку у класрум'
 	},
-	'2023-01-24': { 'etika': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
+	'2023-01-24': {
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/a/NTQxNzI5MjY2OTcy/details||1. Практична робота. Мій улюблений історичний діяч.',
+		'eng': '||',
+		'mat': '||',
+		'nat': '||',
+		'uklit': '||',
+		'fiz': '||1. Форма'
+	},
 	'2023-01-25': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2023-01-26': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
 	'2023-01-27': { 'mat': '-', 'tec': '-', 'tec': '-', 'hist': '-', 'uklit': '-', 'eng': '-' },
