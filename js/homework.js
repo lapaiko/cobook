@@ -158,10 +158,10 @@ var chLesson = {
 //2023
 var arSсhedule = [
 	['uklen', 'uklen', 'zarlit', 'eng', 'mat', 'pain'],
-	['etika', 'eng', 'mat', 'nat', 'uklit', 'fiz'],
+	['hist', 'eng', 'mat', 'nat', 'uklit', 'fiz'],
 	['prog', 'mus', 'fiz', 'uklen', 'dram', 'mat'],
 	['fiz', 'nat', 'mat', 'uklen', 'prog', 'eng', 'oz'],
-	['mat', 'tec', 'tec', 'hist', 'uklit', 'eng']
+	['mat', 'tec', 'tec', 'etika', 'uklit', 'eng']
 ];
 
 //Розклад дзвінків
