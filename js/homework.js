@@ -852,7 +852,13 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Послухайте трек 96, прочитайте вправу 1 стор.66 (тренуєм читання, на наступному уроці перевірятиму техніку читання);|2. Вправа 3, 4, 5 стор.67 на перевірку розуміння тексту ( в зошиті, письмово)'
 	},
 
-	'2023-02-06': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
+	'2023-02-06': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Вправа 447 з сторінка 193 (старий підручник)',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTg4ODU2ODk0Mzgy/details||Літературний диктант(для тих, хто працює дистанційно)',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Give you the task for homework:|- listen to the track 97 and do exercise 6, 7 at page 67;|- * learn one of the paragraphs of ex.1 p.66',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTg4ODg5MDc4MzA5/details||1. параграф 32 опрацювати, номер 1047, 1051(3) виконати письмово',
+		'pain': '||1. Фарби, кісточки, папір'
+	},
 	'2023-02-07': { 'etika': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
 	'2023-02-08': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
 	'2023-02-09': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
