@@ -863,11 +863,18 @@ var chHomework = {
 		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/m/NTkxMjIzNjE2NTMy/details||1. Параг 19 повт.|2. Придумай та намалюй поштову листівку для привітань із Днем Незалежності України.',
 		'eng': '||1. Page 69, ex. 1, 2 (read), 3(write)',
 		'mat': '||1. № 1052',
-		'nat': '||1. Параграф 35',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTkxNTUwNTI2NjM1/details||1. Чому вода найдивовижніша рідина на Землі (параграф 11)2. Де міститься вода на Землі (параграф 30)3.Яке значення води на Землі (Параграф 33)',
 		'uklit': '||1. Стор. 140- 142.|2. Стор. 142 завд. 7',
 		'fiz': '||1. Форма'
 	},
-	'2023-02-08': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
+	'2023-02-08': {
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTQyMzAyMjUwNjU5/details||1. читати підручник сторінка 106-112|2. опрацювати презентацію|3. виконати в онлайн середовищі вправу2 сторінка 111(	посилання на онлайн скретч    https://scratch.mit.edu/projects/editor',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTg4NzczODA0NTk1/details||1. Переглянь презентацію до уроку "Дитячий фольклор та іграшки" за посиланням|2. Склади пазл "Музика - народна пісня" за посиланням|3. Вивчи пісню  "Під небом синім" за посиланням',
+		'fiz': '||1. Форма',
+		'uklen': '||1. Підготуватись до контрольної',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTkxNTM2OTk0NjA0/details||1. Завдання до уроку: опрацювати презентацію, вивчити основні поняття. Створити діалог між мамою і сином (дочкою), що прийшов додому зі школи без рюкзака (загубив!)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTkxNjQ2NzIzMTk2/details||Підготуватися до контрольної роботи'
+	},
 	'2023-02-09': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
 	'2023-02-10': { 'mat': '-', 'tec': '-', 'tec': '-', 'etika': '-', 'uklit': '-', 'eng': '-' },
 
