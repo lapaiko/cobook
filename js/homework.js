@@ -875,8 +875,22 @@ var chHomework = {
 		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTkxNTM2OTk0NjA0/details||1. Завдання до уроку: опрацювати презентацію, вивчити основні поняття. Створити діалог між мамою і сином (дочкою), що прийшов додому зі школи без рюкзака (загубив!)',
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTkxNjQ2NzIzMTk2/details||Підготуватися до контрольної роботи'
 	},
-	'2023-02-09': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
-	'2023-02-10': { 'mat': '-', 'tec': '-', 'tec': '-', 'etika': '-', 'uklit': '-', 'eng': '-' },
+	'2023-02-09': {
+		'fiz': '||1. Форма',
+		'nat': '||Контрольна',
+		'mat': '||Контрольна',
+		'uklen': '||Контрольна',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTkxOTA1ODMyMTI4/details||1. 1. читати підручник сторінка 112-116|2. опрацювати презентацію',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Look, listen to the stories of Ex.3 at page 70 and then read them. If you don\'t know some words, copy them into the vocabularies and translate,',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTkxOTMxODI2MjY3/details||1. Ел. підручник параграф 18 прочитати, скласти список добрих справ на день.'
+	},
+	'2023-02-10': {
+		'mat': '||!!!',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTkyMTA2MTYwMzUz/details ||1. Опрацюйте  матеріал  по  темі,  переглянувши  відео.Знайдіть в інтернеті відео по складанню  серветок. Потренуйтесь в складанні  серветок, наступного заняття  практична робота по складанню серветок до святкового столу. Оригінальність  і складність оцінюється!',
+		'etika': '||1. Опрацювати матеріал презентації, виконати завдання (у зошиті), слайд №2,3,9,13,16. Подивитися мультфільм, посилання міститься у слайді №17.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTkyMDgxMzkyNzYy/details||1. 1. Виразно читати с. 144 -148.|2. За бажанням:|•Зроби зимовий фотоколаж.|•Напиши літературну казку, поезію про зиму.|•Намалюй ілюстрацію до вірша.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercises1, 2 at page 72 read the direction to the tasks carefully!'
+	},
 
 	'2023-02-13': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
 	'2023-02-14': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
