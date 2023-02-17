@@ -854,7 +854,7 @@ var chHomework = {
 
 	'2023-02-06': {
 		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy||1. Вправа 447 з сторінка 193 (старий підручник)',
-		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1/a/NTg4ODU2ODk0Mzgy/details||Літературний диктант(для тих, хто працює дистанційно)',
+		'zarlit': '||',
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Give you the task for homework:|- listen to the track 97 and do exercise 6, 7 at page 67;|- * learn one of the paragraphs of ex.1 p.66',
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTg4ODg5MDc4MzA5/details||1. параграф 32 опрацювати, номер 1047, 1051(3) виконати письмово',
 		'pain': '||1. Фарби, кісточки, папір'
@@ -892,11 +892,45 @@ var chHomework = {
 		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercises1, 2 at page 72 read the direction to the tasks carefully!'
 	},
 
-	'2023-02-13': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
-	'2023-02-14': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
-	'2023-02-15': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2023-02-16': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
-	'2023-02-17': { 'mat': '-', 'tec': '-', 'tec': '-', 'etika': '-', 'uklit': '-', 'eng': '-' },
+	'2023-02-13': {
+		'uklen': '||1. Впр 451 (старий підручник)',
+		'zarlit': '||1. Стор.200-202, скласти три питання',
+		'eng': '||1. Записати 10 речень з how mach/many',
+		'mat': '||1. Параграф 33, № 1068',
+		'pain': '||'
+	},
+	'2023-02-14': {
+		'hist': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw/m/NTQyNDkxMDUyNTUx/details||1. Віхи становлення української державності. В\’ячеслав Чорновіл',
+		'eng': '||1. EX 1 page 73',
+		'mat': '||1. Параграф 33 №1083, 1096',
+		'nat': '||1. Парграф 33, стор 146 завдання 3',
+		'uklit': '||1. Стор 200 скласти паспорт твору "Гаї шумлять" (старий підручник)',
+		'fiz': '||1. Форма'
+	},
+	'2023-02-15': {
+		'prog': '||',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTkyNDk4NzY4OTM0/details||1. Пройди інтерактивну гру  "Українські народні музичні інструменти" за посиланням|2. Вивчи пісню  "Бандура, сопілка" за посиланням',
+		'fiz': '||1. Форма',
+		'uklen': '||1. Впр. 456 (старий підручник)',
+		'dram': '||',
+		'mat': '||1. Параграф 34, № 1115, 1122'
+	},
+	'2023-02-16': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTYyOTQ0NjIyMzUx/details||1. РОБОТА НА УРОЦІ ДЛЯ ДИСТАНЦІЙНОЇ ФОРМИ НАВЧАННЯ:1. Прочитати параграф 40, виписати органели клітини та їх функції.|ДОМАШНЄ ЗАВДАННЯ: вивчити матеріал параграфа 40',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTkzMzYxMDc4NjAy/details||Переглянути відео, розв\'язані вправи записати в зошит https://m.youtube.com/watch?v=4P1oLJCcXak',
+		'uklen': '||1. Стор 200 впр 464 (старий підручник)',
+		'prog': '||1. Опрацювати стор 122-124',
+		'eng': '||Page 73 ex 3',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTkzMzE2OTg0MTY4/details||1. Прочитати ,виконати мозаїку завдань на с. 162'
+	},
+	'2023-02-17': {
+		'mat': '||Параграф 35 № 1138, 1144',
+		'tec': '||1. Ровязати криптограму "Сервірування столу"',
+		'etika': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4/m/NTkzMzYwNzcyOTYz/details||1. Повторити матеріал уроку. Виконати завдання із презентації.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTkzNjE1NzI1Nzk2/details||1. Домашня робота: Вивчити одну з поезій напам’ять. Намалювати малюнки на тему “Краса рідного краю”.',
+		'eng': '||'
+	},
 
 	'2023-02-20': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
 	'2023-02-21': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
