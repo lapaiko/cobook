@@ -932,17 +932,85 @@ var chHomework = {
 		'eng': '||'
 	},
 
-	'2023-02-20': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
-	'2023-02-21': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
-	'2023-02-22': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2023-02-23': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
-	'2023-02-24': { 'mat': '-', 'tec': '-', 'tec': '-', 'etika': '-', 'uklit': '-', 'eng': '-' },
+	'2023-02-20': {
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTk0MDM2NTQ2MzU2/details||1) Переглянути відео.|2. Вивчити правила в електронному підручнику с.147. ПІДРУЧНИК ПРИКРІПИЛА!|3. Виписати із вправи 358 три складних речення, підкреслити в них граматичні основи.',
+		'zarlit': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1||1. На  27.02.2023р. Прочитати текст роману за електронним підручником с. 203-209. Це  для роботи під час уроку і ваше домашнє завдання.|2. Самостійно прочитати, підготувати перказ епізодів за електроним підручником до с. 209 (до розділу Гра)',
+		'eng': '||',
+		'mat': '||1. Параграф 36 № 1154, 1157',
+		'pain': '||1. Звязок народного та професійного мистецтва. Композиція Вербові котики'
+	},
+	'2023-02-21': {
+		'hist': '||1. Підготовка до к/р стор. 72-110',
+		'eng': '||',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Параграф 37 опрацювати, номер 1191(1,2,3,5)- виконати письмово',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTk0MDIyMzM0ODg2/details||1. Повторити параграф 40',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTk0MjQzMjYwMjU4/details||1. Прочитати казку с.156 -162, вміти переказувати.|2. За бажанням:|•Зроби фотоколаж про навколишній світ.|•Напиши літературну казку про природу.',
+		'fiz': '||'
+	},
+	'2023-02-22': {
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTk0MTYxNDAyNTgy/details||1. Повторити сторінки в підручнику 94-127.|2.Виконати тестове завдання https://cutt.ly/a30VelZ   і надіслати скріншот з результатом в класрум, або у вайбер за номером 0968661323.|3. в онлайн-Скретч   https://scratch.mit.edu/projects/edito виконати завдання',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NTkzODc3OTY5MzAx/details||1. Переглянь презентацію до уроку " НАРОДНІ ГЕРОЇ В МИСТЕЦТВІ " за посиланням|2. Склади пазл "КОЗАК МАМАЙ" за посиланням|3. Вивчи пісню  "МИ - КОЗАКИ" за посиланням',
+		'fiz': '||1. Форма',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTk0MzkzMDIxMDI0/details||1. Вивчити правила параграфа 42, с. 215-217.|2. Виконати вправу 503 с. 217 (старий підручник).',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTk0MzcyMTY3OTQ2/details||1. Навчитися читати діалог з сумом, зі злістю, з радістю.',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Параграф 38-опрацювати, №1217(2,5,8), №1221-виконати письмово'
+	},
+	'2023-02-23': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTk0NDU2MTYwNzIy/details|Прочитати матеріал підручника с.154 -155, скласти пам\'ятку "Профілактика бактеріальних захворювань", підготувати повідомлення Юзько Артему  на тему: "Хвороботворні бактерії", Спеней Анастасії на тему: "Корисні бактерії"',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk0NjQxOTE3Njgw/details||1. Параграф 38-повторити, №1229(1,2), №1233(1)-виконати письмово',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTk0NjQyODU0OTg4/details||1. Вивчити правила, виконати вправу 512 с.221 - переписати, розставити розділові знаки, намалювати схему до кожного речення (старий підручник).',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTk0NDU2MTU5NDE5/details||1. читати підручник сторінка 128-135|2. опрацювати презентацію |3. виконати практичну роботу 2 сторінка 131-132.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Do exercises 5 and 6 at page 77 in written form',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTk0NDAxNzcxNTc1/details||1. Виконати мозаїку завддань на с.168, перейдіть за QR-кодом на с.164 і перегляньте відео про стилі спілкування.'
+	},
+	'2023-02-24': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||Д.з. №1237-виконати письмово, додатково за бажанням №1242',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/m/NTQyODU0MTU0MDMy/details||Технологія виготовлення топіарію- магнітика',
+		'etika': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4/m/NTkzMzYwNzcyOTYz/details||1. Повторити матеріал уроку. Виконати завдання із презентації.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTk0OTAyNjMzNTY3/details||Прочитати казку Миколи Вінграновського «Гусенятко»  с.165 -173, вміти переказувати.|2) Скласти план оповідання 6 пунктів, використовуючи питальні речення (письмово).',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5/a/NTk0OTEzODg4MjQ1/details||Виконати впр.1,2,3 на ст.78 (Vocabulary) переслати завдання до кінця уроку Домашнє завдання: повторити вивчене по темі'
+	},
 
-	'2023-02-27': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
-	'2023-02-28': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
-	'2023-03-01': { 'prog': '-', 'mus': '-', 'fiz': '-', 'uklen': '-', 'dram': '-', 'mat': '-' },
-	'2023-03-02': { 'fiz': '-', 'nat': '-', 'mat': '-', 'uklen': '-', 'prog': '-', 'eng': '-', 'oz': '-' },
-	'2023-03-03': { 'mat': '-', 'tec': '-', 'tec': '-', 'etika': '-', 'uklit': '-', 'eng': '-' },
+	'2023-02-27': {
+		'uklen': '||1. Сто. 223 впр 516',
+		'zarlit': '||1. Читати та перказувати зміст твору "Поліана" до стор 223',
+		'eng': '||1. Повторити вивчену тематичну лексику',
+		'mat': '||1. №1249 (4,5,6), №1253 (1,2,3)',
+		'pain': '||1. Народні мотиви в скульптурі. Композиція Гопак'
+	},
+	'2023-02-28': {
+		'hist': '||!!!',
+		'eng': '||1. Підготувати усне повідолення про своє захоплення',
+		'mat': '||1. Паразраф 39 №1264',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTk1NDE1MjkwODU0/details||1. Параграф 42',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTk1NjU0MTExMjEz/details||1. Виконати письмово задання 10, 12 с.173.',
+		'fiz': '||1. Форма'
+	},
+	'2023-03-01': {
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTk1ODk0MTI4NzI5/details||1. читати підручник сторінка 135-141|2. переглянути презентацію|3. виконати завдання',
+		'mus': '||1. Вивчити пісню "Маніфест"',
+		'fiz': '||1. Форма',
+		'uklen': '||1. Повторити однорідні члени речення, складне речення, пряму мову і діалог впр 530 2 речення на вибір (старий підручник)',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTk1ODA5NDU2OTEw/details||1. 1. Опрацюйте матеріал про репетицію.|2. Уявіть себе в ролі режисера: продумайте, які поради ви дасте акторці, яка буде грати роль Попелюшки з однойменної казки.',
+		'mat': '||1. Пройти тест https://cutt.ly/vIbbZqV'
+	},
+	'2023-03-02': {
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NTk1OTk0MzE1MjM3/details||Опрацювати матеріал підручника с.155, повторити параграф 42, підготувати повідомлення на тему: "Вірусні захворювання людини"( Вероніка Дудка)',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk2MTg2ODc4NjEy/details||1. Контрольна робота',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NTYzMDM1MTkyODA2/details||1. Підготуватися до контрольної роботи за темами "Однорідні члени речення. Складне речення. Пряма мова. Діалог".',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTk2MTc3OTM0MjQ2/details||1. читати підручник сторінка 142-146|2. переглянути презентацію|3. виконати практичну роботу  і надіслати.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Work yourself. The project we\'ll discuss on the next lesson. Do the tasks 1, 4 at page 80 (written); Exercises 2, 3 (orally)',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTYzMDE3ODU2MzE4/details||1. Ел. підручниу параграф 22, виконати мозаїку завдань на с.174. Повторити параграфи 18-20'
+	},
+	'2023-03-03': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk2NDY0NjkwODEw/details||1. Переглянути відео пояснення темиhttps://m.youtube.com/watch?v=mua9aDlSb1I|2. Виконати усно номер 1281|3. Виконати письмово номер 1282|4. Д.з. Опрацювати параграф 40',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NTYzMDQzNjU0NzA2/details||Ознайомтесь з нижчеподаними відео по темі уроку. Визначтесь, який зразок, ви будете виготовляти. Можете також вносити свої зміни або використовувати інші відео з інтернету. Матеріал для виготовлення букетів - кольоровий папір та картон. Якщо є фоаміран та клейовий пістолкт, можете спробувати виготовити букет квітів з фоамірану. Фото виробу скидаєте в класрум.',
+		'etika': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4/m/NTk2NDczMzU0MzYy/details||Ознайомитися із матеріалом уроку.|Підручни п.25,26. виконати завдання у класрумі.|Додатковий (презентаційний) матеріал.|Слайд 12, пройти тестування, результат записати в зошит.',
+		'uklit': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0/a/NTk2NDg3Njc5NjYx/details||1. прочитати оповідання "Вірність Хатіко" Марії Морозенко с.175-180 (електроннний підручник), вміти переказувати, усно давати відповіді на запитання підручника після прочитаного твору.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Подивіться відео  про There is...   There are...  ;-прочитайте впр.1,2 ст.81;-виконайте письмово впр.3 ст.81 (можна перевірити, прослухавши запис 119)'
+	},
 
 	'2023-03-06': { 'uklen': '-', 'uklen': '-', 'zarlit': '-', 'eng': '-', 'mat': '-', 'pain': '-' },
 	'2023-03-07': { 'hist': '-', 'eng': '-', 'mat': '-', 'nat': '-', 'uklit': '-', 'fiz': '-' },
