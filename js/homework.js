@@ -1075,8 +1075,22 @@ var chHomework = {
 		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NTk5MDA3MjMwMTIx/details||1. Навчитися виразно читати діалог, використовуючи відповідну міміку і жести.',
 		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk5MTE5NjI2NTY5/details||1. Виконати завдання с.р. і здати на перевірку'
 	},
-	'2023-03-16': { 'fiz': '||', 'nat': '||', 'mat': '||', 'uklen': '||', 'prog': '||', 'eng': '||', 'oz': '||' },
-	'2023-03-17': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'uklit': '||', 'eng': '||' },
+	'2023-03-16': {
+		'fiz': '||1. Форма',
+		'nat': '||!!!',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk5NDExNTA5Nzg1/details||1. Підготуватись до контрольної. Номери 6 і 8 записати в зошит',
+		'uklen': '||1. Написати кросворд у якому головне слово "Інформація"',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NTk5MzMwOTAwMjg5/details||1. читати підручник сторінка 160-164|2. опрацювати презентацію|3. виконати завдання',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercises 3 at page 85(copy out the sentences);|2. Exercise 4 page 85(Grammar) write only the second half',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTQzNjExNzU1MzEw/details||1. Параграф 24 в ел. підручнику'
+	},
+	'2023-03-17': {
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/a/NTk5NTg5NjM4MjA0/details||1. Контрольна робота. Виконати і здати на перевірку',
+		'tec': '||1. Взяти фарби (гуаш або акрилова)',
+		'etika': '||1. Записати позитивні і негативні сторони інтернету',
+		'uklit': '||!!!',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Make phrases of Exercise 4 at page 86 be ready to translate them, not in written form'
+	},
 
 	'2023-03-20': { 'uklen': '||', 'uklen': '||', 'zarlit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
 	'2023-03-21': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||' },
