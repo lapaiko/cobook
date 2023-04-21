@@ -1232,9 +1232,30 @@ var chHomework = {
 		'uklit': '||чит 206-213 план ',
 		'fiz': '||1. Форма'
 	},
-	'2023-04-19': { 'prog': '||', 'mus': '||', 'fiz': '||', 'uklen': '||', 'dram': '||', 'mat': '||' },
-	'2023-04-20': { 'fiz': '||', 'nat': '||', 'mat': '||', 'uklen': '||', 'prog': '||', 'eng': '||', 'oz': '||' },
-	'2023-04-21': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'uklit': '||', 'eng': '||' },
+	'2023-04-19': {
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NjA0OTg0MDc4NDM2/details||1. читати підручник сторінки 202 - 205|2. опрацювати презентацію|3. виконати управу 4 сторінка 204',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NjAyMzkzOTYyNDE3/details||1. Переглянь презентацію до уроку " ЗВ\'ЯЗОК МУЗИКИ І ЛІТЕРАТУРИ " за посиланням|2.  Вивчи пісню  "ПІСНЯ ПРО УКРАЇНУ" за посиланням',
+		'fiz': '||1. Форма',
+		'uklen': '||!!! К/р',
+		'dram': '||1. Створити афішу для виставки, яку ви хотіли б поставити з класом. Тема: "Самодіяльні дитячі театри. Театр юного глядач: дорослі актори, юні глядачі"',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Виконати домашню самостійну роботу ст.271'
+	},
+	'2023-04-20': {
+		'fiz': '||1. Форма',
+		'uklit': '||1. Підготувати твір до к/р по темі "Дитинство мало б бути щастливим"',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/m/NjA1MDk1Mjg4Njky/details||1. №6, 8 письмово',
+		'uklen': '||1. Провідміняти за відмінками словосполучення "давня історія, ваші олівці"',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NjA1MjQ4MTA2MzEz/details||1. 1. читати підручник сторінка 209-213|2. переглянути презентацію|3. підібрати картинки на тему "Безпека в Інтернеті" і створити презентацію з підписами зображень',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||Exercises: 1,2 p.98',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NTUzMTkxMDA4NDA3/details||Ел. підручник параграф 28, с.219-226'
+	},
+	'2023-04-21': {
+		'mat': '||!!! К/р',
+		'tec': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NjA1NDY0NjA4NDk4/details||1. Моделювання  в  техніці  орігамі',
+		'etika': '||1. Повторити матеріал уроку. Підготуватись до к/р',
+		'nat': '||1. Опрацювати презентацію в класрумі. Заповнити таблицю в зошиті',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Read exercise 3 p.98 Do exercises: 4,5 p.98'
+	},
 
 	'2023-04-24': { 'uklen': '||', 'uklen': '||', 'zarlit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
 	'2023-04-25': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||' },
