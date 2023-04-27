@@ -1281,15 +1281,22 @@ var chHomework = {
 		'mat': '||!!!'
 	},
 	'2023-04-27': {
-		'fiz': '||',
-		'nat': '||',
-		'mat': '||',
-		'uklen': '||',
-		'prog': '||',
-		'eng': '||',
-		'oz': '||'
+		'fiz': '||1. Форма',
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NjA2NDY2MzIwMjAx/details||1. Виконати практичну роботу "Як фізичне навантаження впливає на роботу серця" за інструкціями підручника , що на с.211 і відправити в класрум на перевірку|ДОМАШНЄ ЗАВДАННЯ: опрацювати параграфи 54, 55, відповісти на запитання на с. 212 ',
+		'mat': '||1. №1697',
+		'uklen': '||1. Вправа 441 (старий підручник)',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NjA2NTQyNzE0MDY5/details||1. читати підручник сторінка 220-225|2. переглянути презентацію|3. виконати практичне завдання( пункти 5, 6) і надіслати презентацію.',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Do exercises: 2 p.101 (Grammar) and 1,2 p.101 (Reading)',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NjA2Mjk4MTA5NjM3/details||1. Написати історію "Мій найкращий відпочинок."'
 	},
-	'2023-04-28': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'zarlit': '||', 'eng': '||' },
+	'2023-04-28': {
+		'mat': '||',
+		'tec': '||',
+		'tec': '||',
+		'etika': '||',
+		'zarlit': '||',
+		'eng': '||'
+	},
 
 	'2023-05-01': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
 	'2023-05-02': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||' },
