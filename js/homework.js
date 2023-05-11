@@ -157,11 +157,11 @@ var chLesson = {
 
 //2023
 var arSсhedule = [
-	['uklen', 'uklen', 'uklit', 'eng', 'mat', 'pain'],
+	['uklen', 'uklen', 'zarlit', 'eng', 'mat', 'pain'],
 	['hist', 'eng', 'mat', 'nat', 'uklit', 'fiz'],
 	['prog', 'mus', 'fiz', 'uklen', 'dram', 'mat'],
-	['fiz', 'zarlit', 'mat', 'uklen', 'prog', 'eng', 'oz'],
-	['mat', 'tec', 'tec', 'etika', 'nat', 'eng']
+	['fiz', 'nat', 'mat', 'uklen', 'prog', 'eng', 'oz'],
+	['mat', 'tec', 'tec', 'etika', 'uklit', 'eng']
 ];
 
 //Розклад дзвінків
@@ -1337,10 +1337,38 @@ var chHomework = {
 		'eng': '||'
 	},
 
-	'2023-05-08': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
-	'2023-05-09': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||1. Форма' },
-	'2023-05-10': { 'prog': '||', 'mus': '||', 'fiz': '||1. Форма', 'uklen': '||', 'dram': '||', 'mat': '||' },
-	'2023-05-11': { 'fiz': '||1. Форма', 'nat': '||', 'mat': '||', 'uklen': '||', 'prog': '||', 'eng': '||', 'oz': '||' },
+	'2023-05-08': {
+		'uklen': '||!!!',
+		'zarlit': '||1. Прочитати текст с.250-255, знати зміст, вміти переказувати',
+		'eng': '||1. Ex. 5 p.105',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz/m/NjA4MTEwMjg1NTQz/details||1. Завдання для підготовки до к.р',
+		'pain': '||!!!'
+	},
+	'2023-05-09': {
+		'hist': '||1. Стор. 146. 1-й QR-код',
+		'eng': '||1.  Ex.4 page107',
+		'mat': '||К/р!!!',
+		'nat': '||К/р!!!',
+		'uklit': '||1. Виразно читати с.242-253 (електроний підручник), вміти аналізувати. Письмове скласти карту маршруту за прочитаним',
+		'fiz': '||1. Форма'
+	},
+	'2023-05-10': {
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NjA4ODE5OTQxMjcz/details||1. читати підручник сторінка 136-139|2. переглянути презентацію|3. виконай практичне завдання і надішли на перевірку',
+		'mus': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3/a/NjA4ODIzODAzNzk5/details||1. Вивчити нову пісню до наступного уроку. Відео і текст прикріпляю.',
+		'fiz': '||1. Форма',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NjA4ODQ1NzcwMzMz/details||На вибір:|1. Скласти інструкцію «Як користуватися книгою».|2. Написати привітання людині до будь-якого свята.',
+		'dram': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx/a/NjA4NzQ5OTM5NDk4/details||1. Виконайте тести за посиланням внизу',
+		'mat': 'https://classroom.google.com/c/NTI2OTIzMTIyMzUz||1. Д.з. №307(1)'
+	},
+	'2023-05-11': {
+		'fiz': '||1. Форма',
+		'nat': '||',
+		'mat': '||',
+		'uklen': '||',
+		'prog': '||',
+		'eng': '||',
+		'oz': '||'
+	},
 	'2023-05-12': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'zarlit': '||', 'eng': '||' },
 
 	'2023-05-15': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
