@@ -1362,14 +1362,20 @@ var chHomework = {
 	},
 	'2023-05-11': {
 		'fiz': '||1. Форма',
-		'nat': '||',
-		'mat': '||',
-		'uklen': '||',
-		'prog': '||',
-		'eng': '||',
-		'oz': '||'
+		'nat': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1/a/NjA5MDU2OTIxMTU1/details||1. Презентація до уроку',
+		'mat': '||1. №1822(а,б)',
+		'uklen': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy/a/NjA4OTA1MTA5NTU4/details||1. Жанри мовлення. Самостійна робота',
+		'prog': 'https://classroom.google.com/c/NTQ1MTU5NzIwMDMx/a/NjA5MDUzMzczMjM5/details||1. читати підручник сторінка 136-139 для тих, хто не виконав вчорашнього завдання|2. виконай практичне завдання і надішли на перевірку',
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Впр.3,4,5,6 ст.111',
+		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NjA5MDU4ODYxNjI5/details||1. Ел. підручник параграф 30, прочитиати, виконати мозаїку завдань в кінці параграфа.'
 	},
-	'2023-05-12': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'zarlit': '||', 'eng': '||' },
+	'2023-05-12': {
+		'mat': '||',
+		'tec': '||',
+		'etika': '||',
+		'zarlit': '||',
+		'eng': '||'
+	},
 
 	'2023-05-15': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
 	'2023-05-16': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||1. Форма' },
