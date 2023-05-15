@@ -1370,18 +1370,24 @@ var chHomework = {
 		'oz': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2/a/NjA5MDU4ODYxNjI5/details||1. Ел. підручник параграф 30, прочитиати, виконати мозаїку завдань в кінці параграфа.'
 	},
 	'2023-05-12': {
-		'mat': '||',
+		'mat': '||1. № 1794 (1,2)',
 		'tec': '||',
-		'etika': '||',
+		'etika': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz/a/NjA5MjIxNTE1NjQw/details||1. Букет до Дня Матері',
 		'zarlit': '||',
-		'eng': '||'
+		'eng': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5||1. Listen to the track 156 and do the tasks 7,8 at page 111'
 	},
 
-	'2023-05-15': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
+	'2023-05-15': {
+		'uklen': '||1. Скласти спілкування з прямою мовою',
+		'zarlit': '||1. Розповісти про улюбленого героя',
+		'eng': '||1. Ex 2 p 113',
+		'mat': '||!!!',
+		'pain': '||!!!'
+	},
 	'2023-05-16': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||1. Форма' },
 	'2023-05-17': { 'prog': '||', 'mus': '||', 'fiz': '||1. Форма', 'uklen': '||', 'dram': '||', 'mat': '||' },
 	'2023-05-18': { 'fiz': '||1. Форма', 'nat': '||', 'mat': '||', 'uklen': '||', 'prog': '||', 'eng': '||', 'oz': '||' },
-	'2023-05-19': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'zarlit': '||', 'eng': '||' },
+	'2023-05-19': { 'mat': '||', 'tec': '||', 'tec': '||', 'etika': '||', 'ukrlit': '||', 'eng': '||' },
 
 	'2023-05-22': { 'uklen': '||', 'uklen': '||', 'uklit': '||', 'eng': '||', 'mat': '||', 'pain': '||' },
 	'2023-05-23': { 'hist': '||', 'eng': '||', 'mat': '||', 'nat': '||', 'uklit': '||', 'fiz': '||1. Форма' },
