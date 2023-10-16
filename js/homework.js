@@ -22,7 +22,7 @@ var chLesson = {
 	'zarlit': {
 		'lesson': 'Зарубіжна література',
 		'teacher': 'Солодка Ірина Петрівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -40,7 +40,7 @@ var chLesson = {
 	'mat': {
 		'lesson': 'Математика',
 		'teacher': 'Карабаджак Ірина Анатоліївна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTg5NDAyNzYyNDM5',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -58,7 +58,7 @@ var chLesson = {
 	'hist': {
 		'lesson': 'Історія',
 		'teacher': 'Дідур Оксана Володимирівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -69,7 +69,7 @@ var chLesson = {
 		'teacher': 'Дідур Оксана Володимирівна',
 		'classroom': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4',
 		'homework': '',
-		'meet': 'https://meet.google.com/uob-rwtu-xgf ',
+		'meet': 'https://meet.google.com/uob-rwtu-xgf',
 		'booklink': '',
 		'book': ''
 	},
@@ -103,7 +103,7 @@ var chLesson = {
 	'dram': {
 		'lesson': 'Драматургія і театр',
 		'teacher': 'Рахнянська Наталія Федорівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -112,7 +112,7 @@ var chLesson = {
 	'oz': {
 		'lesson': 'Основи здоров\'я',
 		'teacher': 'Щепанська Алла Борисівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -446,7 +446,7 @@ var chHomework = {
 		'uklen': '||1. Впр. 129',
 		'mat': '||1. !!!К/р',
 		'mat': '||',
-		'eng': '||1. P.23, ex.3',
+		'eng': '||1. P.23, ex.1',
 		'nat': '||1. Стор.40-41 п.4 від парграфа',
 		'tec': '||1. !!!',
 		'tec': '||'
