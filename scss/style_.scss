@@ -5,295 +5,306 @@ body {
 	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
 }
 
+// PC, MOBILE: Обгортка сайту - позиціонування та розміри:
 .wrapper {
-	height: 100%;
-	//overflow: hidden;
-	display: flex;
-	flex-direction: column;
+	min-height: 100%; // - висота дорівнє розміру всіх Блоків сайта 
+	overflow: hidden; // - скролінг приховуємо
+
+	display: flex; // - flex-контейнер Блоків сайту
+	flex-direction: column; // - вертикальне орієнтування Блоків сайту
 }
 
+// PC, MOBILE: Контейнер Блоків - позиціонування та розміри:
 .conteiner {
-	max-width: 1000px;
-	margin: 0 auto;
+	max-width: 900px; // - обмеженя по ширині
+	margin: 0 auto; // - вирівнювання по ширині
+	padding: 0 10px; // - бокові поля
 }
 
+// PC: Блок HEADER - позиціонування, розміри та оформлення:
 .header {
-	//flex: 0 0 80px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
+	position: fixed; // - фіксація зверху
+	top: 0; // - відступ зверху = 0 
+	left: 0; // - відступ зліва = 0
+	width: 100%; // - ширина = 100%
+	background-color: #0e5789; // - фон
+	z-index: 50; // - поверх всіх елемнтів
 
+	// MOBILE: Блок HEADER - підкладка під Логотип/Меню-кнопку-Бургер:
 	&::before {
 		content: "";
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		background-color: #5e5373;
+		position: absolute; // - позиціонування абсолютне
+		top: 0; // - відступ зверху = 0
+		left: 0; // - відступ зліва = 0
+		width: 100%; // - ширина = 100%
+		height: 100%; // - висота = 100%
+		background-color: #0e5789; // - фон
+		z-index: 2; // - виносимо наверх
 	}
+
+	// PC: Блок HEADER-контейнер - для PC - позиціонування, розміри: 
+	&__body {
+		position: relative; // - позиціонування відносне
+		height: 80px; // - висота 
+		padding: 0 10px;
+
+		display: flex; // flex-контейнер для Логотипу/Меню
+		justify-content: space-between; // - Логотип/Меню // - горизонтальне вирівнювання по краям
+		align-items: center; // - Логотипу/Меню - // - вертикальне вирівнювання по центру/
+
+		//border: 1px solid red;
+		//z-index: 100;
+	}
+
+	// PC: Логотип-контейнер - позиціонування, розміри та оформлення:
+	&__logo {
+		flex: 0 0 60px; // - заборона збільшення/зменшення, фіксований розмір 60
+		border-radius: 50%; // - радіус заокруглення 50%
+		overflow: hidden; // - обрізка вмісту логотипу по контуру
+		background-color: #eadc0c; // фон
+		z-index: 3; // виводимо наверх
+
+		//Логотип-картинка - вивід та розміри:
+		& img {
+			width: 100%; // - розмір по контейнеру
+			display: block; // - картинка у блочний елемент
+		}
+	}
+
+	// PC: Меню-кнопка-Бургер - позиціонування:
+	&__burger {
+		display: none; // - приховати
+	}
+
+	//&__menu {}
+
+	// PC: Меню-Список - позиціонування:
+	&__list {
+		display: flex; // - flex-контейнер Меню-пункти
+		justify-content: space-between; // - Меню-пункти - // - горизонтальне вирівнювання по краям
+
+		// PC: Меню-пункти - позиціонування:
+		& li {
+			position: relative; // - позиціонування відносне
+			margin: 0 0 0 20px; // - відступ зліва = 20рх
+			z-index: 2; // - вивід наверх
+		}
+	}
+
+	// PC: Меню-посилання - оформлення:
+	&__link {
+		font-size: 18px; // - розмр = 30px
+		letter-spacing: 0.4px; // - міжсимвольний інтервал = 0.4рх
+		text-transform: uppercase; // - всі літери прописні
+		color: #eadc0c; // - фон
+	}
+}
+
+
+
+// PC: Блок CONTENT - позиціонування та розміри:
+.content {
+	flex: 1 1 auto; // - flex-елемент більше/менше, розмір = вміст
+	padding: 90px 0 0 0; // - відступ зверх = 90рх (HEADER - fixed)
+
+	&__navigation {
+		flex: 1 0 40px; // - flex-елемент більше/не-менше, розмір = вміст
+		width: 100%;
+	}
+
+	&__shedule {
+		flex: 1 1 auto;
+		width: 100%;
+	}
+}
+
+.navigation {
 
 	&__body {
 		position: relative;
-		height: 50px;
+		height: 40px;
+		padding: 0 10px;
 
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 
-		color: #fff;
-		font-size: 24px;
-
+		//border: 1px solid red;
 	}
 
-	&__category {
-		flex: 0 0 auto;
+	&__school {
+		font-size: 20px;
+		padding: 0 0px;
+		//border: 1px solid red;
 	}
 
-	&__title {
-		flex: 0 0 auto;
-	}
-
-	&__calendar {
-		flex: 0 1 auto;
+	&__week {
 		display: flex;
-
-		&_plus,
-		&_minus {
-			flex: 1 0 30px;
-			display: block;
-			position: relative;
-			width: 30px;
-			height: 32px;
-			margin: 0 10px;
-			border: 1px solid #5e5373;
-			box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
-			border-radius: 5px;
-			transition: all 0.3s ease 0s;
-		}
-
-		&_plus:hover,
-		&_minus:hover {
-			background: #9285a8;
-			border: 1px solid rgba(255, 255, 255, 0.2);
-			box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.8);
-			cursor: pointer;
-		}
-
-		&_plus:active,
-		&_minus:active {
-			top: 1px;
-		}
-
-		&_minus span::after,
-		&_minus span::before,
-		&_plus span::after,
-		&_plus span::before {
-			content: "";
-			background-color: #fff;
-			position: absolute;
-			width: 24px;
-			height: 2px;
-			left: 3px;
-		}
-
-		&_plus span::before {
-			bottom: 8px;
-			transform: rotate(30deg);
-		}
-
-		&_plus span::after {
-			top: 8px;
-			transform: rotate(-30deg);
-		}
-
-		&_minus span::before {
-			bottom: 8px;
-			transform: rotate(-30deg);
-		}
-
-		&_minus span::after {
-			top: 8px;
-			transform: rotate(30deg);
-		}
-
-		&_date {
-			flex: 0 0 auto;
-			padding: 3px 10px;
-			border: 1px solid #5e5373;
-			border-radius: 5px;
-			text-decoration: underline;
-		}
+		justify-content: space-between;
+		align-items: center;
+		//border: 1px solid red;
 	}
+
 }
 
-.content {
-	flex: 1 1 auto;
-	padding: 60px 0 0 0; // Відступ від зафіксованої шапки
+.week {
 
-	&__body {
-		display: flex;
-		flex-wrap: wrap;
-		margin: 0 -10px; // Відступ в контейнері 1
-		//border: 1px solid green;
+	&__date {
+		padding: 0 10px 0 10px;
+		font-size: 20px;
 	}
 }
 
 .shedule {
 
-	flex: 0 0 50%;
-	padding: 0 10px; // Відступ в контейнері 1
-	//border: 1px solid red;
-
-	&__body {
-		display: flex;
-		padding: 15px;
-		flex-direction: column;
-		border: 1px solid #777;
-		border-radius: 5px;
-		box-shadow: 0px 0px 20px rgba(159, 161, 163, 0.74);
-	}
-
-	&__day {
-		margin: 0 0 20px 0;
-
-		& p {
-			font-size: 30px;
-		}
-	}
-
-	&__lessons:nth-child(2) {
-		border-top: 1px solid #777;
-	}
-
-	&__lessons {
-		border-bottom: 1px solid #777;
-	}
-}
-
-.lesson {
-	display: flex;
-	//justify-content: space-between;
-	margin: 0 -5px;
-	//align-items: center;
-
-	&__number {
-		//border: 1px solid rebeccapurple;
-
-		flex: 0 1 50px;
-		padding: 0 5px;
-		text-align: center;
-
-		&_count {
-			font-size: 32px;
-			line-height: 40px;
-		}
-
-		&_time {
-			font-style: 14px;
-			line-height: 24px;
-		}
-	}
-
-	&__info {
-		//border: 1px solid blue;
-		flex: 1 1 auto;
-		padding: 0 5px;
-
-		&_name {
-			font-size: 28px;
-			line-height: 40px;
-		}
-
-		&_teacher {
-			font-style: 14px;
-			line-height: 24px;
-		}
-	}
-
-	&__link {
-		flex: 0 0 40px;
-		//border: 1px solid red;
-		padding: 0 5px;
-
-		display: flex;
-		flex-direction: column;
-		justify-content: space-around;
-		align-items: center;
-		//margin: 0 -5px;
-
-		&_classroom,
-		&_meet {
-			//
-			//height: 30px;
-			//padding: 0 5px;
-			overflow: hidden;
-			border-radius: 3px;
-			//width: 24px;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-		}
-
-		&_classroom:hover,
-		&_meet:hover {
-			background-color: rgba(159, 161, 163, 0.1);
-			box-shadow: 0px 0px 10px rgba(159, 161, 163, 0.74);
-		}
-
-		&_classroom img,
-		&_meet img {
-			display: block;
-			max-width: 100%;
-		}
-	}
-
-	&__task {
-		//border: 1px solid green;
-		padding: 0 5px;
-		flex: 0 1 45px;
-		//height: 100%;
-		position: relative;
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-
-		//margin: 0 -10px;
-
-
-		&_button::before,
-		&_button::after {
-			content: "";
-			//padding: 0 10px;
-			position: absolute;
-			width: 45%;
-			height: 2px;
-			background-color: #000;
-			transition: all 0.3s ease 0s;
-		}
-
-		&_button::before {
-			left: 11%;
-			transform: rotate(45deg);
-		}
-
-		&_button::after {
-			right: 11%;
-			transform: rotate(-45deg);
-
-		}
-
-	}
-}
-
-.footer {
-	flex: 0 0 40px;
-	background-color: #5e5373;
-
 	&__body {}
 }
 
-.tridemark {}
 
-.company {}
+
+// PC: Блок FOOTER - позиціонування та розміри:
+.footer {
+	flex: 0 0 100%; // - // - flex-елемент ні-менше/ні-більше, розмір = вміст
+	background-color: #0e5789; // - фон
+
+	// PC: FOOTER-контейнер - позиціонування та розміри:
+	&__body {
+		height: 30px; // - висота = 30рх
+		display: flex; // - flex-контейнер блоку 
+		justify-content: space-between; // - горизонтальне вирівнювання по краям
+		align-items: center; // - вертикальне вирівнювання по центру
+		color: #eadc0c; // - фон
+	}
+}
+
+
+
+// MOBILE->MB:
+@media(max-width:767px) {
+
+	// MB: BODY - позиціонування:
+	body._lock {
+		overflow: hidden; // скролінг - заборонено
+	}
+
+	// MB: Блок HEADER - позиціонування, розміри та оформлення: 
+	.header {
+
+		// MB: Блок HEADER-контейнер - розміри:
+		&__body {
+			height: 50px; // - висота = 50рх
+		}
+
+		// MB: Логотип-контейнер - позиціонування:
+		&__logo {
+			flex: 0 0 40px; // - flex-елемент ні-менше/ні-більше, розмір = 40px
+		}
+
+		// MB: Меню-Вікно - позиціонування, розміри та оформлення: 
+		&__menu {
+			position: fixed; // - позиціонування фіксоване (під HEADER )
+			top: -100%; // - сховане вгорі
+			left: 0; // - зліва = 0
+			width: 100%; // - ширина = весь екран
+			height: 100%; // - висота = весь екран
+			padding: 60px 10px 20px 10px; // - відступ від HEADER = 60рх + поля 
+			background-color: rgba($color: #000000, $alpha: 0.8); // - напівпрозорий фон
+			transition: all 0.3s ease 0s; // - параметри анімації
+
+			// MB: Меню-Вікно - позиціонування:
+			&._active {
+				top: 0; // - поява вікна Меню
+			}
+		}
+
+		// MB: Меню-Список - позиціонування:
+		&__list {
+			display: block; // - блочний елемент (Меню-пункти розташовуються один під одним)
+
+			// MB: Меню-пункти - позиціонування:
+			& li {
+				margin: 0 0 20px 0; // - відступ зверху
+			}
+		}
+
+		// MB: Меню-посилання - оформлення:
+		&__link {
+			font-size: 24px; // - розмір шрифта
+		}
+
+		// MB: Меню-кнопка-Бургер - позиціонування, розміри та оформлення:
+		&__burger {
+			display: block; // - блочний елемент
+			position: relative; // - позиціонування відносне
+			width: 30px; // - ширина = 30рх
+			height: 20px; // - висота = 20рх
+			z-index: 3; // - вивід наверх
+
+			// MB: Меню-кнопка-Бургер - оформлення
+			&::before,
+			&::after {
+				content: ""; // - контент =""
+			}
+
+			// MB: Меню-кнопка-Бургер - позиціонування, розміри
+			& span,
+			&::before,
+			&::after {
+				position: absolute; // - позиціонування абсолютне
+				left: 0; // - відступ зліва = 0
+				height: 10%; // - висота риски = 10%
+				width: 100%; // - ширина риски = 100%
+				background-color: #eadc0c; // - фон
+				transition: all 0.3s ease 0s; // - парметри анімації
+			}
+
+			// MB: Меню-кнопка-Бургер - позиціонування
+			&::before {
+				top: 0; // - відступ зверху = 0
+			}
+
+			// MB: Меню-кнопка-Бургер - позиціонування
+			&::after {
+				bottom: 0; // - відступ знизу = 0
+			}
+
+			// MB: Меню-кнопка-Бургер - позиціонування та оформлення
+			& span {
+				top: 50%; // - відступ зверху = 50%
+				transform: scale(1) translate(0px, -50%); // - збільшення середньої риски
+			}
+
+			// MB: Клас _active -  - позиціонування, розмір та оформлення:
+			&._active {
+
+				// MB: Меню-кнопка-Бургер - позиціонування
+				& span {
+					transform: scale(0) translate(0px, -50%); // - зменшення середньої риски
+				}
+
+				// MB: Меню-кнопка-Бургер - позиціонування
+				&::before {
+					top: 50%; // - відступ зверху = 50%
+					transform: rotate(45deg); // - розворот на 45грд
+				}
+
+				// MB: Меню-кнопка-Бургер - позиціонування
+				&::after {
+					top: 50%; // - відступ зверху = 50%
+					transform: rotate(-45deg); // - розворот на -45грд
+				}
+			}
+		}
+	}
+
+	// MB: Блок CONTENT - позиціонування
+	.content {
+		padding: 70px 0 0 0; // - відступ зверху = 70px
+	}
+
+	// MB: Блок FOOTER - позиціонування
+	.footer {
+		display: none; // - приховати
+	}
+
+}

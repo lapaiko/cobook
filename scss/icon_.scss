@@ -1,0 +1,149 @@
+// Стрілки
+$arrow_size: 30px;
+$arrow_background: #555;
+
+.arrow {
+
+	&__left,
+	&__right {
+		position: relative;
+		width: $arrow_size;
+		height: $arrow_size;
+
+		&:hover {
+			cursor: pointer;
+		}
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 25%;
+			width: 50%;
+			height: 10%;
+			background-color: $arrow_background;
+		}
+	}
+
+	&__left {
+		&::before {
+			top: 25%;
+			transform: rotate(-60deg);
+		}
+
+		&::after {
+			bottom: 25%;
+			transform: rotate(60deg);
+		}
+	}
+
+	&__right {
+		&::before {
+			top: 25%;
+			transform: rotate(60deg);
+		}
+
+		&::after {
+			bottom: 25%;
+			transform: rotate(-60deg);
+		}
+	}
+
+}
+
+//*************************************
+//*  Календар
+
+// аркуш:
+$calendar_size: 30px; // розмір аркушу
+$calendar_border: $calendar_size/15; // товшина ліній
+$calendar_border-top: $calendar_size/3; // висота шапки 
+$calendar_border-radius: $calendar_size/10; // радіус заокруглення
+$calendar_border-color: #555; // колір ліній
+
+// шрифт:
+$calendar_line-height: $calendar_size/3*2; // висота стрічки
+$calendar_font-size: $calendar_size/15*9; // розмір шрифта
+$calendar_color: #555; // колір
+
+// петлі календаря:
+$calendar_loop_height: $calendar_size/3; // висота 
+$calendar_loop_width: $calendar_size/5; // ширина петлі
+$calendar_loop_top: $calendar_loop_width*(-2); // віддступ зверху 
+$calendar_loop_left-right: $calendar_size/10; // відступи зліва/зправа
+$calendar_loop_background-color: #fff; // фон
+
+.calendar {
+	position: relative;
+	width: $calendar_size;
+	height: $calendar_size;
+	border: $calendar_border solid $calendar_border-color;
+	border-top: $calendar_border-top solid $calendar_border-color;
+	border-radius: $calendar_border-radius;
+
+	font-size: $calendar_font-size;
+	line-height: $calendar_line-height;
+	text-align: center;
+	font-weight: 700;
+	color: $calendar_color;
+
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		top: $calendar_loop_top;
+		width: $calendar_loop_width;
+		height: $calendar_loop_height;
+		border-radius: $calendar_border-radius;
+		border: $calendar_border solid $calendar_border-color;
+		background-color: $calendar_loop_background-color;
+	}
+
+	&::before {
+		left: $calendar_loop_left-right;
+	}
+
+	&::after {
+		right: $calendar_loop_left-right;
+	}
+}
+
+//*************************************
+//*  Трикутники
+
+// трикутник:
+$triangle_border: 10px; // товщина ліній
+$triangle_size: $triangle_border*2; // розмір 
+$triangle_color: #777; // колір
+
+.triangle {
+
+	&__right,
+	&__left {
+		border-bottom: $triangle_border solid transparent;
+		border-top: $triangle_border solid transparent;
+	}
+
+	&__right {
+		border-left: $triangle_size solid $triangle_color;
+	}
+
+	&__left {
+		border-right: $triangle_size solid $triangle_color;
+	}
+
+	&__top,
+	&__bottom {
+		border-left: $triangle_border solid transparent;
+		border-right: $triangle_border solid transparent;
+	}
+
+	&__top {
+		border-bottom: $triangle_size solid $triangle_color;
+	}
+
+	&__bottom {
+		border-top: $triangle_size solid $triangle_color;
+	}
+
+}

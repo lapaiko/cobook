@@ -1,0 +1,101 @@
+.arrow__left, .arrow__right {
+  position: relative;
+  width: 30px;
+  height: 30px;
+}
+
+.arrow__left:hover, .arrow__right:hover {
+  cursor: pointer;
+}
+
+.arrow__left::before, .arrow__left::after, .arrow__right::before, .arrow__right::after {
+  content: "";
+  position: absolute;
+  left: 25%;
+  width: 50%;
+  height: 10%;
+  background-color: #555;
+}
+
+.arrow__left::before {
+  top: 25%;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.arrow__left::after {
+  bottom: 25%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.arrow__right::before {
+  top: 25%;
+  -webkit-transform: rotate(60deg);
+          transform: rotate(60deg);
+}
+
+.arrow__right::after {
+  bottom: 25%;
+  -webkit-transform: rotate(-60deg);
+          transform: rotate(-60deg);
+}
+
+.calendar {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #555;
+  border-top: 10px solid #555;
+  border-radius: 3px;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: 700;
+  color: #555;
+}
+
+.calendar::before, .calendar::after {
+  content: "";
+  position: absolute;
+  top: -12px;
+  width: 6px;
+  height: 10px;
+  border-radius: 3px;
+  border: 2px solid #555;
+  background-color: #fff;
+}
+
+.calendar::before {
+  left: 3px;
+}
+
+.calendar::after {
+  right: 3px;
+}
+
+.triangle__right, .triangle__left {
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid transparent;
+}
+
+.triangle__right {
+  border-left: 20px solid #777;
+}
+
+.triangle__left {
+  border-right: 20px solid #777;
+}
+
+.triangle__top, .triangle__bottom {
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.triangle__top {
+  border-bottom: 20px solid #777;
+}
+
+.triangle__bottom {
+  border-top: 20px solid #777;
+}
