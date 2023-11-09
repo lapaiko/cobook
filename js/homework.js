@@ -97,7 +97,7 @@ var chLesson = {
 		'classroom': '',
 		'homework': '',
 		'meet': '',
-		'booklink': '',
+		'booklink': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html',
 		'book': ''
 	},
 	'dram': {
@@ -142,7 +142,7 @@ var chLesson = {
 		'classroom': '',
 		'homework': '',
 		'meet': '',
-		'booklink': '',
+		'booklink': 'https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html',
 		'book': ''
 	}
 };
