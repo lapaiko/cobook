@@ -158,6 +158,7 @@ $MB_menu-padding: $MB_header-height + 10px;
 	}
 }
 
+$MB_letter-spacing: 0.3px;
 
 .content {
 	flex: 1 1 auto;
@@ -166,58 +167,113 @@ $MB_menu-padding: $MB_header-height + 10px;
 	color: #333;
 
 	&__body {
-		padding: 0 10px;
+		padding: 0 5px;
 	}
 
-	&__title {
-		margin: 0 0 10px 0;
-		letter-spacing: 1px;
-	}
-
-	&__lessons {}
 
 }
 
-.lessons {
-	&__shedule {
-		display: flex;
-		flex-direction: column;
+.task {
 
-		padding: 0 10px;
+	&__content {
+		padding: 0 5px; //поля контенту Завдань
+	}
+
+	//Завдання - Шапка 
+	&__head {
+		//Заголовок та кнопка "Додати"
+		display: flex; // орієнтувати по горизнталі
+		justify-content: space-between; // вирівняти горизонтально - по краях
+		align-items: center; // вирівняти вертикально - по центру 
+
+		//Шапка
+		padding: 0 10px; //поля 
+
+		//Шапка та Завдання
+		border-bottom: 1px solid #999; // лінія розмежування
+		margin: 0 0 15px 0; // відступ знизу
+	}
+
+	// Завдання - заголовок
+	&__title {
+		font-size: 18px; // розмір шрифту Заголовка
+	}
+
+	// Завдання - кнопка "Додати"
+	&__add {
+		position: relative;
+		width: 30px; // ширина кнопки
+		height: 30px; // висота кнопки
+		margin: 0 0 5px 0; // відступ знизу
+		cursor: pointer;
+
+		// Лінії "+"
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			width: 100%;
+			height: 10%;
+			top: 45%;
+			background-color: #999;
+		}
+
+		&::after {
+			transform: rotate(90deg);
+		}
+
+		&:hover {
+
+			&::before,
+			&::after {
+				background-color: #333;
+			}
+		}
+	}
+
+	//Завдання - контеінер
+	&__conteiner {
+		margin: 0 20px;
+	}
+
+	//Завдання - список
+	&__list {
+		display: flex;
+		flex-wrap: wrap;
+
 		margin: 0 -15px;
 	}
 
+	//Завдання - картка
 	&__card {
-		padding: 0 15px;
-		margin: 0 0 10px 0;
-
-		border: 1px solid #999;
+		padding: 15px 15px;
 		border-radius: 5px;
+		border: 1px solid #aaa;
+
+		box-shadow: 0 0 10px #ddd;
 	}
 
-	&__day {
-		padding: 5px 0;
-		//margin: 0 0 10px 0;
-	}
-
-	&__list {}
-
-	&__item {
+	&__name-date {
 		display: flex;
-		margin: 0 0 10px 0;
+		justify-content: space-between;
 		align-items: center;
-
-		border-top: 1px solid #999;
+		margin: 0 0 10px 0;
 	}
 
-	&__number {
-		flex: 0 0 20px;
-		text-align: center;
+	//Завдання картка - назва завдання
+	&__name {
+		font-size: 18px;
 	}
 
-	&__leson {
-		flex: 1 1 auto;
+	//Завдання картка - текст завдання
+	&__text {
+		font-size: 16px;
+		letter-spacing: 0.3px;
+		line-height: 18px;
 	}
+
+	//Завдання картка - термін виконання завдання
+	&__date {}
 }
 
 
@@ -286,11 +342,11 @@ $PC_content-padding: $PC_header-height + 15px;
 	.content {
 		padding: $PC_content-padding 0 0 0;
 
-		&__body {}
+		&__body {
+			display: flex; // елекметнти Контенту
+		}
 
-		&__title {}
 
-		&__shedule {}
 	}
 
 }
