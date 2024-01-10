@@ -173,7 +173,39 @@ $MB_letter-spacing: 0.3px;
 
 }
 
-.task {
+// Завдання - кнопка "Додати"
+.add {
+	position: relative;
+	width: 30px; // ширина кнопки
+	height: 30px; // висота кнопки
+	margin: 0 0 5px 0; // відступ знизу
+	cursor: pointer;
+
+	// Лінії "+"
+	&::before,
+	&::after {
+		content: "";
+		position: absolute;
+		width: 100%;
+		height: 10%;
+		top: 45%;
+		background-color: #999;
+	}
+
+	&::after {
+		transform: rotate(90deg);
+	}
+
+	&:hover {
+
+		&::before,
+		&::after {
+			background-color: #333;
+		}
+	}
+}
+
+.items {
 
 	&__content {
 		padding: 0 5px; //поля контенту Завдань
@@ -199,38 +231,6 @@ $MB_letter-spacing: 0.3px;
 		font-size: 18px; // розмір шрифту Заголовка
 	}
 
-	// Завдання - кнопка "Додати"
-	&__add {
-		position: relative;
-		width: 30px; // ширина кнопки
-		height: 30px; // висота кнопки
-		margin: 0 0 5px 0; // відступ знизу
-		cursor: pointer;
-
-		// Лінії "+"
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			width: 100%;
-			height: 10%;
-			top: 45%;
-			background-color: #999;
-		}
-
-		&::after {
-			transform: rotate(90deg);
-		}
-
-		&:hover {
-
-			&::before,
-			&::after {
-				background-color: #333;
-			}
-		}
-	}
-
 	//Завдання - контеінер
 	&__conteiner {
 		margin: 0 20px;
@@ -244,39 +244,73 @@ $MB_letter-spacing: 0.3px;
 		margin: 0 -15px;
 	}
 
-	//Завдання - картка
-	&__card {
-		padding: 15px 15px;
-		border-radius: 5px;
-		border: 1px solid #aaa;
+}
 
-		box-shadow: 0 0 10px #ddd;
+//Картка завдання:
+.task {
+
+	&__card {
+		padding: 10px 15px;
+		box-shadow: 0 0 20px #ddd;
 	}
 
-	&__name-date {
+	//шапка
+	&__head {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		margin: 0 0 10px 0;
-	}
+		border-bottom: 1px solid #aaa;
 
-	//Завдання картка - назва завдання
-	&__name {
 		font-size: 18px;
 	}
 
-	//Завдання картка - текст завдання
-	&__text {
-		font-size: 16px;
-		letter-spacing: 0.3px;
-		line-height: 18px;
+	//назва
+	&__add {
+		width: 24px; // ширина кнопки
+		height: 24px; // висота кнопки
 	}
 
-	//Завдання картка - термін виконання завдання
-	&__date {}
+	//термін
+	//&__date {}
 }
 
 
+//Список вправ:
+.exercise {
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px 10px -5px;
+
+	}
+
+	&__check {
+		flex: 0 0 30px;
+		padding: 0 5px;
+		position: relative;
+
+		& span {
+			display: block;
+			width: 24px;
+			height: 24px;
+			border: 1px solid #999;
+			background-color: greenyellow;
+		}
+	}
+
+	//опис
+	&__text {
+		flex: 1 1 auto;
+		padding: 0 5px;
+
+		font-size: 16px;
+		letter-spacing: 0.3px;
+		line-height: 18px;
+
+	}
+
+}
 
 
 
