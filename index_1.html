@@ -15,7 +15,6 @@
 				<div class="header__body">
 					<div class="header__logo">
 						<div class="calendar">30</div>
-
 					</div>
 
 					<div class="header__burger">
@@ -24,60 +23,443 @@
 					<div class="header__menu">
 						<ul class="header__list">
 							<li><a href="" class="header__link">Завдання</a></li>
-							<li><a href="" class="header__link">Нотатки</a></li>
+							<li><a href="" class="header__link">Розклад</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="content">
-			<div class="conteiner">
-				<div class="content__body">
+		<div class="content"><!--КОНТЕНТ-->
 
-					<!-- Блок запланованих завдань -->
-					<div class="items__content">
-						<div class="items__head">
-							<div class="items__title">Завдання</div>
-							<div class="items__add add"></div>
-						</div>
+			<div class="shedule"><!-- РОЗКЛАД - коробка (рамка)-->
+				<div class="conteiner"><!-- РОЗКЛАД - поля-контейнер -->
 
-						<!-- Картки домашніх завданнь -->
-						<div class="items__conteiner">
-							<div class="items__list">
+					<div class="week"><!-- ТИЖДЕНЬ - коробка -->
 
-								<!-- Карточка домашнього завдання -->
-								<div class="task__card">
-									<div class="task__head">
-										<div class="task__name">Географія</div>
-										<div class="task__add add"></div>
-									</div>
+						<div class="weekday"><!-- ДЕНЬ ТИЖНЯ - коробка (рамка)-->
+							<div class="weekday__conteiner"><!-- ДЕНЬ ТИЖНЯ - поля-контейнер -->
 
-									<div class="task__exercises">
-										<div class="exercise__item">
-											<div class="exercise__check"><span></span></div>
-											<div class="exercise__text">Параг.15, стор.76 №3,5(новий підручник) або Параг. 17</div>
-										</div>
-										<div class="exercise__item">
-											<div class="exercise__check"><span></span></div>
-											<div class="exercise__text">Стор.68 завд.2.3(старий підручник)</div>
-										</div>
-									</div>
+								<div class="weekday__date"><!-- ДЕНЬ ТИЖНЯ - НАЗВА - коробка -->
+									Понеділок
+								</div><!--weekday__date-->
+								<div class="weekday__subject"><!-- ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка-->
 
-									<div class="task__date">2024-01-15</div>
-								</div>
+									<!-- ПРЕДМЕТ-контейнер -->
+									<div class="subject__conteiner">
+										<!-- ПРЕДМЕТ-рамка-->
+										<div class="subject__border">
 
-							</div>
-						</div>
-					</div>
-					<!-- Блок запланованих завдань -->
+											<!-- ПРЕДМЕТ-ОПИС-контейнер -->
+											<div class="description">
+												<!-- ПРЕДМЕТ-ОПИС-рамка-flex-контейнер -->
+												<div class="description__row">
+													<!-- ПРЕДМЕТ-ОПИС-номер -->
+													<div class="description__number">1</div>
+													<!-- ПРЕДМЕТ-ОПИС-назва -->
+													<div class="description__text">Українська література</div>
 
-					<!-- Блок виконаних завдань -->
-					<!-- Блок виконаних завдань -->
+													<!-- ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер -->
+													<div class="description__communicator">
+														<!-- ПРЕДМЕТ-ОПИС-комунікатори-перелік -->
+														<div class="description__list">
+															<!-- ПРЕДМЕТ-ОПИС-комунікатори-кнопка згорнути/розгорнути -->
+															<div class="description__button"></div>
+															<!-- ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер -->
+															<div class="description__links">
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/book.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/meet.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/classroom.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/viber.png" alt="">
+																</div><!--description__link-->
+															</div><!--description__links-->
+														</div><!--description__list-->
+													</div><!--description__communicator-->
 
-				</div>
-			</div>
-		</div>
+												</div><!--description__row-->
+											</div><!--description-->
+
+
+											<!-- КОНТАКТ-контейнер -->
+											<div class="contact">
+												<!-- КОНТАКТ-flex-контейнер-->
+												<div class="contact__row">
+													<!-- КОНТАКТ-час-->
+													<div class="contact__time">08:00 </div><!--contact__time-->
+													<!-- КОНТАКТ-вчитель-->
+													<div class="contact__tiecher">Волк Світлана Віталіївна</div>
+													<!-- КОНТАКТ-офіс-->
+													<div class="contact__office">к.45</div><!--contact__office-->
+
+												</div><!--contact__row-->
+											</div><!--contact-->
+
+											<div class="task"><!-- ЗАВДАННЯ-рамка-flex-елемент -->
+												<div class="task__item"><!--ТАБЛИЦЯ ЗАВДАННЯ -->
+													<!--ДОДАТИ ЗАВДАННЯ-->
+													<div class="task__add"></div>
+													<!--КОНТЕЙНЕР ЗАВДАНЬ-->
+													<div class="task__info">
+														<!--ЗАГОЛВОК ЗАВДАНЬ-->
+														<div class="task__title">
+															<div class="task__persent">0%</div>
+															<div class="task__process">
+																<span></span>
+															</div>
+														</div>
+														<!--СПИСОК ЗАВДАНЬ-->
+														<div class="task__list">
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Дочитати твір "Таємне товариство боягузів</div>
+															</div><!--task__row-->
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Намалювати хронологічну стрічку пригод головного
+																	персонажу
+																</div>
+															</div><!--task__row-->
+														</div><!--task__list-->
+
+													</div><!--task__info-->
+												</div><!--task__item-->
+											</div><!--task-->
+
+										</div><!--subject__item-->
+									</div><!-- subject__list -->
+
+									<!-- ПРЕДМЕТ-контейнер -->
+									<div class="subject__conteiner">
+										<!-- ПРЕДМЕТ-рамка-->
+										<div class="subject__border">
+
+											<!-- ПРЕДМЕТ-ОПИС-контейнер -->
+											<div class="description">
+												<!-- ПРЕДМЕТ-ОПИС-рамка-flex-контейнер -->
+												<div class="description__row">
+													<!-- ПРЕДМЕТ-ОПИС-номер -->
+													<div class="description__number">1</div>
+													<!-- ПРЕДМЕТ-ОПИС-назва -->
+													<div class="description__text">Українська література</div>
+
+													<!-- ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер -->
+													<div class="description__communicator">
+														<!-- ПРЕДМЕТ-ОПИС-комунікатори-перелік -->
+														<div class="description__list">
+															<!-- ПРЕДМЕТ-ОПИС-комунікатори-кнопка згорнути/розгорнути -->
+															<div class="description__button"></div>
+															<!-- ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер -->
+															<div class="description__links">
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/book.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/meet.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/classroom.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/viber.png" alt="">
+																</div><!--description__link-->
+															</div><!--description__links-->
+														</div><!--description__list-->
+													</div><!--description__communicator-->
+
+												</div><!--description__row-->
+											</div><!--description-->
+
+
+											<!-- КОНТАКТ-контейнер -->
+											<div class="contact">
+												<!-- КОНТАКТ-flex-контейнер-->
+												<div class="contact__row">
+													<!-- КОНТАКТ-час-->
+													<div class="contact__time">08:00 </div><!--contact__time-->
+													<!-- КОНТАКТ-вчитель-->
+													<div class="contact__tiecher">Волк Світлана Віталіївна</div>
+													<!-- КОНТАКТ-офіс-->
+													<div class="contact__office">к.45</div><!--contact__office-->
+
+												</div><!--contact__row-->
+											</div><!--contact-->
+
+											<div class="task"><!-- ЗАВДАННЯ-рамка-flex-елемент -->
+												<div class="task__item"><!--ТАБЛИЦЯ ЗАВДАННЯ -->
+													<!--ДОДАТИ ЗАВДАННЯ-->
+													<div class="task__add"></div>
+													<!--КОНТЕЙНЕР ЗАВДАНЬ-->
+													<div class="task__info">
+														<!--ЗАГОЛВОК ЗАВДАНЬ-->
+														<div class="task__title">
+															<div class="task__persent">0%</div>
+															<div class="task__process">
+																<span></span>
+															</div>
+														</div>
+														<!--СПИСОК ЗАВДАНЬ-->
+														<div class="task__list">
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Дочитати твір "Таємне товариство боягузів</div>
+															</div><!--task__row-->
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Намалювати хронологічну стрічку пригод головного
+																	персонажу
+																</div>
+															</div><!--task__row-->
+														</div><!--task__list-->
+
+													</div><!--task__info-->
+												</div><!--task__item-->
+											</div><!--task-->
+
+										</div><!--subject__item-->
+									</div><!-- subject__list -->
+
+								</div><!--weekday__subject-->
+
+							</div><!--weekday__conteiner-->
+						</div><!--weekday-->
+
+						<div class="weekday"><!-- ДЕНЬ ТИЖНЯ - коробка (рамка)-->
+							<div class="weekday__conteiner"><!-- ДЕНЬ ТИЖНЯ - поля-контейнер -->
+
+								<div class="weekday__date"><!-- ДЕНЬ ТИЖНЯ - НАЗВА - коробка -->
+									Понеділок
+								</div><!--weekday__date-->
+								<div class="weekday__subject"><!-- ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка-->
+
+									<!-- ПРЕДМЕТ-контейнер -->
+									<div class="subject__conteiner">
+										<!-- ПРЕДМЕТ-рамка-->
+										<div class="subject__border">
+
+											<!-- ПРЕДМЕТ-ОПИС-контейнер -->
+											<div class="description">
+												<!-- ПРЕДМЕТ-ОПИС-рамка-flex-контейнер -->
+												<div class="description__row">
+													<!-- ПРЕДМЕТ-ОПИС-номер -->
+													<div class="description__number">1</div>
+													<!-- ПРЕДМЕТ-ОПИС-назва -->
+													<div class="description__text">Українська література</div>
+
+													<!-- ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер -->
+													<div class="description__communicator">
+														<!-- ПРЕДМЕТ-ОПИС-комунікатори-перелік -->
+														<div class="description__list">
+															<!-- ПРЕДМЕТ-ОПИС-комунікатори-кнопка згорнути/розгорнути -->
+															<div class="description__button"></div>
+															<!-- ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер -->
+															<div class="description__links">
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/book.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/meet.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/classroom.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/viber.png" alt="">
+																</div><!--description__link-->
+															</div><!--description__links-->
+														</div><!--description__list-->
+													</div><!--description__communicator-->
+
+												</div><!--description__row-->
+											</div><!--description-->
+
+
+											<!-- КОНТАКТ-контейнер -->
+											<div class="contact">
+												<!-- КОНТАКТ-flex-контейнер-->
+												<div class="contact__row">
+													<!-- КОНТАКТ-час-->
+													<div class="contact__time">08:00 </div><!--contact__time-->
+													<!-- КОНТАКТ-вчитель-->
+													<div class="contact__tiecher">Волк Світлана Віталіївна</div>
+													<!-- КОНТАКТ-офіс-->
+													<div class="contact__office">к.45</div><!--contact__office-->
+
+												</div><!--contact__row-->
+											</div><!--contact-->
+
+											<div class="task"><!-- ЗАВДАННЯ-рамка-flex-елемент -->
+												<div class="task__item"><!--ТАБЛИЦЯ ЗАВДАННЯ -->
+													<!--ДОДАТИ ЗАВДАННЯ-->
+													<div class="task__add"></div>
+													<!--КОНТЕЙНЕР ЗАВДАНЬ-->
+													<div class="task__info">
+														<!--ЗАГОЛВОК ЗАВДАНЬ-->
+														<div class="task__title">
+															<div class="task__persent">0%</div>
+															<div class="task__process">
+																<span></span>
+															</div>
+														</div>
+														<!--СПИСОК ЗАВДАНЬ-->
+														<div class="task__list">
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Дочитати твір "Таємне товариство боягузів</div>
+															</div><!--task__row-->
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Намалювати хронологічну стрічку пригод головного
+																	персонажу
+																</div>
+															</div><!--task__row-->
+														</div><!--task__list-->
+
+													</div><!--task__info-->
+												</div><!--task__item-->
+											</div><!--task-->
+
+										</div><!--subject__item-->
+									</div><!-- subject__list -->
+
+									<!-- ПРЕДМЕТ-контейнер -->
+									<div class="subject__conteiner">
+										<!-- ПРЕДМЕТ-рамка-->
+										<div class="subject__border">
+
+											<!-- ПРЕДМЕТ-ОПИС-контейнер -->
+											<div class="description">
+												<!-- ПРЕДМЕТ-ОПИС-рамка-flex-контейнер -->
+												<div class="description__row">
+													<!-- ПРЕДМЕТ-ОПИС-номер -->
+													<div class="description__number">1</div>
+													<!-- ПРЕДМЕТ-ОПИС-назва -->
+													<div class="description__text">Українська література</div>
+
+													<!-- ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер -->
+													<div class="description__communicator">
+														<!-- ПРЕДМЕТ-ОПИС-комунікатори-перелік -->
+														<div class="description__list">
+															<!-- ПРЕДМЕТ-ОПИС-комунікатори-кнопка згорнути/розгорнути -->
+															<div class="description__button"></div>
+															<!-- ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер -->
+															<div class="description__links">
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/book.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/meet.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/classroom.png" alt="">
+																</div><!--description__link-->
+																<!-- ПРЕДМЕТ-ОПИС-ЛІНК-->
+																<div class="description__link">
+																	<img src="img/icon_1/viber.png" alt="">
+																</div><!--description__link-->
+															</div><!--description__links-->
+														</div><!--description__list-->
+													</div><!--description__communicator-->
+
+												</div><!--description__row-->
+											</div><!--description-->
+
+
+											<!-- КОНТАКТ-контейнер -->
+											<div class="contact">
+												<!-- КОНТАКТ-flex-контейнер-->
+												<div class="contact__row">
+													<!-- КОНТАКТ-час-->
+													<div class="contact__time">08:00 </div><!--contact__time-->
+													<!-- КОНТАКТ-вчитель-->
+													<div class="contact__tiecher">Волк Світлана Віталіївна</div>
+													<!-- КОНТАКТ-офіс-->
+													<div class="contact__office">к.45</div><!--contact__office-->
+
+												</div><!--contact__row-->
+											</div><!--contact-->
+
+											<div class="task"><!-- ЗАВДАННЯ-рамка-flex-елемент -->
+												<div class="task__item"><!--ТАБЛИЦЯ ЗАВДАННЯ -->
+													<!--ДОДАТИ ЗАВДАННЯ-->
+													<div class="task__add"></div>
+													<!--КОНТЕЙНЕР ЗАВДАНЬ-->
+													<div class="task__info">
+														<!--ЗАГОЛВОК ЗАВДАНЬ-->
+														<div class="task__title">
+															<div class="task__persent">0%</div>
+															<div class="task__process">
+																<span></span>
+															</div>
+														</div>
+														<!--СПИСОК ЗАВДАНЬ-->
+														<div class="task__list">
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Дочитати твір "Таємне товариство боягузів</div>
+															</div><!--task__row-->
+															<div class="task__row"><!-- ЗАВДАННЯ -->
+																<!-- ЧЕКБОКС ЗАВДАННЯ -->
+																<div class="task__check"></div>
+																<!-- ТЕКСТ ЗАВДАННЯ -->
+																<div class="task__text">Намалювати хронологічну стрічку пригод головного
+																	персонажу
+																</div>
+															</div><!--task__row-->
+														</div><!--task__list-->
+
+													</div><!--task__info-->
+												</div><!--task__item-->
+											</div><!--task-->
+
+										</div><!--subject__item-->
+									</div><!-- subject__list -->
+
+								</div><!--weekday__subject-->
+
+							</div><!--weekday__conteiner-->
+						</div><!--weekday-->
+
+					</div><!-- week -->
+
+				</div><!--conteiner-->
+			</div><!--shedule-->
+		</div><!--content-->
 
 	</div>
 
@@ -86,70 +468,3 @@
 </body>
 
 </html>
-
-<!--div class="content__lessons">
-
-						<div class="lessons__shedule">
-
-							<div class="lessons__card">
-								<div class="lessons__day">Понеділок 30 жовтня</div>
-								<div class="lessons__list">
-									<div class="lessons__item">
-										<div class="lessons__number">1</div>
-										<div class="lessons__leson">
-											<div class="lesson__name">Математика</div>
-											<div class="lesson__homework">
-												<ul class="homework__list">
-													<li>
-														<div class="homework__task">
-															<div class="task__page"></div>
-															<div class="tast__paragraph"></div>
-															<div class="tast__exercise"></div>
-															<div class="task__description"></div>
-														</div>
-													</li>
-													<li>
-														<div class="homework__task">№ 4</div>
-													</li>
-													<li>
-														<div class="homework__task"></div>
-													</li>
-												</ul>
-
-											</div>
-											<div class="lesson__info">Світлана Володимирівна</div>
-
-										</div>
-									</div>
-									<div class="lessons__item">
-										<div class="lessons__number">2</div>
-										<div class="lessons__leson">Українська мова</div>
-									</div>
-									<div class="lessons__item">
-										<div class="lessons__number">3</div>
-										<div class="lessons__leson">Фізкультура</div>
-									</div>
-								</div>
-							</div>
-
-							<div class="lessons__card">
-								<div class="lessons__day">Віторок 31 жовтня</div>
-								<div class="lessons__list">
-									<div class="lessons__item">
-										<div class="lessons__number">1</div>
-										<div class="lessons__leson">Математика</div>
-									</div>
-									<div class="lessons__item">
-										<div class="lessons__number">2</div>
-										<div class="lessons__leson">Українська мова</div>
-									</div>
-									<div class="lessons__item">
-										<div class="lessons__number">3</div>
-										<div class="lessons__leson">Фізкультура</div>
-									</div>
-								</div>
-							</div>
-
-						</div>
-
-					</div-->

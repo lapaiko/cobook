@@ -10,6 +10,11 @@ body {
 	}
 }
 
+._lock {
+	overflow: hidden;
+}
+
+
 // PC, MOBILE: Обгортка сайту - позиціонування та розміри:
 .wrapper {
 	min-height: 100%; // - висота дорівнє розміру всіх Блоків сайта 
@@ -26,6 +31,9 @@ body {
 	padding: 0 10px; // - бокові поля
 }
 
+
+//* ШАПКА - MOBILE
+
 $MB_header-height: 50px;
 $MB_logo-size: $MB_header-height - 10px;
 $MB_content-padding: $MB_header-height + 15px;
@@ -38,6 +46,7 @@ $MB_menu-padding: $MB_header-height + 10px;
 	width: 100%;
 	height: $MB_header-height;
 	background-color: #999;
+	z-index: 1;
 	//z-index: 50;
 
 	&::before {
@@ -158,167 +167,11 @@ $MB_menu-padding: $MB_header-height + 10px;
 	}
 }
 
-$MB_letter-spacing: 0.3px;
 
-.content {
-	flex: 1 1 auto;
-	background-color: #fff;
-	padding: $MB_content-padding 0 0 0;
-	color: #333;
-
-	&__body {
-		padding: 0 5px;
-	}
-
-
-}
-
-// Завдання - кнопка "Додати"
-.add {
-	position: relative;
-	width: 30px; // ширина кнопки
-	height: 30px; // висота кнопки
-	margin: 0 0 5px 0; // відступ знизу
-	cursor: pointer;
-
-	// Лінії "+"
-	&::before,
-	&::after {
-		content: "";
-		position: absolute;
-		width: 100%;
-		height: 10%;
-		top: 45%;
-		background-color: #999;
-	}
-
-	&::after {
-		transform: rotate(90deg);
-	}
-
-	&:hover {
-
-		&::before,
-		&::after {
-			background-color: #333;
-		}
-	}
-}
-
-.items {
-
-	&__content {
-		padding: 0 5px; //поля контенту Завдань
-	}
-
-	//Завдання - Шапка 
-	&__head {
-		//Заголовок та кнопка "Додати"
-		display: flex; // орієнтувати по горизнталі
-		justify-content: space-between; // вирівняти горизонтально - по краях
-		align-items: center; // вирівняти вертикально - по центру 
-
-		//Шапка
-		padding: 0 10px; //поля 
-
-		//Шапка та Завдання
-		border-bottom: 1px solid #999; // лінія розмежування
-		margin: 0 0 15px 0; // відступ знизу
-	}
-
-	// Завдання - заголовок
-	&__title {
-		font-size: 18px; // розмір шрифту Заголовка
-	}
-
-	//Завдання - контеінер
-	&__conteiner {
-		margin: 0 20px;
-	}
-
-	//Завдання - список
-	&__list {
-		display: flex;
-		flex-wrap: wrap;
-
-		margin: 0 -15px;
-	}
-
-}
-
-//Картка завдання:
-.task {
-
-	&__card {
-		padding: 10px 15px;
-		box-shadow: 0 0 20px #ddd;
-	}
-
-	//шапка
-	&__head {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin: 0 0 10px 0;
-		border-bottom: 1px solid #aaa;
-
-		font-size: 18px;
-	}
-
-	//назва
-	&__add {
-		width: 24px; // ширина кнопки
-		height: 24px; // висота кнопки
-	}
-
-	//термін
-	//&__date {}
-}
-
-
-//Список вправ:
-.exercise {
-	&__item {
-		display: flex;
-		justify-content: space-between;
-		margin: 0 -5px 10px -5px;
-
-	}
-
-	&__check {
-		flex: 0 0 30px;
-		padding: 0 5px;
-		position: relative;
-
-		& span {
-			display: block;
-			width: 24px;
-			height: 24px;
-			border: 1px solid #999;
-			background-color: greenyellow;
-		}
-	}
-
-	//опис
-	&__text {
-		flex: 1 1 auto;
-		padding: 0 5px;
-
-		font-size: 16px;
-		letter-spacing: 0.3px;
-		line-height: 18px;
-
-	}
-
-}
-
-
-
-
+//* ШАПКА - PC
 
 $PC_header-height: 70px;
 $PC_logo-size: $PC_header-height - 20px;
-$PC_content-padding: $PC_header-height + 15px;
 
 @media(min-width:767px) {
 
@@ -372,15 +225,793 @@ $PC_content-padding: $PC_header-height + 15px;
 			color: #fff;
 		}
 	}
+}
 
-	.content {
-		padding: $PC_content-padding 0 0 0;
 
-		&__body {
-			display: flex; // елекметнти Контенту
+//* КОНТЕНТ - MOBILE
+
+//КОНТЕНТ
+.content {
+	flex: 1 1 auto;
+	padding: $MB_header-height 0 0 0; // внутрішній-верхній відступ КОНТЕНТу від ШАПКИ
+	border: 0px solid red; // !!! монтажна рамка - після верстки прибрати
+	position: relative;
+}
+
+//РОЗКЛАД - коробка (рамка)
+.shedule {
+	padding: 10px 0; // внутрішній-верхній/нижній відступи РОЗКЛАДу у КОНТЕНТІ
+}
+
+//ТИЖДЕНЬ - коробка 
+.week {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin: 0 -5px;
+}
+
+//ДЕНЬ ТИЖНЯ - коробка (рамка)
+.weekday {
+	flex: 1 1 100%;
+	padding: 0 5px;
+	//	border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+	//ДЕНЬ ТИЖНЯ - поля-контейнер
+	&__conteiner {
+		margin: 0 0 10px 0; // зовнішні відступи 
+		padding: 10px 10px 0 10px;
+		border: 1px solid #999; // рамка
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	//ДЕНЬ ТИЖНЯ - НАЗВА - коробка
+	&__date {
+		font-size: 20px;
+		letter-spacing: 0.3px;
+		//text-transform: uppercase;
+		font-weight: 700;
+		border-bottom: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
+		padding: 0 0 5px 0;
+		margin: 0 0 10px 0;
+	}
+
+	//ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка 
+	&__subject {
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+}
+
+//ПРЕДМЕТ
+.subject {
+
+	//ПРЕДМЕТ-контейнер	
+	&__conteiner {
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	//ПРЕДМЕТ-рамка
+	&__border {
+		margin: 0 0 10px 0;
+		border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
+		//border: 1px solid #ddd; // рамка ДАНИХ ПРЕДМЕТА
+		//box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	}
+
+	//&__item {
+	//	border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
+	//	//	border: 1px solid #ddd; // рамка ДАНИХ ПРЕДМЕТА
+	//	//box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	//	margin: 0 0 10px 0;
+	//}
+}
+
+
+$MB_subject-width: 46px;
+$PS_subject-width: $MB_subject-width;
+
+$MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
+
+//ПРЕДМЕТ-ОПИС-контейнер 
+.description {
+	margin: 0 10px $MB_task_margin 10px;
+
+	//ПРЕДМЕТ-ОПИС-рамка-flex-контейнер
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 -5px;
+		//border-bottom: 1px solid #999;
+	}
+
+	&__number,
+	&__text,
+	&__communicator {
+		padding: 0px 5px;
+		font-size: 20px;
+	}
+
+	&__number,
+	&__text {
+		padding: 5px 5px;
+	}
+
+	//ПРЕДМЕТ-ОПИС-номер
+	&__number {
+		flex: 0 1 $MB_subject-width;
+		text-align: center;
+	}
+
+	//ПРЕДМЕТ-ОПИС-назва
+	&__text {
+		flex: 1 1 auto;
+	}
+
+	//ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер
+	$MB_discription_flex-link: 24px*4+10px*5+10px;
+
+	&__communicator {
+		flex: 1 1 $MB_discription_flex-link;
+
+		display: flex;
+		justify-content: end;
+		margin: 0 -5px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	//ПРЕДМЕТ-ОПИС-комунікатори-перелік
+	&__list {
+		padding: 0 7px 0 20px;
+		position: relative;
+
+		display: flex;
+		justify-content: space-between;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	&__button {
+		flex: 0 0 20px;
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 21px;
+		height: 26px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			left: 4px;
+			width: 10px;
+			height: 2px;
+			background-color: #999;
+
+			transition: all 0.3s ease 0s;
 		}
 
+		&::before {
+			transform: rotate(130deg);
+			top: 7px;
+		}
+
+		&::after {
+			transform: rotate(-130deg);
+			top: 15px;
+		}
+
+		&._active {
+			&::before {
+				transform: rotate(-130deg);
+			}
+
+			&::after {
+				transform: rotate(130deg);
+			}
+		}
+	}
+
+	//ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер
+	&__links {
+		display: flex;
+		justify-content: flex-end;
+
+		position: relative;
+		overflow: hidden;
+		width: 0px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+		&._active {
+			width: 100%;
+		}
+	}
+
+	//ПРЕДМЕТ-ОПИС-ЛІНК
+	&__link {
+		padding: 0 5px;
+		align-self: center;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+		& img {
+			display: block;
+			margin: 0 auto;
+			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати}
+		}
+	}
+}
+
+//КОНТАКТ-контейнер
+$MB_contact-margin: $MB_task_margin + 7px;
+
+.contact {
+	margin: 0 10px $MB_contact-margin 10px;
+	//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати}
+
+	//КОНТАКТ-flex-контейнер
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px;
+		//border-top: 1px solid #999;
+		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати}
+	}
+
+	&__time,
+	&__office,
+	&__tiecher {
+		position: relative;
+		padding: 0px 5px;
+		font-size: 14px;
+		line-height: 18px;
+		color: #999;
+		//margin: 0 0 10px 0;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+	}
+
+	//КОНТАКТ-час
+	&__time {
+		flex: 0 0 $MB_subject-width;
+	}
+
+	//КОНТАКТ-офіс
+	&__office {
+		flex: 0 0 40px;
+	}
+
+	//КОНТАКТ-вчитель
+	&__tiecher {
+		flex: 1 1 auto;
 
 	}
 
 }
+
+
+//ЗАВДАННЯ-рамка-flex-елемент
+.task {
+	margin: 0 10px 0px 10px;
+	//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+	//ЗАВДАННЯ-коробка-flex-контейнер
+	&__item {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	&__add,
+	&__info {
+		position: relative;
+		padding: 5px 5px 0px 5px;
+		font-size: 16px;
+		line-height: 20px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	//ЗАВДАННЯ-додати
+	&__add {
+		flex: 0 0 $MB_subject-width;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 12px;
+			left: 13px;
+			width: 20px;
+			height: 2px;
+
+			background-color: #999;
+			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease 0s;
+			transform: scale(0);
+		}
+
+		&._active::before {
+			transform: scale(1);
+		}
+
+		&._active::after {
+			transform: scale(1);
+			transform: rotate(90deg);
+		}
+	}
+
+	//ЗАВДАНЯ-інформація-контейнер
+	&__info {
+		flex: 1 1 auto;
+	}
+
+	//ЗАВДАНЯ-заголовок 
+	&__title {
+		flex: 1 1 auto;
+
+		display: flex;
+		justify-content: space-between;
+		position: relative;
+		margin: 0px -5px 15px -5px;
+		padding: 0 40px 0 0px;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 8px;
+			width: 10px;
+			height: 2px;
+			background-color: #999;
+
+			transition: all 0.3s ease 0s;
+		}
+
+		&::before {
+			transform: rotate(40deg);
+			right: 15px;
+		}
+
+		&::after {
+			transform: rotate(-40deg);
+			right: 7px;
+		}
+
+		&._active {
+			&::before {
+				transform: rotate(-40deg);
+			}
+
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+	}
+
+	&__persent,
+	&__process {
+		padding: 0 5px;
+	}
+
+	&__process {}
+
+	&__persent {
+		flex: 0 0 35px;
+	}
+
+	&__process {
+		flex: 1 1 auto;
+		position: relative;
+		border-radius: 10px;
+		border: 1px solid #999;
+
+		& span {
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 0;
+			border-radius: 10px;
+			width: 30%;
+			height: 100%;
+			background-color: rgba(120, 185, 23, 0.5);
+
+		}
+	}
+
+	//СПИСОК ЗАВДАНЬ
+	&__list {
+		display: none;
+		//transform: scale(0);
+
+		&._active {
+			display: block;
+			//transform: scale(1);
+		}
+	}
+
+	//ЗАВДАННЯ
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px;
+	}
+
+	&__check,
+	&__text {
+		position: relative;
+		padding: 2px 5px 0 5px;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 10px 0;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+	}
+
+	//ЧЕКБОКС ЗАВДАННЯ
+	&__check {
+		flex: 0 0 30px;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+		}
+
+		&::before {
+			top: 0px;
+			left: 0px;
+			width: 24px;
+			height: 24px;
+			border-radius: 3px;
+			border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&::after {
+			top: 3px;
+			left: 3px;
+			width: 18px;
+			height: 18px;
+			border-radius: 3px;
+			border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&._active::after {
+			background-color: rgb(120, 185, 23);
+		}
+	}
+
+	//ТЕКСТ ЗАВДАННЯ
+	&__text {
+		flex: 1 1 auto;
+		color: #333;
+
+		//background-color: rgb(120, 185, 23);
+		&._active {
+			color: green;
+		}
+	}
+}
+
+
+
+
+//* КОНТЕНТ - PC
+
+$PC_content-padding: $PC_header-height;
+
+@media(min-width:767px) {
+
+	.content {
+		padding: $PC_content-padding 0 0 0;
+	}
+
+	.week {
+		flex-wrap: wrap;
+		//flex-direction: row;
+		//width: 1170px;
+
+	}
+
+	//ДЕНЬ ТИЖНЯ - коробка (рамка)
+	.weekday {
+		flex: 0 0 50%;
+	}
+
+
+}
+
+/*
+// КАРТКИ УРОКІВ
+.shedule {
+
+	// - контейнер
+	&__container {
+		padding-top: 60px; // відступ зверх від шапки 
+	}
+
+	// - flex-контейнер 
+	&__cards {
+		display: flex; // - flex-контейнер-КАРТКИ УРОКІВ -> КАРТКА УРОКІВ
+		flex-wrap: wrap;
+	}
+}
+
+// КАРТКА УРОКІВ
+.card {
+	flex: 1 1 auto; //- flex-елемент-КАРТКИ УРОКІВ -> КАРТКА УРОКІВ
+	margin: 0 0 5px 0;
+
+	// - рамка
+	&__lessons {
+		border: 1px solid #ddd; // колір, товщина 
+		border-radius: 5px; // зокруглення 
+		box-shadow: 0 0 20px #ddd; // тінь
+	}
+}
+
+
+// УРОК 
+$MOBILE_lesson_flex: 40px;
+
+.lesson {
+
+	// - контейнер
+	&__container {
+		padding: 11px 10px 10px 10px;
+	}
+}
+
+
+// ПРЕДМЕТ
+.subject {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #999;
+
+	&__row {
+		display: flex; // - flex-контейнер-УРОК-НАЗВА
+		justify-content: space-between;
+		margin: 0 -5px;
+	}
+
+
+	// ПРЕДМЕТ - НОМЕР
+	&__number {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-НАЗВА-номер
+		text-align: center;
+	}
+
+	// ПРЕДМЕТ - НАЗВА
+	&__name {
+		flex: 1 1 auto; // - flex-елемент-УРОК-НАЗВА-предмет
+	}
+
+	&__book {
+		align-self: flex-start;
+	}
+
+	&__number,
+	&__name,
+	&__book {
+		font-size: 24px;
+		padding: 0px 5px;
+	}
+}
+
+
+// ЗАВДАННЯ
+.task {
+	border-bottom: 1px solid #999;
+	margin: 0 0 10px 0;
+
+	&__item {
+
+		display: flex; // - flex-контейнер
+		justify-content: space-between;
+		margin: 0 -5px 10px -5px;
+		//z-index: 1;
+	}
+
+	// ЗАВДАННЯ - КЕРУВАННЯ
+	&__control {}
+
+	&__add,
+	&__title {
+		position: relative;
+		cursor: pointer;
+		padding: 0px 5px;
+		//	z-index: -1;
+	}
+
+	// ЗАВДАННЯ - ДОДАТИ
+	&__add {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 11px;
+			left: 13px;
+			width: 18px;
+			height: 2px;
+
+			background-color: #999;
+			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease 0s;
+		}
+
+		&::after {
+			transform: rotate(90deg);
+		}
+
+		&_active::before,
+		&_active:after {
+			display: none;
+		}
+
+	}
+
+	// ЗАВДАННЯ - ЗАГОЛОВОК
+	&__title {
+		flex: 1 1 auto; // - flex-елемент-УРОК-ЗАВДАННЯ-опис
+		font-size: 18px;
+		line-height: 22px;
+		color: #999;
+
+		position: relative;
+		cursor: pointer;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 10px;
+			width: 10px;
+			height: 1px;
+			background-color: #999;
+
+			transition: all 0.3s ease 0s;
+		}
+
+		&::before {
+			transform: rotate(40deg);
+			right: 10px;
+		}
+
+		&::after {
+			transform: rotate(-40deg);
+			right: 18px;
+		}
+
+		&_active {
+			&::before {
+				transform: rotate(-40deg);
+			}
+
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+
+	}
+
+	// ЗАВДАННЯ - СПИСОК
+	&__list {
+		//display: none;
+
+		//transform: scale(0) translate(0px, -50%);
+		//margin: -110px 0 0 0;
+	}
+
+	// ЗАВДАННЯ - ВІДМІТКА
+	&__check {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			transition: all 0.3s ease 0s;
+			z-index: -1; // скриває чекбокс під вспливаючим меню - LIFEHACK
+		}
+
+		&::before {
+			width: 24px; //$MOBILE_lesson_check-before_width;
+			height: 24px; //$MOBILE_lesson_check-before_height;
+			border-radius: 3px; //$MOBILE_lesson_check-before_radius;
+			top: 0px;
+			left: 11px;
+			background-color: #fff; //#bfc8c4;
+			border: 1px solid #999;
+			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+
+		&::after {
+			width: 18px; //$MOBILE_lesson_check-after_width-height;
+			height: 18px; //$MOBILE_lesson_check-after_width-height;
+			border-radius: 50%;
+			top: 3px;
+			left: 14px;
+			//border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&._active ::after {
+			background-color: #4fbb65;
+		}
+
+	}
+
+	// ЗАВДАННЯ - ТЕКСТ
+	&__text {
+		flex: 1 1 auto; // - flex-елемент-УРОК-ЗАВДАННЯ-опис
+	}
+
+	&__check,
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 0px 5px;
+	}
+}
+
+
+// КОНТАКТИ
+.contact {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	margin: 0 -5px;
+	z-index: -1;
+
+	&__info,
+	&__сommunicator {}
+
+	&__info {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+	}
+
+	&__office,
+	&__time {
+		color: #999;
+	}
+
+	&__сommunicator {
+		padding: 0 5px;
+		flex: 1 1 auto;
+
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px;
+	}
+
+	&__ticher,
+	&__links {
+		padding: 0 -5px;
+	}
+
+	&__ticher {
+		flex: 0 1 40%;
+		color: #999;
+	}
+
+	&__links {
+		flex: 1 1 auto;
+
+		display: flex;
+		justify-content: flex-end;
+		margin: -5px;
+	}
+
+	&__link {
+		padding: 5px;
+	}
+
+}
+*/

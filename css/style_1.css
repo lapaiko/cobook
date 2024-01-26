@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -197,6 +198,10 @@ body._active {
   overflow: hidden;
 }
 
+._lock {
+  overflow: hidden;
+}
+
 .wrapper {
   min-height: 100%;
   overflow: hidden;
@@ -222,6 +227,7 @@ body._active {
   width: 100%;
   height: 50px;
   background-color: #999;
+  z-index: 1;
 }
 
 .header::before {
@@ -349,143 +355,6 @@ body._active {
   color: #fff;
 }
 
-.content {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  background-color: #fff;
-  padding: 65px 0 0 0;
-  color: #333;
-}
-
-.content__body {
-  padding: 0 5px;
-}
-
-.add {
-  position: relative;
-  width: 30px;
-  height: 30px;
-  margin: 0 0 5px 0;
-  cursor: pointer;
-}
-
-.add::before, .add::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 10%;
-  top: 45%;
-  background-color: #999;
-}
-
-.add::after {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-}
-
-.add:hover::before, .add:hover::after {
-  background-color: #333;
-}
-
-.items__content {
-  padding: 0 5px;
-}
-
-.items__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 10px;
-  border-bottom: 1px solid #999;
-  margin: 0 0 15px 0;
-}
-
-.items__title {
-  font-size: 18px;
-}
-
-.items__conteiner {
-  margin: 0 20px;
-}
-
-.items__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 0 -15px;
-}
-
-.task__card {
-  padding: 10px 15px;
-  -webkit-box-shadow: 0 0 20px #ddd;
-          box-shadow: 0 0 20px #ddd;
-}
-
-.task__head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 0 0 10px 0;
-  border-bottom: 1px solid #aaa;
-  font-size: 18px;
-}
-
-.task__add {
-  width: 24px;
-  height: 24px;
-}
-
-.exercise__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -5px 10px -5px;
-}
-
-.exercise__check {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30px;
-          flex: 0 0 30px;
-  padding: 0 5px;
-  position: relative;
-}
-
-.exercise__check span {
-  display: block;
-  width: 24px;
-  height: 24px;
-  border: 1px solid #999;
-  background-color: greenyellow;
-}
-
-.exercise__text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  padding: 0 5px;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 18px;
-}
-
 @media (min-width: 767px) {
   .header {
     height: 70px;
@@ -540,12 +409,750 @@ body._active {
     text-transform: uppercase;
     color: #fff;
   }
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 50px 0 0 0;
+  border: 0px solid red;
+  position: relative;
+}
+
+.shedule {
+  padding: 10px 0;
+}
+
+.week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.weekday {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding: 0 5px;
+}
+
+.weekday__conteiner {
+  margin: 0 0 10px 0;
+  padding: 10px 10px 0 10px;
+  border: 1px solid #999;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.weekday__date {
+  font-size: 20px;
+  letter-spacing: 0.3px;
+  font-weight: 700;
+  border-bottom: 1px solid #999;
+  padding: 0 0 5px 0;
+  margin: 0 0 10px 0;
+}
+
+.subject__border {
+  margin: 0 0 10px 0;
+  border-bottom: 1px solid #999;
+}
+
+.description {
+  margin: 0 10px 0px 10px;
+}
+
+.description__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 -5px;
+}
+
+.description__number, .description__text, .description__communicator {
+  padding: 0px 5px;
+  font-size: 20px;
+}
+
+.description__number, .description__text {
+  padding: 5px 5px;
+}
+
+.description__number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46px;
+          flex: 0 1 46px;
+  text-align: center;
+}
+
+.description__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.description__communicator {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 156px;
+          flex: 1 1 156px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  margin: 0 -5px;
+}
+
+.description__list {
+  padding: 0 7px 0 20px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.description__button {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20px;
+          flex: 0 0 20px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 26px;
+}
+
+.description__button::before, .description__button::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  width: 10px;
+  height: 2px;
+  background-color: #999;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.description__button::before {
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+  top: 7px;
+}
+
+.description__button::after {
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+  top: 15px;
+}
+
+.description__button._active::before {
+  -webkit-transform: rotate(-130deg);
+          transform: rotate(-130deg);
+}
+
+.description__button._active::after {
+  -webkit-transform: rotate(130deg);
+          transform: rotate(130deg);
+}
+
+.description__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  overflow: hidden;
+  width: 0px;
+}
+
+.description__links._active {
+  width: 100%;
+}
+
+.description__link {
+  padding: 0 5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.description__link img {
+  display: block;
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 0 10px 7px 10px;
+}
+
+.contact__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.contact__time, .contact__office, .contact__tiecher {
+  position: relative;
+  padding: 0px 5px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #999;
+}
+
+.contact__time {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46px;
+          flex: 0 0 46px;
+}
+
+.contact__office {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+}
+
+.contact__tiecher {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.task {
+  margin: 0 10px 0px 10px;
+}
+
+.task__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.task__add, .task__info {
+  position: relative;
+  padding: 5px 5px 0px 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.task__add {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46px;
+          flex: 0 0 46px;
+}
+
+.task__add::before, .task__add::after {
+  content: "";
+  position: absolute;
+  top: 12px;
+  left: 13px;
+  width: 20px;
+  height: 2px;
+  background-color: #999;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+}
+
+.task__add._active::before {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.task__add._active::after {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.task__info {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.task__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+  margin: 0px -5px 15px -5px;
+  padding: 0 40px 0 0px;
+}
+
+.task__title::before, .task__title::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  width: 10px;
+  height: 2px;
+  background-color: #999;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.task__title::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  right: 15px;
+}
+
+.task__title::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  right: 7px;
+}
+
+.task__title._active::before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.task__title._active::after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
+.task__persent, .task__process {
+  padding: 0 5px;
+}
+
+.task__persent {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 35px;
+          flex: 0 0 35px;
+}
+
+.task__process {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid #999;
+}
+
+.task__process span {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+  width: 30%;
+  height: 100%;
+  background-color: rgba(120, 185, 23, 0.5);
+}
+
+.task__list {
+  display: none;
+}
+
+.task__list._active {
+  display: block;
+}
+
+.task__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px;
+}
+
+.task__check, .task__text {
+  position: relative;
+  padding: 2px 5px 0 5px;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0 0 10px 0;
+}
+
+.task__check {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30px;
+          flex: 0 0 30px;
+}
+
+.task__check::before, .task__check::after {
+  content: "";
+  position: absolute;
+}
+
+.task__check::before {
+  top: 0px;
+  left: 0px;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+.task__check::after {
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  border-radius: 3px;
+  border: 1px solid #999;
+  background-color: #fff;
+}
+
+.task__check._active::after {
+  background-color: #78b917;
+}
+
+.task__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  color: #333;
+}
+
+.task__text._active {
+  color: green;
+}
+
+@media (min-width: 767px) {
   .content {
-    padding: 85px 0 0 0;
+    padding: 70px 0 0 0;
   }
-  .content__body {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  .week {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .weekday {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
   }
 }
+
+/*
+// КАРТКИ УРОКІВ
+.shedule {
+
+	// - контейнер
+	&__container {
+		padding-top: 60px; // відступ зверх від шапки 
+	}
+
+	// - flex-контейнер 
+	&__cards {
+		display: flex; // - flex-контейнер-КАРТКИ УРОКІВ -> КАРТКА УРОКІВ
+		flex-wrap: wrap;
+	}
+}
+
+// КАРТКА УРОКІВ
+.card {
+	flex: 1 1 auto; //- flex-елемент-КАРТКИ УРОКІВ -> КАРТКА УРОКІВ
+	margin: 0 0 5px 0;
+
+	// - рамка
+	&__lessons {
+		border: 1px solid #ddd; // колір, товщина 
+		border-radius: 5px; // зокруглення 
+		box-shadow: 0 0 20px #ddd; // тінь
+	}
+}
+
+
+// УРОК 
+$MOBILE_lesson_flex: 40px;
+
+.lesson {
+
+	// - контейнер
+	&__container {
+		padding: 11px 10px 10px 10px;
+	}
+}
+
+
+// ПРЕДМЕТ
+.subject {
+	padding: 0 0 10px 0;
+	margin: 0 0 10px 0;
+	border-bottom: 1px solid #999;
+
+	&__row {
+		display: flex; // - flex-контейнер-УРОК-НАЗВА
+		justify-content: space-between;
+		margin: 0 -5px;
+	}
+
+
+	// ПРЕДМЕТ - НОМЕР
+	&__number {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-НАЗВА-номер
+		text-align: center;
+	}
+
+	// ПРЕДМЕТ - НАЗВА
+	&__name {
+		flex: 1 1 auto; // - flex-елемент-УРОК-НАЗВА-предмет
+	}
+
+	&__book {
+		align-self: flex-start;
+	}
+
+	&__number,
+	&__name,
+	&__book {
+		font-size: 24px;
+		padding: 0px 5px;
+	}
+}
+
+
+// ЗАВДАННЯ
+.task {
+	border-bottom: 1px solid #999;
+	margin: 0 0 10px 0;
+
+	&__item {
+
+		display: flex; // - flex-контейнер
+		justify-content: space-between;
+		margin: 0 -5px 10px -5px;
+		//z-index: 1;
+	}
+
+	// ЗАВДАННЯ - КЕРУВАННЯ
+	&__control {}
+
+	&__add,
+	&__title {
+		position: relative;
+		cursor: pointer;
+		padding: 0px 5px;
+		//	z-index: -1;
+	}
+
+	// ЗАВДАННЯ - ДОДАТИ
+	&__add {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 11px;
+			left: 13px;
+			width: 18px;
+			height: 2px;
+
+			background-color: #999;
+			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+			transition: all 0.3s ease 0s;
+		}
+
+		&::after {
+			transform: rotate(90deg);
+		}
+
+		&_active::before,
+		&_active:after {
+			display: none;
+		}
+
+	}
+
+	// ЗАВДАННЯ - ЗАГОЛОВОК
+	&__title {
+		flex: 1 1 auto; // - flex-елемент-УРОК-ЗАВДАННЯ-опис
+		font-size: 18px;
+		line-height: 22px;
+		color: #999;
+
+		position: relative;
+		cursor: pointer;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			top: 10px;
+			width: 10px;
+			height: 1px;
+			background-color: #999;
+
+			transition: all 0.3s ease 0s;
+		}
+
+		&::before {
+			transform: rotate(40deg);
+			right: 10px;
+		}
+
+		&::after {
+			transform: rotate(-40deg);
+			right: 18px;
+		}
+
+		&_active {
+			&::before {
+				transform: rotate(-40deg);
+			}
+
+			&::after {
+				transform: rotate(40deg);
+			}
+		}
+
+	}
+
+	// ЗАВДАННЯ - СПИСОК
+	&__list {
+		//display: none;
+
+		//transform: scale(0) translate(0px, -50%);
+		//margin: -110px 0 0 0;
+	}
+
+	// ЗАВДАННЯ - ВІДМІТКА
+	&__check {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+		position: relative;
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+			transition: all 0.3s ease 0s;
+			z-index: -1; // скриває чекбокс під вспливаючим меню - LIFEHACK
+		}
+
+		&::before {
+			width: 24px; //$MOBILE_lesson_check-before_width;
+			height: 24px; //$MOBILE_lesson_check-before_height;
+			border-radius: 3px; //$MOBILE_lesson_check-before_radius;
+			top: 0px;
+			left: 11px;
+			background-color: #fff; //#bfc8c4;
+			border: 1px solid #999;
+			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+		}
+
+		&::after {
+			width: 18px; //$MOBILE_lesson_check-after_width-height;
+			height: 18px; //$MOBILE_lesson_check-after_width-height;
+			border-radius: 50%;
+			top: 3px;
+			left: 14px;
+			//border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&._active ::after {
+			background-color: #4fbb65;
+		}
+
+	}
+
+	// ЗАВДАННЯ - ТЕКСТ
+	&__text {
+		flex: 1 1 auto; // - flex-елемент-УРОК-ЗАВДАННЯ-опис
+	}
+
+	&__check,
+	&__text {
+		font-size: 18px;
+		line-height: 22px;
+		padding: 0px 5px;
+	}
+}
+
+
+// КОНТАКТИ
+.contact {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 5px;
+	margin: 0 -5px;
+	z-index: -1;
+
+	&__info,
+	&__сommunicator {}
+
+	&__info {
+		flex: 0 0 $MOBILE_lesson_flex; // - flex-елемент-УРОК-ЗАВДАННЯ-відмітка
+	}
+
+	&__office,
+	&__time {
+		color: #999;
+	}
+
+	&__сommunicator {
+		padding: 0 5px;
+		flex: 1 1 auto;
+
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -5px;
+	}
+
+	&__ticher,
+	&__links {
+		padding: 0 -5px;
+	}
+
+	&__ticher {
+		flex: 0 1 40%;
+		color: #999;
+	}
+
+	&__links {
+		flex: 1 1 auto;
+
+		display: flex;
+		justify-content: flex-end;
+		margin: -5px;
+	}
+
+	&__link {
+		padding: 5px;
+	}
+
+}
+*/
