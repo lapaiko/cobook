@@ -349,20 +349,17 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 	}
 
 	//ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер
-	$MB_discription_flex-link: 24px*4+10px*5+10px;
-
 	&__communicator {
-		flex: 1 1 $MB_discription_flex-link;
+		flex: 1 1 auto;
 
 		display: flex;
 		justify-content: end;
 		margin: 0 -5px;
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
 	//ПРЕДМЕТ-ОПИС-комунікатори-перелік
 	&__list {
-		padding: 0 7px 0 20px;
+		padding: 0; //7px 0 20px;
 		position: relative;
 
 		display: flex;
@@ -371,11 +368,11 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 	}
 
 	&__button {
-		flex: 0 0 20px;
+		//flex: 0 0 20px;
 		position: relative;
 		top: 0;
 		left: 0;
-		width: 21px;
+		width: 15px;
 		height: 26px;
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 
@@ -383,7 +380,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		&::after {
 			content: "";
 			position: absolute;
-			left: 4px;
+			left: 0px;
 			width: 10px;
 			height: 2px;
 			background-color: #999;
@@ -414,13 +411,15 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 
 	//ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер
 	&__links {
+		flex: 1 1 auto;
+
 		display: flex;
 		justify-content: flex-end;
 
 		position: relative;
 		overflow: hidden;
 		width: 0px;
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+		//border: 1px solid green; // !!! монтажна рамка - після верстки прибрати
 
 		&._active {
 			width: 100%;
@@ -489,26 +488,21 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 }
 
-
-//ЗАВДАННЯ-рамка-flex-елемент
+//ЗАВДАННЯ-рамка
 .task {
 	margin: 0 10px 0px 10px;
-	//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 
-	//ЗАВДАННЯ-коробка-flex-контейнер
-	&__item {
+	//ЗАВДАННЯ-заголовок
+	&__title {
 		display: flex;
-		justify-content: space-between;
-		margin: 0 -5px;
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+		margin: 0 -5px 10px -5px;
 	}
 
 	&__add,
-	&__info {
+	&__do {
+		padding: 0 5px;
 		position: relative;
-		padding: 5px 5px 0px 5px;
-		font-size: 16px;
-		line-height: 20px;
+		height: 30px;
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
@@ -520,13 +514,12 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		&::after {
 			content: "";
 			position: absolute;
-			top: 12px;
-			left: 13px;
-			width: 20px;
+			top: 13px;
+			left: 10px;
+			width: 24px;
 			height: 2px;
 
 			background-color: #999;
-			//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 			transition: all 0.3s ease 0s;
 			transform: scale(0);
 		}
@@ -541,26 +534,38 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	//ЗАВДАНЯ-інформація-контейнер
-	&__info {
+	//ЗАВДАННЯ-виконання
+	&__do {
 		flex: 1 1 auto;
-	}
+		padding: 5px 40px 5px 5px;
 
-	//ЗАВДАНЯ-заголовок 
-	&__title {
-		flex: 1 1 auto;
+		&_progres {
+			position: relative;
 
-		display: flex;
-		justify-content: space-between;
-		position: relative;
-		margin: 0px -5px 15px -5px;
-		padding: 0 40px 0 0px;
+			border-radius: 10px;
+			border: 1px solid #999;
+			font-size: 16px;
+			text-align: center;
+			padding: 1px 0 0 0;
+
+
+			& span {
+				display: block;
+				position: absolute;
+				left: 0;
+				top: 0;
+				border-radius: 10px;
+				width: 30%;
+				height: 100%;
+				background-color: rgba(120, 185, 23, 0.5);
+			}
+		}
 
 		&::before,
 		&::after {
 			content: "";
 			position: absolute;
-			top: 8px;
+			top: 13px;
 			width: 10px;
 			height: 2px;
 			background-color: #999;
@@ -589,68 +594,274 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	&__persent,
-	&__process {
-		padding: 0 5px;
-	}
-
-	&__process {}
-
-	&__persent {
-		flex: 0 0 35px;
-	}
-
-	&__process {
-		flex: 1 1 auto;
-		position: relative;
-		border-radius: 10px;
-		border: 1px solid #999;
-
-		& span {
-			display: block;
-			position: absolute;
-			left: 0;
-			top: 0;
-			border-radius: 10px;
-			width: 30%;
-			height: 100%;
-			background-color: rgba(120, 185, 23, 0.5);
-
-		}
-	}
-
-	//СПИСОК ЗАВДАНЬ
+	//ЗАВДАННЯ-перелік
 	&__list {
 		display: none;
-		//transform: scale(0);
 
 		&._active {
 			display: block;
-			//transform: scale(1);
 		}
 	}
 
-	//ЗАВДАННЯ
-	&__row {
+	//ЗАВДАННЯ-зміст
+	&__item {
+		margin: 0 0 10px 0;
+	}
+
+	&__caption {
 		display: flex;
 		justify-content: space-between;
 		margin: 0 -5px;
+
+		&._active {
+			display: none;
+		}
+
+		&_check,
+		&_text,
+		&_edit {
+			padding: 0 5px;
+			position: relative;
+			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+		}
+
+		// ЗАВДАННЯ-відмітити
+		&_check {
+			flex: 0 0 $MB_subject-width;
+			position: relative;
+
+			&::before,
+			&::after {
+				content: "";
+				position: absolute;
+			}
+
+			// ЗАВДАННЯ-відмітити - рамка
+			&::before {
+				top: 0px;
+				left: 10px;
+				width: 24px;
+				height: 24px;
+				border-radius: 9px;
+				border: 1px solid #999;
+				background-color: #fff;
+			}
+
+			// ЗАВДАННЯ-відмітити - відівтка
+			&::after {
+				top: 3px;
+				left: 13px;
+				width: 18px;
+				height: 18px;
+				border-radius: 7px;
+				//border: 1px solid #999;
+				background-color: #fff;
+			}
+
+			&._active::after {
+				background-color: rgb(120, 185, 23);
+			}
+		}
+
+		&_text {
+			flex: 1 1 auto;
+			font-size: 16px;
+			line-height: 18px;
+			padding: 0 5px 5px 5px;
+
+			&._active {
+				color: green;
+			}
+		}
+
+		//ЗАВДАННЯ-редагувати
+		&_edit {
+			flex: 0 0 40px;
+			position: relative;
+
+			&::after,
+			&::before {
+				content: "";
+				background-color: #fff;
+			}
+
+			&::before,
+			&::after,
+			& span {
+				position: absolute;
+			}
+
+			//ЗАВДАННЯ-редагувати - рамка
+			&::before {
+				top: 0px;
+				left: 9px;
+				width: 24px;
+				height: 24px;
+				border-radius: 3px;
+				//border: 1px solid #999;
+			}
+
+			//ЗАВДАННЯ-редагувати - стрічка
+			&::after {
+				left: 13px;
+				top: 19px;
+				width: 15px;
+				height: 2px;
+				border: 1px solid #999;
+			}
+
+			//ЗАВДАННЯ-редагувати - пензлик
+			& span {
+				display: block;
+				left: 8px;
+				top: 4px;
+				width: 30px;
+				height: 10px;
+				border-bottom-left-radius: 50%;
+				border-top-left-radius: 50%;
+				transform: rotate(-45deg);
+				border: 3px solid #fff;
+				background-color: #777;
+			}
+		}
 	}
 
+	&__input {
+		display: none;
+
+		&._active {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 -5px 10px -5px;
+		}
+
+		&_delete,
+		&_text,
+		&_save {
+			padding: 0 5px;
+			position: relative;
+			//	border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+		}
+
+		// ЗАВДАННЯ-видалити
+		&_delete {
+			flex: 0 0 $MB_subject-width;
+			position: relative;
+
+			&::before,
+			&::after,
+			& span {
+				position: absolute;
+				border: 1px solid #999;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				top: 11px;
+				left: 7px;
+				width: 30px;
+				height: 2px;
+				border-radius: 3px;
+				background-color: #fff;
+			}
+
+			// ЗАВДАННЯ-видалити - хрестик
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			// ЗАВДАННЯ-видалити - хрестик
+			&::after {
+				transform: rotate(-45deg);
+			}
+
+			// ЗАВДАННЯ-видалити - рамка
+			& span {
+				//display: block;
+				//top: 0px;
+				//left: 10px;
+				//width: 24px;
+				//height: 24px;
+				//border-radius: 3px;
+			}
+		}
+
+		&_text {
+			flex: 1 1 auto;
+
+			& textarea {
+				font-size: 16px;
+				line-height: 18px;
+				width: 100%;
+				height: 60px;
+				padding: 2px 10px 2px 5px;
+				border: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
+
+			}
+		}
+
+		// ЗАВДАННЯ-записати
+		&_save {
+			flex: 0 0 40px;
+			flex: 0 0 40px;
+			font-size: 14px;
+			font-weight: 700;
+
+			&::before,
+			&::after,
+			& span {
+				position: absolute;
+				border: 1px solid #777;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+			}
+
+			//ЗАВДАННЯ-записати
+			&::before {
+				top: 0px;
+				left: 9px;
+				width: 24px;
+				height: 24px;
+				border-radius: 3px;
+				//background-color: #999;
+			}
+
+			//ЗАВДАННЯ-записати
+			&::after {
+				left: 14px;
+				top: 0px;
+				width: 14px;
+				height: 16px;
+				//background-color: #999;
+
+			}
+
+			& span {
+				display: block;
+				left: 17px;
+				top: 3px;
+				width: 5px;
+				height: 10px;
+				//background-color: #999;
+			}
+
+		}
+	}
+
+	/*
 	&__check,
 	&__text {
-		position: relative;
-		padding: 2px 5px 0 5px;
-		font-size: 16px;
-		line-height: 20px;
-		margin: 0 0 10px 0;
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
-
+		padding: 0 5px;
 	}
 
-	//ЧЕКБОКС ЗАВДАННЯ
 	&__check {
-		flex: 0 0 30px;
+		flex: 0 0 $MB_subject-width;
+		position: relative;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 
 		&::before,
 		&::after {
@@ -660,7 +871,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 		&::before {
 			top: 0px;
-			left: 0px;
+			left: 15px;
 			width: 24px;
 			height: 24px;
 			border-radius: 3px;
@@ -670,7 +881,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 		&::after {
 			top: 3px;
-			left: 3px;
+			left: 18px;
 			width: 18px;
 			height: 18px;
 			border-radius: 3px;
@@ -683,18 +894,87 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	//ТЕКСТ ЗАВДАННЯ
 	&__text {
 		flex: 1 1 auto;
-		color: #333;
+		font-size: 16px;
+		line-height: 18px;
+		position: relative;
 
-		//background-color: rgb(120, 185, 23);
 		&._active {
 			color: green;
 		}
-	}
-}
 
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	&__caption {
+		display: flex;
+		margin: 0 -5px;
+
+		//display: none;
+
+		&._action {
+			display: none;
+		}
+
+		&_text,
+		&_button-edit {
+			padding: 0 5px;
+		}
+
+		&_text {
+			flex: 1 1 auto;
+		}
+
+		&_button-edit {
+			flex: 0 0 30px;
+			position: relative;
+			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+			font-size: 14px;
+			font-weight: 700;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 3px;
+				width: 24px;
+				height: 24px;
+				border-radius: 3px;
+				border: 1px solid #999;
+				background-color: #fff;
+			}
+
+			&::after {
+				content: "T";
+				position: absolute;
+				font-size: 20px;
+				font-weight: 700;
+				left: 9px;
+				top: 4px;
+				//text-align: center;
+			}
+
+
+		}
+
+
+	}
+
+	textarea {
+		font-size: 16px;
+		line-height: 18px;
+		width: 100%;
+		height: 60px;
+		padding: 2px 10px 2px 5px;
+		border: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
+		display: none;
+
+		&._action {
+			display: block;
+		}
+	}*/
+}
 
 
 

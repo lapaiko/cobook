@@ -506,8 +506,8 @@ body._active {
 
 .description__communicator {
   -webkit-box-flex: 1;
-      -ms-flex: 1 1 156px;
-          flex: 1 1 156px;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -518,7 +518,7 @@ body._active {
 }
 
 .description__list {
-  padding: 0 7px 0 20px;
+  padding: 0;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -529,20 +529,17 @@ body._active {
 }
 
 .description__button {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 20px;
-          flex: 0 0 20px;
   position: relative;
   top: 0;
   left: 0;
-  width: 21px;
+  width: 15px;
   height: 26px;
 }
 
 .description__button::before, .description__button::after {
   content: "";
   position: absolute;
-  left: 4px;
+  left: 0px;
   width: 10px;
   height: 2px;
   background-color: #999;
@@ -573,6 +570,9 @@ body._active {
 }
 
 .description__links {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -642,23 +642,141 @@ body._active {
 
 .task {
   margin: 0 10px 0px 10px;
+  /*
+	&__check,
+	&__text {
+		padding: 0 5px;
+	}
+
+	&__check {
+		flex: 0 0 $MB_subject-width;
+		position: relative;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+
+		&::before,
+		&::after {
+			content: "";
+			position: absolute;
+		}
+
+		&::before {
+			top: 0px;
+			left: 15px;
+			width: 24px;
+			height: 24px;
+			border-radius: 3px;
+			border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&::after {
+			top: 3px;
+			left: 18px;
+			width: 18px;
+			height: 18px;
+			border-radius: 3px;
+			border: 1px solid #999;
+			background-color: #fff;
+		}
+
+		&._active::after {
+			background-color: rgb(120, 185, 23);
+		}
+	}
+
+	&__text {
+		flex: 1 1 auto;
+		font-size: 16px;
+		line-height: 18px;
+		position: relative;
+
+		&._active {
+			color: green;
+		}
+
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+	}
+
+	&__caption {
+		display: flex;
+		margin: 0 -5px;
+
+		//display: none;
+
+		&._action {
+			display: none;
+		}
+
+		&_text,
+		&_button-edit {
+			padding: 0 5px;
+		}
+
+		&_text {
+			flex: 1 1 auto;
+		}
+
+		&_button-edit {
+			flex: 0 0 30px;
+			position: relative;
+			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
+			font-size: 14px;
+			font-weight: 700;
+
+			&::before {
+				content: "";
+				position: absolute;
+				top: 0px;
+				left: 3px;
+				width: 24px;
+				height: 24px;
+				border-radius: 3px;
+				border: 1px solid #999;
+				background-color: #fff;
+			}
+
+			&::after {
+				content: "T";
+				position: absolute;
+				font-size: 20px;
+				font-weight: 700;
+				left: 9px;
+				top: 4px;
+				//text-align: center;
+			}
+
+
+		}
+
+
+	}
+
+	textarea {
+		font-size: 16px;
+		line-height: 18px;
+		width: 100%;
+		height: 60px;
+		padding: 2px 10px 2px 5px;
+		border: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
+		display: none;
+
+		&._action {
+			display: block;
+		}
+	}*/
 }
 
-.task__item {
+.task__title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 -5px;
+  margin: 0 -5px 10px -5px;
 }
 
-.task__add, .task__info {
+.task__add, .task__do {
+  padding: 0 5px;
   position: relative;
-  padding: 5px 5px 0px 5px;
-  font-size: 16px;
-  line-height: 20px;
+  height: 30px;
 }
 
 .task__add {
@@ -670,9 +788,9 @@ body._active {
 .task__add::before, .task__add::after {
   content: "";
   position: absolute;
-  top: 12px;
-  left: 13px;
-  width: 20px;
+  top: 13px;
+  left: 10px;
+  width: 24px;
   height: 2px;
   background-color: #999;
   -webkit-transition: all 0.3s ease 0s;
@@ -693,80 +811,23 @@ body._active {
           transform: rotate(90deg);
 }
 
-.task__info {
+.task__do {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 5px 40px 5px 5px;
 }
 
-.task__title {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  position: relative;
-  margin: 0px -5px 15px -5px;
-  padding: 0 40px 0 0px;
-}
-
-.task__title::before, .task__title::after {
-  content: "";
-  position: absolute;
-  top: 8px;
-  width: 10px;
-  height: 2px;
-  background-color: #999;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-.task__title::before {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-  right: 15px;
-}
-
-.task__title::after {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-  right: 7px;
-}
-
-.task__title._active::before {
-  -webkit-transform: rotate(-40deg);
-          transform: rotate(-40deg);
-}
-
-.task__title._active::after {
-  -webkit-transform: rotate(40deg);
-          transform: rotate(40deg);
-}
-
-.task__persent, .task__process {
-  padding: 0 5px;
-}
-
-.task__persent {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 35px;
-          flex: 0 0 35px;
-}
-
-.task__process {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+.task__do_progres {
   position: relative;
   border-radius: 10px;
   border: 1px solid #999;
+  font-size: 16px;
+  text-align: center;
+  padding: 1px 0 0 0;
 }
 
-.task__process span {
+.task__do_progres span {
   display: block;
   position: absolute;
   left: 0;
@@ -777,6 +838,39 @@ body._active {
   background-color: rgba(120, 185, 23, 0.5);
 }
 
+.task__do::before, .task__do::after {
+  content: "";
+  position: absolute;
+  top: 13px;
+  width: 10px;
+  height: 2px;
+  background-color: #999;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.task__do::before {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  right: 15px;
+}
+
+.task__do::after {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+  right: 7px;
+}
+
+.task__do._active::before {
+  -webkit-transform: rotate(-40deg);
+          transform: rotate(-40deg);
+}
+
+.task__do._active::after {
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+}
+
 .task__list {
   display: none;
 }
@@ -785,7 +879,11 @@ body._active {
   display: block;
 }
 
-.task__row {
+.task__item {
+  margin: 0 0 10px 0;
+}
+
+.task__caption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -795,58 +893,217 @@ body._active {
   margin: 0 -5px;
 }
 
-.task__check, .task__text {
+.task__caption._active {
+  display: none;
+}
+
+.task__caption_check, .task__caption_text, .task__caption_edit {
+  padding: 0 5px;
   position: relative;
-  padding: 2px 5px 0 5px;
-  font-size: 16px;
-  line-height: 20px;
-  margin: 0 0 10px 0;
 }
 
-.task__check {
+.task__caption_check {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30px;
-          flex: 0 0 30px;
+      -ms-flex: 0 0 46px;
+          flex: 0 0 46px;
+  position: relative;
 }
 
-.task__check::before, .task__check::after {
+.task__caption_check::before, .task__caption_check::after {
   content: "";
   position: absolute;
 }
 
-.task__check::before {
+.task__caption_check::before {
   top: 0px;
-  left: 0px;
+  left: 10px;
   width: 24px;
   height: 24px;
-  border-radius: 3px;
+  border-radius: 9px;
   border: 1px solid #999;
   background-color: #fff;
 }
 
-.task__check::after {
+.task__caption_check::after {
   top: 3px;
-  left: 3px;
+  left: 13px;
   width: 18px;
   height: 18px;
-  border-radius: 3px;
-  border: 1px solid #999;
+  border-radius: 7px;
   background-color: #fff;
 }
 
-.task__check._active::after {
+.task__caption_check._active::after {
   background-color: #78b917;
 }
 
-.task__text {
+.task__caption_text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  color: #333;
+  font-size: 16px;
+  line-height: 18px;
+  padding: 0 5px 5px 5px;
 }
 
-.task__text._active {
+.task__caption_text._active {
   color: green;
+}
+
+.task__caption_edit {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+  position: relative;
+}
+
+.task__caption_edit::after, .task__caption_edit::before {
+  content: "";
+  background-color: #fff;
+}
+
+.task__caption_edit::before, .task__caption_edit::after,
+.task__caption_edit span {
+  position: absolute;
+}
+
+.task__caption_edit::before {
+  top: 0px;
+  left: 9px;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+}
+
+.task__caption_edit::after {
+  left: 13px;
+  top: 19px;
+  width: 15px;
+  height: 2px;
+  border: 1px solid #999;
+}
+
+.task__caption_edit span {
+  display: block;
+  left: 8px;
+  top: 4px;
+  width: 30px;
+  height: 10px;
+  border-bottom-left-radius: 50%;
+  border-top-left-radius: 50%;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 3px solid #fff;
+  background-color: #777;
+}
+
+.task__input {
+  display: none;
+}
+
+.task__input._active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -5px 10px -5px;
+}
+
+.task__input_delete, .task__input_text, .task__input_save {
+  padding: 0 5px;
+  position: relative;
+}
+
+.task__input_delete {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 46px;
+          flex: 0 0 46px;
+  position: relative;
+}
+
+.task__input_delete::before, .task__input_delete::after,
+.task__input_delete span {
+  position: absolute;
+  border: 1px solid #999;
+}
+
+.task__input_delete::before, .task__input_delete::after {
+  content: "";
+  top: 11px;
+  left: 7px;
+  width: 30px;
+  height: 2px;
+  border-radius: 3px;
+  background-color: #fff;
+}
+
+.task__input_delete::before {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.task__input_delete::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.task__input_text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.task__input_text textarea {
+  font-size: 16px;
+  line-height: 18px;
+  width: 100%;
+  height: 60px;
+  padding: 2px 10px 2px 5px;
+  border: 1px solid #999;
+}
+
+.task__input_save {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 40px;
+          flex: 0 0 40px;
+  flex: 0 0 40px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.task__input_save::before, .task__input_save::after,
+.task__input_save span {
+  position: absolute;
+  border: 1px solid #777;
+}
+
+.task__input_save::before, .task__input_save::after {
+  content: "";
+}
+
+.task__input_save::before {
+  top: 0px;
+  left: 9px;
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+}
+
+.task__input_save::after {
+  left: 14px;
+  top: 0px;
+  width: 14px;
+  height: 16px;
+}
+
+.task__input_save span {
+  display: block;
+  left: 17px;
+  top: 3px;
+  width: 5px;
+  height: 10px;
 }
 
 @media (min-width: 767px) {
