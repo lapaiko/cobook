@@ -108,6 +108,14 @@ function task__delete() {
 	}
 }
 
+// Завдання - Прогрес виконання завдань
+function task__do_progres_start() {
+	const task__do_progres = document.getElementsByClassName("task__do_progres");
+	if (task__do_progres) {
+
+	}
+}
+
 // Завдання - Кнопка додати
 function task__add() {
 	const task__add = document.getElementsByClassName("task__add");

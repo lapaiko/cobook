@@ -4,7 +4,7 @@ var chLesson = {
 	'uklen': {
 		'lesson': 'Українська мова',
 		'teacher': 'Волк Світлана Віталіївна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -13,7 +13,7 @@ var chLesson = {
 	'uklit': {
 		'lesson': 'Українська література',
 		'teacher': 'Волк Світлана Віталіївна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -31,7 +31,7 @@ var chLesson = {
 	'eng': {
 		'lesson': 'Англійська мова',
 		'teacher': 'Задоянчук Оксана Василівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -49,7 +49,7 @@ var chLesson = {
 	'mus': {
 		'lesson': 'Музичне мистецтво',
 		'teacher': 'Кериченко Наталія Миколаївна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -76,7 +76,7 @@ var chLesson = {
 	'fiz': {
 		'lesson': 'Фізична культура',
 		'teacher': 'Стеблюк Олександра Вікторівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -85,7 +85,7 @@ var chLesson = {
 	'pain': {
 		'lesson': 'Образотворче мистецтво',
 		'teacher': 'Шклярук Світлана Олександрівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NjI0NTgxNzQ1ODc0',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -121,7 +121,7 @@ var chLesson = {
 	'tec': {
 		'lesson': 'Технологія',
 		'teacher': 'Іванова Алла Опанасівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -130,7 +130,7 @@ var chLesson = {
 	'nat': {
 		'lesson': 'Пізнаємо природу',
 		'teacher': 'Касяненко Світлана Володимирівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1',
 		'homework': '',
 		'meet': '',
 		'booklink': '',
@@ -139,7 +139,7 @@ var chLesson = {
 	'geog': {
 		'lesson': 'Географія',
 		'teacher': 'Тетяна Василівна',
-		'classroom': '',
+		'classroom': 'https://classroom.google.com/c/NjU4MjUzNzIwOTY2',
 		'homework': '',
 		'meet': '',
 		'booklink': 'https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html',
@@ -959,7 +959,14 @@ var chHomework = {
 		'tec': '||1. '
 	},
 	//3
-	'2024-01-29': { 'fiz': '||1. Форма', 'prog': '||1. ', 'eng': '||1. ', 'nat': '||1. ', 'uklen': '||1. ', 'uklen': '||1. ' },
+	'2024-01-29': {
+		'fiz': '||1. Форма',
+		'prog': '||1. Стор. 140, завд 4 за розділом Міркуємо|2. Стор. 147 завд. 9 за розділом Працюємо самотійно. Тема інструктаж з БЖД. Поняття елетронної таблиці. Табличні процеси, їхнє призначення. Середовище табличного процессора. Об/"єкти електронних таблиць-аркуш, клітинка. Введення, редагування даних основних типів. Діапазони клітинок, його виділення',
+		'eng': '||1. P.54, ex.7',
+		'nat': '||1. Параг. 28-30',
+		'uklen': '||1. Впр. 338',
+		'uklen': '||1. '
+	},
 	'2024-01-30': { 'pain': '||1. ', 'geog': '||1. ', 'uklen': '||1. ', 'hist': '||1. ', 'mat': '||1. ', 'eng': '||1. ', 'fiz': '||1. Форма' },
 	'2024-01-31': { 'mus': '||1. ', 'mat': '||1. ', 'hist': '||1. ', 'eng': '||1. ', 'fiz': '||1. Форма', 'uklit': '||1. ', 'uklit': '||1. ' },
 	'2024-02-01': { 'oz': '||1. ', 'zarlit': '||1. ', 'prog': '||1. ', 'mat': '||1. ', 'dram': '||1. ', 'geog': '||1. ' },

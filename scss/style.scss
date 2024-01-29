@@ -8,7 +8,7 @@ body {
 
 h1 {
 	font-size: 20px;
-	color: #ccc;
+	color: #fff;
 }
 
 h2 {
@@ -20,145 +20,208 @@ h3 {
 	font-size: 16px;
 }
 
-.title {
-	padding: 15px 10px;
-}
 
 .wrapper {
-	height: 100%;
-	//overflow: hidden;
-
-
 	display: flex;
+	justify-content: space-between;
 	flex-direction: column;
+	height: 100%;
+
+	width: 100%;
+	//border: 1px solid red;
 }
 
 .conteiner {
-	max-width: 850px;
-	margin: 0px auto;
+	max-width: 1150px;
+	margin: 0 auto;
+	//border: 1px solid red;
 }
 
 .header {
 	flex: 0 0 40px;
-	background: #444;
+	background-color: #555;
+	//border: 1px solid red;
+
+	&__title {
+		display: flex;
+		align-items: center;
+		height: 40px;
+		margin: 0 10px;
+	}
 }
 
 .content {
 	flex: 1 1 auto;
-
 }
 
+//Контейнер
 .shedule {
-	display: flex;
-	flex-wrap: wrap;
-	//justify-content: space-around;
+	padding: 10px 0 0 0;
+	margin: 0 10px;
 
-	//Карточка розкладу одного дня
-	&__days {
-		flex: 0 0 390px;
-
-		margin: 5px 0 5px 10px;
-
-		background: #fff;
-		border: 1px solid #aaa;
-		border-radius: 2px;
-		box-shadow: 0 0 10px #aaa
+	&__calendar {
+		display: flex;
+		//justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -5px;
 	}
 
-	&__card {
-		//border: 1px solid #ddd;
-		//border-radius: 2px;
-		//box-shadow: 0 0 10px #ddd;
+	&__day {
+		flex: 0 0 33.333%;
+		max-width: 33.333%;
+		//flex: 0 0 50%;
+		//max-width: 50%;
+
+		padding: 0 5px;
+		margin: 0 0 10px 0;
+		//border: 1px solid red;
 	}
 }
 
 .lesson {
-	display: flex;
-	padding: 10px;
-	border-bottom: 1px solid #ddd;
-	margin: 0 5px;
+	padding: 10px 10px 0 10px;
+	border: 1px solid #999;
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+	height: 100%;
 
-	&:first-child {
-		border-top: 1px solid #ddd;
+	&__date,
+	&__item {
+		margin: 0 0 10px 0;
+		border-bottom: 1px solid #999;
+		//border: 1px solid red;
 	}
 
-	&:last-child {
-		border-bottom: 0;
+	&__date {
+		font-size: 16px;
+		font-weight: 700;
+		padding: 5px 5px 10px 5px;
+	}
+
+	&__item {
+		padding: 0px 5px 0px 5px;
+
+		&:last-child {
+			border-bottom: 0px solid #999;
+		}
+
+		//font-size: 18px;
+		//border-bottom: 1px solid #999;
+	}
+}
+
+$Column_1: 45px;
+
+.task {
+	margin: 0 0 5px 0;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin: 0 -5px;
+		font-size: 18px;
+	}
+
+	//border: 1px solid red;
+
+	&__number,
+	&__name,
+	&__link {
+		//&__book {
+		padding: 0 5px;
+		//	border: 1px solid red;
 	}
 
 	&__number {
-		flex: 0 0 40px;
-
-		&_val {
-			text-align: center;
-			font-size: 20px;
-			margin: 0 0 10px;
-		}
-
-		&_time {
-			font-size: 12px;
-		}
+		flex: 0 0 $Column_1;
+		text-align: center;
 	}
 
-	&__caption {
+	&__name {
 		flex: 1 1 auto;
-
-		&_name {
-			font-size: 20px;
-			margin: 0 0 10px;
-		}
-
-		&_teacher {
-			font-size: 12px;
-			color: #777;
-		}
 	}
 
 	&__link {
-		flex: 0 0 70px;
+		cursor: pointer;
+		flex: 0 0 30px;
+	}
+
+	//&__book {		flex: 0 0 30px;	}
+}
+
+.contact {
+	margin: 0 0 10px 0;
+	//border: 1px solid red;
+
+	&__row {
 		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 12px;
+		margin: 0 -5px;
+		color: #555;
+	}
 
-		&_classroom {
-			margin: 10px 0 0 0px
-		}
+	&__time,
+	&__teacer,
+	&__link {
+		padding: 0 5px;
+		//	border: 1px solid red;
+	}
 
-		&_meet {
-			margin: 10px 0px 0 10px;
-		}
+	&__time {
+		flex: 0 0 $Column_1;
+	}
 
-		&_classroom,
-		&_meet {
-			& a img {
-				width: 30px;
-				border: 0;
+	&__teacer {
+		flex: 1 1 auto;
+	}
 
-			}
+	//&__link {		flex: 0 0 30px;	}
+}
+
+.footer {
+	flex: 0 0 30px;
+	background-color: #555;
+	//height: 30px;
+	//border: 1px solid red;
+
+	&__caption {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 30px;
+		margin: 0 10px;
+
+		font-size: 14px;
+		color: #fff;
+	}
+
+	//&__titel {		&_1 {}		&_2 {}	}
+}
+
+
+@media(max-width:850px) {
+
+	.shedule {
+		flex-wrap: wrap;
+
+		&__day {
+			flex: 1 1 50%;
+			max-width: 50%;
 		}
 	}
 }
 
-.footer {
-	flex: 0 0 20px;
-	background-color: #555;
+@media(max-width:450px) {
 
-	&__caption {
-		display: flex;
-	}
+	.shedule {
+		flex-wrap: wrap;
 
-	&__titel {
-
-		&_1,
-		&_2 {
-			color: #ccc;
-			text-align: center;
-		}
-
-		&_1 {
-			flex: 0 0 90px;
-		}
-
-		&_2 {
-			flex: 1 1 auto;
+		&__day {
+			flex: 1 1 100%;
+			max-width: 100%;
 		}
 	}
 }
