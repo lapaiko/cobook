@@ -141,7 +141,7 @@ var chLesson = {
 		'teacher': 'Тетяна Василівна',
 		'classroom': 'https://classroom.google.com/c/NjU4MjUzNzIwOTY2',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/pek-tivp-svp',
 		'booklink': 'https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html',
 		'book': ''
 	}
