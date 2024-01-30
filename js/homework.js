@@ -138,7 +138,7 @@ var chLesson = {
 	},
 	'geog': {
 		'lesson': 'Географія',
-		'teacher': 'Тетяна Василівна',
+		'teacher': 'Шитова Тетяна Василівна',
 		'classroom': 'https://classroom.google.com/c/NjU4MjUzNzIwOTY2',
 		'homework': '',
 		'meet': 'https://meet.google.com/pek-tivp-svp',
