@@ -87,7 +87,7 @@ var chLesson = {
 		'teacher': 'Шклярук Світлана Олександрівна',
 		'classroom': 'https://classroom.google.com/c/NjI0NTgxNzQ1ODc0',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/ftc-frif-bph',
 		'booklink': '',
 		'book': ''
 	},
