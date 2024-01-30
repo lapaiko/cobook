@@ -60,7 +60,7 @@ var chLesson = {
 		'teacher': 'Дідур Оксана Володимирівна',
 		'classroom': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/iqw-yvqg-fbh',
 		'booklink': '',
 		'book': ''
 	},

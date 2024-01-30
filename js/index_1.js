@@ -41,6 +41,29 @@ function task__do() {
 	}
 }
 
+// Завдання - Прогрес виконання завдань - Установка
+function set_task__do_progres(task__do_progres) {
+	let task__item = task__do_progres.parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0].getElementsByClassName("task__item");
+	let task_all = task__item.length, task_done = 0;
+	for (let j = 0; j < task_all; j++) {
+		let task__caption_check_classLis = task__item[j].getElementsByClassName("task__caption")[0].getElementsByClassName("task__caption_check")[0].classList;
+		if (task__caption_check_classLis.length == 2) { task_done++; }
+	}
+	task__do_progres.childNodes[0].data = task_done + " / " + task_all;
+	task__do_progres.childNodes[1].style.width = (task_done / task_all * 100) + "%";
+}
+
+// Завдання - Прогрес виконання завдань - Старт
+function task__do_progres_start() {
+	const task__do_progres = document.getElementsByClassName("task__do_progres");
+	if (task__do_progres) {
+		for (let i = 0; i < task__do_progres.length; i++) {
+			// Завдання - Прогрес виконання завдань - Установка
+			set_task__do_progres(task__do_progres[i]);
+		}
+	}
+}
+
 // Завдання - Кнопка відмітки
 function task__caption_check() {
 	const task__caption_check = document.getElementsByClassName("task__caption_check");
@@ -50,6 +73,12 @@ function task__caption_check() {
 				this.classList.toggle('_active');
 				let task__caption_text = this.parentNode.getElementsByClassName("task__caption_text")[0];
 				task__caption_text.classList.toggle('_active');
+
+				// Завдання - Прогрес виконання завдань - Установка
+				let task__do_progres = task__title.childNodes.getElementsByClassName("task__do")[0].childNodes.getElementsByClassName("task__do_progres")[0];
+				// Завдання - Прогрес виконання завдань - Установка
+				//set_task__do_progres(task__do_progres);
+
 			});
 		}
 	}
@@ -108,23 +137,6 @@ function task__delete() {
 	}
 }
 
-// Завдання - Прогрес виконання завдань
-function task__do_progres_start() {
-	const task__do_progres = document.getElementsByClassName("task__do_progres");
-	if (task__do_progres) {
-		for (let i = 0; i < task__do_progres.length; i++) {
-			let task__item = task__do_progres[i].parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0].getElementsByClassName("task__item");
-			let task_all = task__item.length, task_done = 0;
-			for (let j = 0; j < task_all; j++) {
-				let task__caption_check_classLis = task__item[j].getElementsByClassName("task__caption")[0].getElementsByClassName("task__caption_check")[0].classList;
-				if (task__caption_check_classLis.length == 2) { task_done++; }
-			}
-			task__do_progres[i].childNodes[0].data = task_done + " / " + task_all;
-			task__do_progres[i].childNodes[1].style.width = (task_done / task_all * 100) + "%";
-		}
-	}
-}
-
 // Завдання - Кнопка додати
 function task__add() {
 	const task__add = document.getElementsByClassName("task__add");
@@ -176,3 +188,13 @@ function Init() {
 }
 
 Init();
+
+
+//let task__item = task__do_progres[i].parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0].getElementsByClassName("task__item");
+//let task_all = task__item.length, task_done = 0;
+//for (let j = 0; j < task_all; j++) {
+//	let task__caption_check_classLis = task__item[j].getElementsByClassName("task__caption")[0].getElementsByClassName("task__caption_check")[0].classList;
+//	if (task__caption_check_classLis.length == 2) { task_done++; }
+//}
+//task__do_progres[i].childNodes[0].data = task_done + " / " + task_all;
+//task__do_progres[i].childNodes[1].style.width = (task_done / task_all * 100) + "%";
