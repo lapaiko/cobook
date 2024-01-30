@@ -42,7 +42,7 @@ var chLesson = {
 		'teacher': 'Карабаджак Ірина Анатоліївна',
 		'classroom': 'https://classroom.google.com/c/NTg5NDAyNzYyNDM5',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/hek-ofcw-uou',
 		'booklink': '',
 		'book': ''
 	},
