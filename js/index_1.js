@@ -113,23 +113,14 @@ function task__do_progres_start() {
 	const task__do_progres = document.getElementsByClassName("task__do_progres");
 	if (task__do_progres) {
 		for (let i = 0; i < task__do_progres.length; i++) {
-			//let task_list = task__do_progres[i].parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0];
-			//let task__item = task_list.getElementsByClassName("task__item");
 			let task__item = task__do_progres[i].parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0].getElementsByClassName("task__item");
-			let task_all = task__item.length;
-			let task_done = 0;
+			let task_all = task__item.length, task_done = 0;
 			for (let j = 0; j < task_all; j++) {
-				//let task__caption = task__item[j].getElementsByClassName("task__caption")[0];
-				//let task__caption_check = task__caption.getElementsByClassName("task__caption_check")[0];
-				let task__caption = task__item[j].getElementsByClassName("task__caption")[0];
-				let task__caption_check = task__caption.getElementsByClassName("task__caption_check")[0];
-				let classList = task__caption_check.classList;
-				if (classList.length == 2) { task_done++; }
+				let task__caption_check_classLis = task__item[j].getElementsByClassName("task__caption")[0].getElementsByClassName("task__caption_check")[0].classList;
+				if (task__caption_check_classLis.length == 2) { task_done++; }
 			}
-
-			let progres = task_done / task_all * 100;
 			task__do_progres[i].childNodes[0].data = task_done + " / " + task_all;
-			task__do_progres[i].childNodes[1].style.width = progres + "%";
+			task__do_progres[i].childNodes[1].style.width = (task_done / task_all * 100) + "%";
 		}
 	}
 }

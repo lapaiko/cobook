@@ -6,7 +6,7 @@ var chLesson = {
 		'teacher': 'Волк Світлана Віталіївна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/qte-iqxy-dcs',
 		'booklink': '',
 		'book': ''
 	},
