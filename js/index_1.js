@@ -74,10 +74,10 @@ function task__caption_check() {
 				let task__caption_text = this.parentNode.getElementsByClassName("task__caption_text")[0];
 				task__caption_text.classList.toggle('_active');
 
+				let task = this.parentNode.parentNode.parentNode.parentNode;
+				let task__do_progres = task.getElementsByClassName("task__title")[0].getElementsByClassName("task__do")[0].getElementsByClassName("task__do_progres")[0];
 				// Завдання - Прогрес виконання завдань - Установка
-				let task__do_progres = task__title.childNodes.getElementsByClassName("task__do")[0].childNodes.getElementsByClassName("task__do_progres")[0];
-				// Завдання - Прогрес виконання завдань - Установка
-				//set_task__do_progres(task__do_progres);
+				set_task__do_progres(task__do_progres);
 
 			});
 		}

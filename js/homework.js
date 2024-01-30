@@ -33,7 +33,7 @@ var chLesson = {
 		'teacher': 'Задоянчук Оксана Василівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/zvd-crbk-vgb',
 		'booklink': '',
 		'book': ''
 	},
