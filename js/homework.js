@@ -24,7 +24,7 @@ var chLesson = {
 		'teacher': 'Солодка Ірина Петрівна',
 		'classroom': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/try-xbxe-eax',
 		'booklink': '',
 		'book': ''
 	},
@@ -967,7 +967,15 @@ var chHomework = {
 		'uklen': '||1. Впр. 338',
 		'uklen': '||1. '
 	},
-	'2024-01-30': { 'pain': '||1. ', 'geog': '||1. ', 'uklen': '||1. ', 'hist': '||1. ', 'mat': '||1. ', 'eng': '||1. ', 'fiz': '||1. Форма' },
+	'2024-01-30': {
+		'pain': '||1. Домалювати міський пейзаж і скинути у класрум',
+		'geog': '||1. Параг.30 намалювати розу вітрів будь якого міста',
+		'uklen': '||1. Самостійна робота',
+		'hist': '||1. Зробити практичну',
+		'mat': '||1. Д.з. Виконати одну із вправ (або всі за бажанням)|https://www.matific.com/ua/uk/teachers/episodes/Worksheet05DecimalComparison4DecimalDigits|https://learningapps.org/view8907338|https://www.matific.com/ua/uk/teachers/episodes/CardsMultiplicationAsScalingNegativeWholeNumbersUpTo100',
+		'eng': '||1. P.56, ex.4',
+		'fiz': '||1. Форма'
+	},
 	'2024-01-31': { 'mus': '||1. ', 'mat': '||1. ', 'hist': '||1. ', 'eng': '||1. ', 'fiz': '||1. Форма', 'uklit': '||1. ', 'uklit': '||1. ' },
 	'2024-02-01': { 'oz': '||1. ', 'zarlit': '||1. ', 'prog': '||1. ', 'mat': '||1. ', 'dram': '||1. ', 'geog': '||1. ' },
 	'2024-02-02': { 'uklen': '||1. ', 'mat': '||1. ', 'mat': '||1. ', 'eng': '||1. ', 'nat': '||1. ', 'tec': '||1. ', 'tec': '||1. ' },

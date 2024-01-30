@@ -263,6 +263,8 @@ $PC_logo-size: $PC_header-height - 20px;
 		padding: 10px 10px 0 10px;
 		border: 1px solid #999; // рамка
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+		height: 100%;
 	}
 
 	//ДЕНЬ ТИЖНЯ - НАЗВА - коробка
@@ -272,8 +274,8 @@ $PC_logo-size: $PC_header-height - 20px;
 		//text-transform: uppercase;
 		font-weight: 700;
 		border-bottom: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
-		padding: 0 0 5px 0;
-		margin: 0 0 10px 0;
+		padding: 3px 0 10px 0;
+		//margin: 0 0 10px 0;
 	}
 
 	//ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка 
@@ -292,8 +294,9 @@ $PC_logo-size: $PC_header-height - 20px;
 
 	//ПРЕДМЕТ-рамка
 	&__border {
-		margin: 0 0 10px 0;
+		//margin: 0 0 10px 0;
 		border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
+
 		//border: 1px solid #ddd; // рамка ДАНИХ ПРЕДМЕТА
 		//box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	}
@@ -322,6 +325,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		justify-content: space-between;
 		align-items: center;
 		margin: 0 -5px;
+		padding: 10px 0 0 0;
 		//border-bottom: 1px solid #999;
 	}
 
@@ -496,6 +500,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 	&__title {
 		display: flex;
 		margin: 0 -5px 10px -5px;
+		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
 	&__add,

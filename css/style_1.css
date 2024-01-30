@@ -449,6 +449,7 @@ body._active {
   border: 1px solid #999;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  height: 100%;
 }
 
 .weekday__date {
@@ -456,12 +457,10 @@ body._active {
   letter-spacing: 0.3px;
   font-weight: 700;
   border-bottom: 1px solid #999;
-  padding: 0 0 5px 0;
-  margin: 0 0 10px 0;
+  padding: 3px 0 10px 0;
 }
 
 .subject__border {
-  margin: 0 0 10px 0;
   border-bottom: 1px solid #999;
 }
 
@@ -480,6 +479,7 @@ body._active {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 -5px;
+  padding: 10px 0 0 0;
 }
 
 .description__number, .description__text, .description__communicator {

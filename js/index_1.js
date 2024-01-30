@@ -42,7 +42,9 @@ function task__do() {
 }
 
 // Завдання - Прогрес виконання завдань - Установка
-function set_task__do_progres(task__do_progres) {
+function task__progres(task) {
+	let task__do_progres = task.getElementsByClassName("task__title")[0].getElementsByClassName("task__do")[0].getElementsByClassName("task__do_progres")[0];
+
 	let task__item = task__do_progres.parentNode.parentNode.parentNode.getElementsByClassName("task__list")[0].getElementsByClassName("task__item");
 	let task_all = task__item.length, task_done = 0;
 	for (let j = 0; j < task_all; j++) {
@@ -55,12 +57,10 @@ function set_task__do_progres(task__do_progres) {
 
 // Завдання - Прогрес виконання завдань - Старт
 function task__do_progres_start() {
-	const task__do_progres = document.getElementsByClassName("task__do_progres");
-	if (task__do_progres) {
-		for (let i = 0; i < task__do_progres.length; i++) {
-			// Завдання - Прогрес виконання завдань - Установка
-			set_task__do_progres(task__do_progres[i]);
-		}
+	const task = document.getElementsByClassName("task");
+	for (let i = 0; i < task.length; i++) {
+		// Завдання - Прогрес виконання завдань - Установка
+		task__progres(task[i]);
 	}
 }
 
@@ -75,10 +75,8 @@ function task__caption_check() {
 				task__caption_text.classList.toggle('_active');
 
 				let task = this.parentNode.parentNode.parentNode.parentNode;
-				let task__do_progres = task.getElementsByClassName("task__title")[0].getElementsByClassName("task__do")[0].getElementsByClassName("task__do_progres")[0];
 				// Завдання - Прогрес виконання завдань - Установка
-				set_task__do_progres(task__do_progres);
-
+				task__progres(task);
 			});
 		}
 	}
@@ -131,7 +129,11 @@ function task__delete() {
 			task__input_delete[i].addEventListener("click", function (e) {
 				let task__item = this.parentNode.parentNode;
 				let task__list = this.parentNode.parentNode.parentNode;
+				let task = task__list.parentNode;
+
 				task__list.removeChild(task__item);
+				// Завдання - Прогрес виконання завдань - Установка
+				task__progres(task);
 			});
 		}
 	}
@@ -155,6 +157,9 @@ function task__add() {
 				// Завдання - Кнопка додати
 				task__delete();
 
+				let task = task__list.parentNode;
+				// Завдання - Прогрес виконання завдань - Установка
+				task__progres(task);
 			});
 		}
 	}
