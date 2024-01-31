@@ -1,0 +1,146 @@
+{
+	"uklen": {
+		"lesson": "Українська мова",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMyODExMjEy",
+		"homework": "",
+		"meet": "https://meet.google.com/qte-iqxy-dcs",
+		"booklink": "",
+		"book": ""
+	},
+	"uklit": {
+		"lesson": "Українська література",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMzNDAzMDE0",
+		"homework": "",
+		"meet": "",
+		"booklink": "",
+		"book": ""
+	},
+	"zarlit": {
+		"lesson": "Зарубіжна література",
+		"teacher": "Солодка Ірина Петрівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzUwODYxNzA1",
+		"homework": "",
+		"meet": "https://meet.google.com/try-xbxe-eax",
+		"booklink": "",
+		"book": ""
+	},
+	"eng": {
+		"lesson": "Англійська мова",
+		"teacher": "Задоянчук Оксана Василівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5",
+		"homework": "",
+		"meet": "https://meet.google.com/zvd-crbk-vgb",
+		"booklink": "",
+		"book": ""
+	},
+	"mat": {
+		"lesson": "Математика",
+		"teacher": "Карабаджак Ірина Анатоліївна",
+		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
+		"homework": "",
+		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"booklink": "",
+		"book": ""
+	},
+	"mus": {
+		"lesson": "Музичне мистецтво",
+		"teacher": "Кериченко Наталія Миколаївна",
+		"classroom": "https://classroom.google.com/c/NTI2OTIxMzY1NjM3",
+		"homework": "",
+		"meet": "https://meet.google.com/nfa-usas-xei",
+		"booklink": "",
+		"book": ""
+	},
+	"hist": {
+		"lesson": "Історія",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw",
+		"homework": "",
+		"meet": "https://meet.google.com/iqw-yvqg-fbh",
+		"booklink": "",
+		"book": ""
+	},
+	"etika": {
+		"lesson": "Етика",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4",
+		"homework": "",
+		"meet": "https://meet.google.com/uob-rwtu-xgf",
+		"booklink": "",
+		"book": ""
+	},
+	"fiz": {
+		"lesson": "Фізична культура",
+		"teacher": "Стеблюк Олександра Вікторівна",
+		"classroom": "https://classroom.google.com/c/NTI3MjA4NzU0NjU1",
+		"homework": "",
+		"meet": "https://meet.google.com/jbg-aaqq-nbo",
+		"booklink": "",
+		"book": ""
+	},
+	"pain": {
+		"lesson": "Образотворче мистецтво",
+		"teacher": "Шклярук Світлана Олександрівна",
+		"classroom": "https://classroom.google.com/c/NjI0NTgxNzQ1ODc0",
+		"homework": "",
+		"meet": "https://meet.google.com/ftc-frif-bph",
+		"booklink": "",
+		"book": ""
+	},
+	"prog": {
+		"lesson": "Інформатика",
+		"teacher": "Литвинюк Тетяна Ігорівна",
+		"classroom": "https://classroom.google.com/c/NjUxMjkyMjA1ODgy",
+		"homework": "",
+		"meet": "https://meet.google.com/utt-pwfc-wzk",
+		"booklink": "https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html",
+		"book": ""
+	},
+	"dram": {
+		"lesson": "Драматургія і театр",
+		"teacher": "Рахнянська Наталія Федорівна",
+		"classroom": "https://classroom.google.com/c/NTI3MTI3NTg1MjMx",
+		"homework": "",
+		"meet": "",
+		"booklink": "",
+		"book": ""
+	},
+	"oz": {
+		"lesson": "Основи здоров\"я",
+		"teacher": "Щепанська Алла Борисівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDE1NTYzNDM2",
+		"homework": "",
+		"meet": "",
+		"booklink": "",
+		"book": ""
+	},
+	"tec": {
+		"lesson": "Технологія",
+		"teacher": "Іванова Алла Опанасівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTc3MDc3MTYz",
+		"homework": "",
+		"meet": "",
+		"booklink": "",
+		"book": ""
+	},
+	"nat": {
+		"lesson": "Пізнаємо природу",
+		"teacher": "Касяненко Світлана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDc1MDgxMzg1",
+		"homework": "",
+		"meet": "",
+		"booklink": "",
+		"book": ""
+	},
+	"geog": {
+		"lesson": "Географія",
+		"teacher": "Шитова Тетяна Василівна",
+		"classroom": "https://classroom.google.com/c/NjU4MjUzNzIwOTY2",
+		"homework": "",
+		"meet": "https://meet.google.com/pek-tivp-svp",
+		"booklink": "https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html",
+		"book": ""
+	}
+}

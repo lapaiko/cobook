@@ -1,0 +1,106 @@
+{
+	"2024-01-01_day": {
+		"str": {
+			"mo": [
+				"fiz",
+				"prog",
+				"eng",
+				"nat",
+				"uklen",
+				"uklen"
+			],
+			"tu": [
+				"pain",
+				"geog",
+				"uklen",
+				"hist",
+				"mat",
+				"eng",
+				"fiz"
+			],
+			"we": [
+				"mus",
+				"mat",
+				"hist",
+				"eng",
+				"fiz",
+				"uklit",
+				"uklit"
+			],
+			"th": [
+				"oz",
+				"zarlit",
+				"prog",
+				"mat",
+				"dram",
+				"geog"
+			],
+			"fr": [
+				"uklen",
+				"mat",
+				"mat",
+				"eng",
+				"nat",
+				"tec",
+				"tec"
+			],
+			"st": [
+				"-"
+			],
+			"su": [
+				"-"
+			]
+		},
+		"num": {
+			"1": [
+				"fiz",
+				"prog",
+				"eng",
+				"nat",
+				"uklen",
+				"uklen"
+			],
+			"2": [
+				"pain",
+				"geog",
+				"uklen",
+				"hist",
+				"mat",
+				"eng",
+				"fiz"
+			],
+			"3": [
+				"mus",
+				"mat",
+				"hist",
+				"eng",
+				"fiz",
+				"uklit",
+				"uklit"
+			],
+			"4": [
+				"oz",
+				"zarlit",
+				"prog",
+				"mat",
+				"dram",
+				"geog"
+			],
+			"5": [
+				"uklen",
+				"mat",
+				"mat",
+				"eng",
+				"nat",
+				"tec",
+				"tec"
+			],
+			"6": [
+				"-"
+			],
+			"7": [
+				"-"
+			]
+		}
+	}
+}

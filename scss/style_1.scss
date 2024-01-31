@@ -293,8 +293,8 @@ $PC_logo-size: $PC_header-height - 20px;
 		//text-transform: uppercase;
 		font-weight: 700;
 		border-bottom: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
-		padding: 13px 0 10px 0;
-		//	margin: 0 0 10px 0;
+		padding: 18px 0 15px 5px;
+		margin: 0 0 0px 0;
 	}
 
 	//ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка 
@@ -313,7 +313,7 @@ $PC_logo-size: $PC_header-height - 20px;
 
 	//ПРЕДМЕТ-рамка
 	&__border {
-		margin: 0 0 10px 0;
+		margin: 0 0 0px 0;
 		border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
 
 		&._border-without {

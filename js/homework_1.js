@@ -93,10 +93,10 @@ var chLesson = {
 	},
 	'prog': {
 		'lesson': 'Інформатика',
-		'teacher': 'Литвинюк Тетяна Ігорівна',//'Шевчук Андрій Григорович',
-		'classroom': 'https://classroom.google.com/c/NjUxMjkyMjA1ODgy',
+		'teacher': 'Гутова Валентина Миколаївна',//'Шевчук Андрій Григорович',
+		'classroom': '',
 		'homework': '',
-		'meet': 'https://meet.google.com/utt-pwfc-wzk',
+		'meet': '',
 		'booklink': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html',
 		'book': ''
 	},
@@ -976,7 +976,15 @@ var chHomework = {
 		'eng': '||1. P.56, ex.4',
 		'fiz': '||1. Форма'
 	},
-	'2024-01-31': { 'mus': '||1. ', 'mat': '||1. ', 'hist': '||1. ', 'eng': '||1. ', 'fiz': '||1. Форма', 'uklit': '||1. ', 'uklit': '||1. ' },
+	'2024-01-31': {
+		'mus': '||1. ',
+		'mat': '||1. ',
+		'hist': '||1. ',
+		'eng': '||1. ',
+		'fiz': '||1. Форма',
+		'uklit': '||1. ',
+		'uklit': '||1. '
+	},
 	'2024-02-01': { 'oz': '||1. ', 'zarlit': '||1. ', 'prog': '||1. ', 'mat': '||1. ', 'dram': '||1. ', 'geog': '||1. ' },
 	'2024-02-02': { 'uklen': '||1. ', 'mat': '||1. ', 'mat': '||1. ', 'eng': '||1. ', 'nat': '||1. ', 'tec': '||1. ', 'tec': '||1. ' },
 	//4
