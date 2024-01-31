@@ -15,7 +15,7 @@ var chLesson = {
 		'teacher': 'Волк Світлана Віталіївна',
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/zrm-ipgh-oxb',
 		'booklink': '',
 		'book': ''
 	},
