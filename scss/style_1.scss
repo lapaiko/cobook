@@ -243,24 +243,43 @@ $PC_logo-size: $PC_header-height - 20px;
 	padding: 10px 0; // внутрішній-верхній/нижній відступи РОЗКЛАДу у КОНТЕНТІ
 }
 
+
+
+.scrum {
+	margin: 0 0 20px 0;
+	padding: 0 0 10px 0;
+	border-bottom: 1px solid #999;
+
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
+}
+
+
 //ТИЖДЕНЬ - коробка 
 .week {
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	margin: 0 -5px;
+	&__row {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		margin: 0 -5px;
+	}
 }
 
 //ДЕНЬ ТИЖНЯ - коробка (рамка)
 .weekday {
 	flex: 1 1 100%;
 	padding: 0 5px;
+	margin: 0 0 10px 0; // зовнішні відступи 
 	//	border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 
 	//ДЕНЬ ТИЖНЯ - поля-контейнер
 	&__conteiner {
-		margin: 0 0 10px 0; // зовнішні відступи 
-		padding: 10px 10px 0 10px;
+		//margin: 0 0 0px 0; // зовнішні відступи 
+		padding: 0px 10px 0 10px;
 		border: 1px solid #999; // рамка
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
@@ -274,8 +293,8 @@ $PC_logo-size: $PC_header-height - 20px;
 		//text-transform: uppercase;
 		font-weight: 700;
 		border-bottom: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
-		padding: 3px 0 10px 0;
-		//margin: 0 0 10px 0;
+		padding: 13px 0 10px 0;
+		//	margin: 0 0 10px 0;
 	}
 
 	//ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка 
@@ -294,19 +313,13 @@ $PC_logo-size: $PC_header-height - 20px;
 
 	//ПРЕДМЕТ-рамка
 	&__border {
-		//margin: 0 0 10px 0;
+		margin: 0 0 10px 0;
 		border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
 
-		//border: 1px solid #ddd; // рамка ДАНИХ ПРЕДМЕТА
-		//box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+		&._border-without {
+			border: none; // рамка ДАНИХ ПРЕДМЕТА
+		}
 	}
-
-	//&__item {
-	//	border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
-	//	//	border: 1px solid #ddd; // рамка ДАНИХ ПРЕДМЕТА
-	//	//box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-	//	margin: 0 0 10px 0;
-	//}
 }
 
 
@@ -325,7 +338,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		justify-content: space-between;
 		align-items: center;
 		margin: 0 -5px;
-		padding: 10px 0 0 0;
+		padding: 8px 0 0 0;
 		//border-bottom: 1px solid #999;
 	}
 
@@ -611,6 +624,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 	//ЗАВДАННЯ-зміст
 	&__item {
 		margin: 0 0 10px 0;
+
 	}
 
 	&__caption {

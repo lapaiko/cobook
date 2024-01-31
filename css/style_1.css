@@ -424,7 +424,25 @@ body._active {
   padding: 10px 0;
 }
 
-.week {
+.scrum {
+  margin: 0 0 20px 0;
+  padding: 0 0 10px 0;
+  border-bottom: 1px solid #999;
+}
+
+.scrum__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+.week__row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -441,11 +459,11 @@ body._active {
       -ms-flex: 1 1 100%;
           flex: 1 1 100%;
   padding: 0 5px;
+  margin: 0 0 10px 0;
 }
 
 .weekday__conteiner {
-  margin: 0 0 10px 0;
-  padding: 10px 10px 0 10px;
+  padding: 0px 10px 0 10px;
   border: 1px solid #999;
   -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -457,11 +475,16 @@ body._active {
   letter-spacing: 0.3px;
   font-weight: 700;
   border-bottom: 1px solid #999;
-  padding: 3px 0 10px 0;
+  padding: 13px 0 10px 0;
 }
 
 .subject__border {
+  margin: 0 0 10px 0;
   border-bottom: 1px solid #999;
+}
+
+.subject__border._border-without {
+  border: none;
 }
 
 .description {
@@ -479,7 +502,7 @@ body._active {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 -5px;
-  padding: 10px 0 0 0;
+  padding: 8px 0 0 0;
 }
 
 .description__number, .description__text, .description__communicator {

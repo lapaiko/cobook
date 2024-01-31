@@ -51,7 +51,7 @@ var chLesson = {
 		'teacher': 'Кериченко Наталія Миколаївна',
 		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/nfa-usas-xei',
 		'booklink': '',
 		'book': ''
 	},
@@ -78,7 +78,7 @@ var chLesson = {
 		'teacher': 'Стеблюк Олександра Вікторівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/jbg-aaqq-nbo',
 		'booklink': '',
 		'book': ''
 	},
