@@ -166,7 +166,7 @@ function task__add() {
 }
 
 // Ініціація обєктів і запуск налаштування сторінки
-function Init() {
+function init_inteface() {
 	// Меню Бургер - Кнопка показати/приховти 
 	header__burger();
 	// Лінки - Кнопка показати/приховати
@@ -325,12 +325,12 @@ function Shedule() {
 }
 
 //Розклад уроків - Вивід
-Shedule();
+//Shedule();
 
 //Отримуємо домашні завданя
 //GetHomework();
 
 
-Init();
+//init_inteface();
 
 

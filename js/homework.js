@@ -105,7 +105,7 @@ var chLesson = {
 		'teacher': 'Рахнянська Наталія Федорівна',
 		'classroom': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx',
 		'homework': '',
-		'meet': '',
+		'meet': 'meet.google.com/ref-iyhu-bzk',
 		'booklink': '',
 		'book': ''
 	},
