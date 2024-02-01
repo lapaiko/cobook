@@ -202,17 +202,63 @@ function CardDay(day, cardslesson) {
 	cardday = cardday + '</div>';
 	cardday = cardday + '</div>';
 	cardday = cardday + '</div>';
-
-	//cardday = cardday + '<div class="shedule__day">';
-	//cardday = cardday + '<div class="lesson">';
-	//cardday = cardday + '<div class="lesson__date">' + day + '</div>';
-	//cardday = cardday + cardslesson;
-	//cardday = cardday + '</div>';
-	//cardday = cardday + '</div>';
 	return cardday;
 }
 
 function CardLesson(num, lesson, teacher, time, classroom, meet, book) {
+	var cardslesson = '';
+
+	cardslesson = cardslesson + '<div class="subject__conteiner">';
+	cardslesson = cardslesson + '<div class="subject__border">';
+	cardslesson = cardslesson + '<div class="description">';
+	cardslesson = cardslesson + '<div class="description__row">';
+	cardslesson = cardslesson + '<div class="description__number">' + num + '</div>';
+	cardslesson = cardslesson + '<div class="description__text">' + lesson + '</div>';
+	cardslesson = cardslesson + '<div class="description__communicator">';
+	cardslesson = cardslesson + '<div class="description__list">';
+	cardslesson = cardslesson + '<div class="description__button"></div>';
+	cardslesson = cardslesson + '<div class="description__links">';
+	cardslesson = cardslesson + '<div class="description__link">';
+	cardslesson = cardslesson + '<a href="' + book + '" target="_blank">';
+	cardslesson = cardslesson + '<img src="img/icon_1/book.png" alt=""></a>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '<div class="description__link">';
+	cardslesson = cardslesson + '<a href="' + meet + '" target="_blank">';
+	cardslesson = cardslesson + '<img src="img/icon_1/meet.png" alt=""></a>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '<div class="description__link">';
+	cardslesson = cardslesson + '<a href="' + classroom + '" target="_blank">';
+	cardslesson = cardslesson + '<img src="img/icon_1/classroom.png" alt=""></a>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '<div class="contact">';
+	cardslesson = cardslesson + '<div class="contact__row">';
+	cardslesson = cardslesson + '<div class="contact__time">' + time + '</div>';
+	cardslesson = cardslesson + '<div class="contact__tiecher">' + teacher + '</div>';
+	cardslesson = cardslesson + '<div class="contact__office">к.45</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '<div class="task">';
+	cardslesson = cardslesson + '<div class="task__title">';
+	cardslesson = cardslesson + '<div class="task__add _active"></div>';
+	cardslesson = cardslesson + '<div class="task__do"> ';
+	cardslesson = cardslesson + '<div class="task__do_progres">0 / 0<span></span></div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '<div class="task__list _active">';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+	cardslesson = cardslesson + '</div>';
+
+	return cardslesson;
+}
+
+function CardLesson_short(num, lesson, teacher, time, classroom, meet, book) {
 	var cardslesson = '';
 
 	cardslesson = cardslesson + '<div class="subject__conteiner">';
@@ -279,7 +325,7 @@ function Shedule() {
 }
 
 //Розклад уроків - Вивід
-//Shedule();
+Shedule();
 
 //Отримуємо домашні завданя
 //GetHomework();
