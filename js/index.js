@@ -12,7 +12,7 @@ function CardDay(day, cardslesson) {
 	return cardday;
 }
 
-function CardLesson(num, lesson, teacher, time, classroom, meet) {
+function CardLesson(num, lesson, teacher, time, classroom, meet, booklink) {
 	var cardslesson = '';
 
 	cardslesson = cardslesson + '<div class="lesson__item">';
@@ -20,14 +20,24 @@ function CardLesson(num, lesson, teacher, time, classroom, meet) {
 	cardslesson = cardslesson + '<div class="task__row">';
 	cardslesson = cardslesson + '<div class="task__number">' + num + '.</div>';
 	cardslesson = cardslesson + '<div class="task__name">' + lesson + '</div>';
-	cardslesson = cardslesson + '<div class="task__link">';
-	cardslesson = cardslesson + '<a href="' + classroom + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/classroom.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="task__link">';
-	cardslesson = cardslesson + '<a href="' + meet + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/meet.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
+	if (booklink != "-" && booklink != "") {
+		cardslesson = cardslesson + '<div class="task__link">';
+		cardslesson = cardslesson + '<a href="' + booklink + '" target="_blank">';
+		cardslesson = cardslesson + '<img src="img/icon_1/book.png" alt=""></a>';
+		cardslesson = cardslesson + '</div>';
+	}
+	if (classroom != "-" && classroom != "") {
+		cardslesson = cardslesson + '<div class="task__link">';
+		cardslesson = cardslesson + '<a href="' + classroom + '" target="_blank">';
+		cardslesson = cardslesson + '<img src="img/icon_1/classroom.png" alt=""></a>';
+		cardslesson = cardslesson + '</div>';
+	}
+	if (meet != "-" && meet != "") {
+		cardslesson = cardslesson + '<div class="task__link">';
+		cardslesson = cardslesson + '<a href="' + meet + '" target="_blank">';
+		cardslesson = cardslesson + '<img src="img/icon_1/meet.png" alt=""></a>';
+		cardslesson = cardslesson + '</div>';
+	}
 	cardslesson = cardslesson + '</div>';
 	cardslesson = cardslesson + '</div>';
 	cardslesson = cardslesson + '<div class="contact">';
@@ -52,8 +62,9 @@ function Shedule() {
 		for (let l = 0; l < arSсhedule[d].length; l++) {
 			let num = l + 1, idLesson = arSсhedule[d][l], Lesson = chLesson[idLesson];
 			let lesson = Lesson.lesson, teacher = Lesson.teacher, classroom = Lesson.classroom, meet = Lesson.meet;
+			let booklink = Lesson.booklink;
 			let time = arTime[l];
-			lessons = lessons + CardLesson(num, lesson, teacher, time, classroom, meet);
+			lessons = lessons + CardLesson(num, lesson, teacher, time, classroom, meet, booklink);
 		}
 		// Формуємо карточку одного дня
 		let nmWeek = arWeek[d];

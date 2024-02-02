@@ -52,8 +52,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
 		'homework': '',
 		'meet': 'https://meet.google.com/nfa-usas-xei',
-		'booklink': '',
-		'book': ''
+		'booklink': '-',
+		'book': '-'
 	},
 	'hist': {
 		'lesson': 'Історія',
@@ -70,8 +70,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4',
 		'homework': '',
 		'meet': 'https://meet.google.com/uob-rwtu-xgf',
-		'booklink': '',
-		'book': ''
+		'booklink': '-',
+		'book': '-'
 	},
 	'fiz': {
 		'lesson': 'Фізична культура',
@@ -79,8 +79,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
 		'homework': '',
 		'meet': 'https://meet.google.com/jbg-aaqq-nbo',
-		'booklink': '',
-		'book': ''
+		'booklink': '-',
+		'book': '-'
 	},
 	'pain': {
 		'lesson': 'Образотворче мистецтво',
@@ -106,8 +106,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx',
 		'homework': '',
 		'meet': 'meet.google.com/ref-iyhu-bzk',
-		'booklink': '',
-		'book': ''
+		'booklink': '-',
+		'book': '-'
 	},
 	'oz': {
 		'lesson': 'Основи здоров\'я',
