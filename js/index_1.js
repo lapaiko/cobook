@@ -1,8 +1,9 @@
 
 // -4 ТИЖДЕНЬ - коробка
 function week__row() {
-	var send = SJAXtext('php/indexmaket.php?Action=week__row&date_shedule=2024-01');
-	let week__row = document.getElementsByClassName("week__row")[0];
+	let dt = '2024-01-01'
+	let send = SJAXtext('php/indexmaket.php?Action=week__row&week__row_date=2024-01-01');
+	//let week__row = document.getElementsByClassName("week__row")[0];
 
 	week__row.innerHTML = send;
 }
@@ -10,7 +11,8 @@ function week__row() {
 //*****************************************************************************************************************************
 //** -1 Контент: завантаження головного вікна                                                                                   **
 function init() {
-	var snd = SJAXtext('php/indexmaket.php?Action=init');
+
+	week__row();
 
 	Shedule();
 

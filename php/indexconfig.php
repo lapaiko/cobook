@@ -1,7 +1,7 @@
 <?php
 
 	// -3 ДЕНЬ ТИЖНЯ - коробка (рамка)
-	function weekday($day, $subject__conteiner) 
+	function weekday_maket($day, $subject__conteiner) 
 	{
 		$weekday = '<div class="weekday">';
 		$weekday.= '<div class="weekday__conteiner">';
@@ -15,7 +15,7 @@
 	}
 
 	// -2 ПРЕДМЕТ-контейнер
-	function subject__conteiner($chsubject)
+	function subject__conteiner_maket($chsubject)
 	{
 		$subject__conteiner='<div class="subject__conteiner">';
 		$subject__conteiner.='<div class="subject__border">';
