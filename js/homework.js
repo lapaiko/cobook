@@ -7,8 +7,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy',
 		'homework': '',
 		'meet': 'https://meet.google.com/qte-iqxy-dcs',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html',
+		'book': 'https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html'
 	},
 	'uklit': {
 		'lesson': 'Українська література',
@@ -16,8 +16,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
 		'homework': '',
 		'meet': 'https://meet.google.com/zrm-ipgh-oxb',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html',
+		'book': 'https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html'
 	},
 	'zarlit': {
 		'lesson': 'Зарубіжна література',
@@ -25,8 +25,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1',
 		'homework': '',
 		'meet': 'https://meet.google.com/try-xbxe-eax',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html',
+		'book': 'https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html'
 	},
 	'eng': {
 		'lesson': 'Англійська мова',
@@ -34,8 +34,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5',
 		'homework': '',
 		'meet': 'https://meet.google.com/zvd-crbk-vgb',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html',
+		'book': 'https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html'
 	},
 	'mat': {
 		'lesson': 'Математика',
@@ -43,8 +43,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTg5NDAyNzYyNDM5',
 		'homework': '',
 		'meet': 'https://meet.google.com/hek-ofcw-uou',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html',
+		'book': 'https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html'
 	},
 	'mus': {
 		'lesson': 'Музичне мистецтво',
@@ -61,8 +61,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw',
 		'homework': '',
 		'meet': 'https://meet.google.com/iqw-yvqg-fbh',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html',
+		'book': 'https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html'
 	},
 	'etika': {
 		'lesson': 'Етика',
@@ -88,8 +88,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NjI0NTgxNzQ1ODc0',
 		'homework': '',
 		'meet': 'https://meet.google.com/ftc-frif-bph',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html',
+		'book': 'https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html'
 	},
 	'prog': {
 		'lesson': 'Інформатика',
@@ -98,7 +98,7 @@ var chLesson = {
 		'homework': '',
 		'meet': 'https://meet.google.com/utt-pwfc-wzk',
 		'booklink': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html',
-		'book': ''
+		'book': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html'
 	},
 	'dram': {
 		'lesson': 'Драматургія і театр',
@@ -115,7 +115,7 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
 		'homework': '',
 		'meet': 'https://meet.google.com/uzn-bwwf-zti',
-		'booklink': '',
+		'booklink': 'https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html',
 		'book': 'https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html'
 	},
 	'tec': {
@@ -124,7 +124,7 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
 		'homework': '',
 		'meet': 'https://meet.google.com/uwr-mgkm-nnc',
-		'booklink': '',
+		'booklink': 'https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html',
 		'book': 'https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html'
 	},
 	'nat': {
@@ -133,8 +133,8 @@ var chLesson = {
 		'classroom': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1',
 		'homework': '',
 		'meet': 'https://meet.google.com/hfo-mkni-seh',
-		'booklink': '',
-		'book': ''
+		'booklink': 'https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html',
+		'book': 'https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html'
 	},
 	'geog': {
 		'lesson': 'Географія',
@@ -143,7 +143,7 @@ var chLesson = {
 		'homework': '',
 		'meet': 'https://meet.google.com/pek-tivp-svp',
 		'booklink': 'https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html',
-		'book': ''
+		'book': 'https://pidruchnyk.com.ua/2629-geografiia-6-klas-kobernik-2023.html'
 	}
 };
 
