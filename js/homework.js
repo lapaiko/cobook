@@ -125,7 +125,7 @@ var chLesson = {
 		'homework': '',
 		'meet': 'https://meet.google.com/uwr-mgkm-nnc',
 		'booklink': '',
-		'book': ''
+		'book': 'https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html'
 	},
 	'nat': {
 		'lesson': 'Пізнаємо природу',
