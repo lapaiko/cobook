@@ -1,6 +1,7 @@
 <?php
 
-	// -3 ДЕНЬ ТИЖНЯ - коробка (рамка)
+	// -4 ТИЖДЕНЬ - коробка	
+	// -4.1 ДЕНЬ ТИЖНЯ - коробка (рамка)
 	function weekday_maket($day, $subject__conteiner) 
 	{
 		$weekday = '<div class="weekday">';
@@ -13,30 +14,30 @@
 		$weekday.= '</div>';
 		return $weekday;
 	}
-
-	// -2 ПРЕДМЕТ-контейнер
-	function subject__conteiner_maket($chsubject)
+	// -4 ТИЖДЕНЬ - коробка	
+	// -4.2 ПРЕДМЕТ-контейнер
+	function subject__conteiner_maket($chhedule, $chlesson)
 	{
 		$subject__conteiner='<div class="subject__conteiner">';
 		$subject__conteiner.='<div class="subject__border">';
 		$subject__conteiner.='<div class="description">';
 		$subject__conteiner.='<div class="description__row">';
-		$subject__conteiner.='<div class="description__number">' + $chsubject.num + '</div>';
-		$subject__conteiner.='<div class="description__text">' + $chsubject.lesson + '</div>';
+		$subject__conteiner.='<div class="description__number">' + $chhedule.num + '</div>';
+		$subject__conteiner.='<div class="description__text">' + $chlesson.lesson + '</div>';
 		$subject__conteiner.='<div class="description__communicator">';
 		$subject__conteiner.='<div class="description__list">';
 		$subject__conteiner.='<div class="description__button"></div>';
 		$subject__conteiner.='<div class="description__links">';
 		$subject__conteiner.='<div class="description__link">';
-		$subject__conteiner.='<a href="' + $chsubject.book + '" target="_blank">';
+		$subject__conteiner.='<a href="' + $chlesson.book + '" target="_blank">';
 		$subject__conteiner.='<img src="img/icon_1/book.png" alt=""></a>';
 		$subject__conteiner.='</div>';
 		$subject__conteiner.='<div class="description__link">';
-		$subject__conteiner.='<a href="' + $chsubject.meet + '" target="_blank">';
+		$subject__conteiner.='<a href="' + $chlesson.meet + '" target="_blank">';
 		$subject__conteiner.='<img src="img/icon_1/meet.png" alt=""></a>';
 		$subject__conteiner.='</div>';
 		$subject__conteiner.='<div class="description__link">';
-		$subject__conteiner.='<a href="' + $chsubject.classroom + '" target="_blank">';
+		$subject__conteiner.='<a href="' + $chlesson.classroom + '" target="_blank">';
 		$subject__conteiner.='<img src="img/icon_1/classroom.png" alt=""></a>';
 		$subject__conteiner.='</div>';
 		$subject__conteiner.='</div>';
@@ -46,8 +47,8 @@
 		$subject__conteiner.='</div>';
 		$subject__conteiner.='<div class="contact">';
 		$subject__conteiner.='<div class="contact__row">';
-		$subject__conteiner.='<div class="contact__time">' + $chsubject.time + '</div>';
-		$subject__conteiner.='<div class="contact__tiecher">' + $chsubject.teacher + '</div>';
+		$subject__conteiner.='<div class="contact__time">' + $chhedule.time + '</div>';
+		$subject__conteiner.='<div class="contact__tiecher">' + $chlesson.teacher + '</div>';
 		$subject__conteiner.='<div class="contact__office">к.45</div>';
 		$subject__conteiner.='</div>';
 		$subject__conteiner.='</div>';

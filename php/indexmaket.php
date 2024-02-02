@@ -8,41 +8,29 @@
 
 	// -4 ТИЖДЕНЬ - коробка
 	if($Action=="week__row"){
-		$week__row_date = $_GET['week__row_date'];
-
-		$weekday_data="";
-		$lesson_data_json=lesson_json();
-		$lesson_data_json['uklen']: {
-			"lesson"
-		//foreach ($lesson_data_json as $subject =>$chsubject){
-		//	foreach ($chsubject as $item => $data)
-		//	{
-		//		$weekday_data.= "$item = $data >";
-		//	}
-		//}
-
-		//$shedule_=""; $dt="2024-01-01";
-		//$shedule_data_json=shedule_json("2024-01-01");
-		//foreach( $shedule_data_json as $shedule_data=>$chshedule )
-		//{
-		//	$arr=$chshedule['shedule'];
-		//	
-		//	$shedule_.="'$type'";
-		//}
-		//let $arrshedule=$shedule_data_json['shedule'];
-		//let $arrtime=$shedule_data_json.time;
-		//for($i=0; $i<=$arrshedule.length; $i++) {
-		//}
-
-
-		// -3 ДЕНЬ ТИЖНЯ - коробка (рамка)
-		//weekday_maket($day, $subject__conteiner);
+		$language = $_GET['language'];
+		$week_date = $_GET['week_date'];		
+		$week_row="";
 		
-		// -2 ПРЕДМЕТ-контейнер
-		//subject__conteiner($chsubject);
+		$chweekday=weekday($language); 		// -4.3 - Дні тижня
+		$arrweekday=$chweekday['weekday'];
+		$chlesson=lesson_json();	// -4.1 Предмет, викладач, лінки (комунікатори/книжки)
+		
+		$shedule_data_json=shedule_json($week_date); //-4.2 Розклад уроків
+		$arrshedule=$shedule_data_json['shedule'];
+		$arrtime=$shedule_data_json['time'];
+		
+		for($d=0; $d<$arrshedule.length; $d++)			{	
+			$subject__conteiner="";
+			for($i=0; $i<$arrshedule[$d].length; $i++){
+				$chhedule['num'] = $i+1;
+				$chhedule['time'] = $arrtime[$d][$i];	
+				$subject__conteiner.= subject__conteiner_maket($chhedule, $chlesson);
+			}
+			$week_row.= weekday_maket($arrweekday[$d], $subject__conteiner); 
+		}
 
-
-		echo "- $shedule_ -";
+		echo $week_row;
 	}
 
 

@@ -123,7 +123,7 @@ var chLesson = {
 		'teacher': 'Іванова Алла Опанасівна',
 		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
 		'homework': '',
-		'meet': '',
+		'meet': 'https://meet.google.com/uwr-mgkm-nnc',
 		'booklink': '',
 		'book': ''
 	},
@@ -1001,12 +1001,10 @@ var chHomework = {
 	},
 	'2024-02-02': {
 		'uklen': '||1. Стор. 156 Впр. 352 (кругле, осінній-у множині поставити у середньому роді і провідміняти)',
-		'mat': '||1. ',
-		'mat': '||1. ',
-		'eng': '||1. ',
-		'nat': '||1. ',
-		'tec': '||1. ',
-		'tec': '||1. '
+		'mat': '||1. Перейти за посиланням і переглянути відео-урок https://www.youtube.com/watch?v=diwp4qcmep4 Усі розв\'язані приклади у відео в рубриці "Працюємо разом" записати в зошит.',
+		'eng': '||1. P.44 ex.1,2(WB)',
+		'nat': '||1. Параг. 31, 32 - опрацювати|2. Сотр. 145, завд.5|3. Стор.150 завд.4',
+		'tec': '||1. Проектування виробів https://naurok.com.ua/test/6-klas_proektuvannya-virobiv-2525177.html'
 	},
 	//4
 	'2024-02-05': { 'fiz': '||1. Форма', 'prog': '||1. ', 'eng': '||1. ', 'nat': '||1. ', 'uklen': '||1. ', 'uklen': '||1. ' },
