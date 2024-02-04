@@ -1,4 +1,4 @@
-// Меню Бургер - Кнопка показати/приховти 
+// m.1.0 МЕНЮ - кнопка БУРГЕР
 function header__burger() {
 	const header__burger = document.querySelector('.header__burger');
 	const header__menu = document.querySelector('.header__menu');
@@ -11,7 +11,19 @@ function header__burger() {
 	}
 }
 
-// Лінки - Кнопка показати/приховати
+//********************************************************************
+// m.2.0 РОЗКЛАД НА ТИЖДЕНЬ - елемент
+function week__row() {
+	let week__row = document.getElementsByClassName("week__row")[0];
+	let send = SJAXtext('php/indexmaket.php?Action=week__row&week_date=2024-01-01&language=uk');
+
+	let task_json = SJAXtext('php/indexmaket.php?Action=task_json');
+
+	week__row.innerHTML = send;
+}
+
+
+// m.3.0 ПРЕДМЕТ-ОПИС-комунікатори - кнопка згорнути/розгорнути
 function description__button() {
 	const description__button = document.getElementsByClassName("description__button");
 	if (description__button) {
@@ -25,7 +37,7 @@ function description__button() {
 	}
 }
 
-// Завдання - Кнопка показати/приховати
+// m.4.0 ЗАВДАННЯ - список завдань - показати/приховати
 function task__do() {
 	const task__do = document.getElementsByClassName("task__do");
 	if (task__do) {
@@ -41,7 +53,7 @@ function task__do() {
 	}
 }
 
-// Завдання - Прогрес виконання завдань - Установка
+// m.5.0 ЗАВДАННЯ - прогрес виконання - статус
 function task__progres(task) {
 	let task__do_progres = task.getElementsByClassName("task__title")[0].getElementsByClassName("task__do")[0].getElementsByClassName("task__do_progres")[0];
 
@@ -55,16 +67,16 @@ function task__progres(task) {
 	task__do_progres.childNodes[1].style.width = (task_done / task_all * 100) + "%";
 }
 
-// Завдання - Прогрес виконання завдань - Старт
+// m.5.0 ЗАВДАННЯ - прогрес виконання - старт
 function task__do_progres_start() {
 	const task = document.getElementsByClassName("task");
 	for (let i = 0; i < task.length; i++) {
-		// Завдання - Прогрес виконання завдань - Установка
+		// m.5.0 ЗАВДАННЯ - прогрес виконання - статус
 		task__progres(task[i]);
 	}
 }
 
-// Завдання - Кнопка відмітки
+// m.6.0 ЗАВДАННЯ - чекбокс ВИКОНАНО
 function task__caption_check() {
 	const task__caption_check = document.getElementsByClassName("task__caption_check");
 	if (task__caption_check) {
@@ -75,14 +87,14 @@ function task__caption_check() {
 				task__caption_text.classList.toggle('_active');
 
 				let task = this.parentNode.parentNode.parentNode.parentNode;
-				// Завдання - Прогрес виконання завдань - Установка
+				// 5.0 ЗАВДАННЯ - прогрес виконання - статус
 				task__progres(task);
 			});
 		}
 	}
 }
 
-// Завдання - Кнопка редагувати
+// m.7.0 ЗАВДАННЯ - кнопка редагувати
 function task__caption_edit() {
 	const task__caption_edit = document.getElementsByClassName("task__caption_edit");
 	if (task__caption_edit) {
@@ -102,7 +114,7 @@ function task__caption_edit() {
 	}
 }
 
-// Завдання - Кнопка зберегти
+// m.8.0 ЗАВДАННЯ - кнопка записати
 function task__input_save() {
 	const task__input_save = document.getElementsByClassName("task__input_save");
 	if (task__input_save) {
@@ -121,7 +133,7 @@ function task__input_save() {
 	}
 }
 
-// Завдання - Кнопка додати
+// m.9.0 ЗАВДАННЯ - кнопка видалити
 function task__delete() {
 	const task__input_delete = document.getElementsByClassName("task__input_delete");
 	if (task__input_delete) {
@@ -132,14 +144,14 @@ function task__delete() {
 				let task = task__list.parentNode;
 
 				task__list.removeChild(task__item);
-				// Завдання - Прогрес виконання завдань - Установка
+				// m.5.0 ЗАВДАННЯ - прогрес виконання - статус
 				task__progres(task);
 			});
 		}
 	}
 }
 
-// Завдання - Кнопка додати
+// m.10.0 ЗАВДАННЯ - кнопка ДОДАТИ
 function task__add() {
 	const task__add = document.getElementsByClassName("task__add");
 	if (task__add) {
@@ -148,189 +160,47 @@ function task__add() {
 				let task__list = this.parentNode.parentNode.getElementsByClassName("task__list")[0];
 				let task_new = '<div class="task__item"><div class="task__caption"><div class="task__caption_check"></div><div class="task__caption_text">Параг. стор. впр.</div><div class="task__caption_edit"><span></span></div></div><div class="task__input"><div class="task__input_delete"><span></span></div><div class="task__input_text"><textarea></textarea></div><div class="task__input_save"><span></span></div></div></div>';
 				task__list.innerHTML = task__list.innerHTML + task_new;
-				// Завдання - Кнопка відмітки
+				// m.6.0 ЗАВДАННЯ - чекбокс ВИКОНАНО
 				task__caption_check();
-				// Завдання - Кнопка редагувати
+				// m.7.0 ЗАВДАННЯ - кнопка редагувати
 				task__caption_edit();
-				// Завдання - Кнопка зберегти
+				// m.8.0 ЗАВДАННЯ - кнопка записати
 				task__input_save();
-				// Завдання - Кнопка додати
+				// m.9.0 ЗАВДАННЯ - кнопка видалити
 				task__delete();
 
+
 				let task = task__list.parentNode;
-				// Завдання - Прогрес виконання завдань - Установка
+				// m.5.0 ЗАВДАННЯ - прогрес виконання - статус
 				task__progres(task);
 			});
 		}
 	}
 }
 
-// Ініціація обєктів і запуск налаштування сторінки
+
+// m.1.0 МЕНЮ_ПРЕДМЕТ-ОПИС_ЗАВДАННЯ - присвоєння подій обєктам інтерфейсу
 function init_inteface() {
-	// Меню Бургер - Кнопка показати/приховти 
+
+	// m.1.0 МЕНЮ - кнопка БУРГЕР
 	header__burger();
-	// Лінки - Кнопка показати/приховати
+	// m.3.0 ПРЕДМЕТ-ОПИС-комунікатори - кнопка згорнути/розгорнути
 	description__button();
-	// Завдання - Кнопка показати/приховати
+	// m.4.0 ЗАВДАННЯ - список завдань - показати/приховати
 	task__do();
 
-	// Завдання - Кнопка відмітки
+	// m.6.0 ЗАВДАННЯ - чекбокс ВИКОНАНО
 	task__caption_check();
-	// Завдання - Кнопка редагувати
+	// m.7.0 ЗАВДАННЯ - кнопка редагувати
 	task__caption_edit();
-	// Завдання - Кнопка зберегти
+	// m.8.0 ЗАВДАННЯ - кнопка записати
 	task__input_save();
-	// Завдання - Кнопка додати
+	// m.9.0 ЗАВДАННЯ - кнопка видалити
 	task__delete();
 
-
-	// Завдання - Прогрес виконання завдань
+	// m.5.0 ЗАВДАННЯ - прогрес виконання - старт
 	task__do_progres_start();
 
-	// Завдання - Кнопка додати
+	// m.0.0 ЗАВДАННЯ - кнопка ДОДАТИ
 	task__add();
-
 }
-
-function CardDay(day, cardslesson) {
-	let cardday = '';
-	cardday = cardday + '<div class="weekday">';
-	cardday = cardday + '<div class="weekday__conteiner">';
-	cardday = cardday + '<div class="weekday__date">' + day + '</div>';
-	cardday = cardday + '<div class="weekday__subject">';
-	cardday = cardday + cardslesson;
-	cardday = cardday + '</div>';
-	cardday = cardday + '</div>';
-	cardday = cardday + '</div>';
-	return cardday;
-}
-
-function CardLesson(num, lesson, teacher, time, classroom, meet, book) {
-	var cardslesson = '';
-
-	cardslesson = cardslesson + '<div class="subject__conteiner">';
-	cardslesson = cardslesson + '<div class="subject__border">';
-	cardslesson = cardslesson + '<div class="description">';
-	cardslesson = cardslesson + '<div class="description__row">';
-	cardslesson = cardslesson + '<div class="description__number">' + num + '</div>';
-	cardslesson = cardslesson + '<div class="description__text">' + lesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__communicator">';
-	cardslesson = cardslesson + '<div class="description__list">';
-	cardslesson = cardslesson + '<div class="description__button"></div>';
-	cardslesson = cardslesson + '<div class="description__links">';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + book + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/book.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + meet + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/meet.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + classroom + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/classroom.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="contact">';
-	cardslesson = cardslesson + '<div class="contact__row">';
-	cardslesson = cardslesson + '<div class="contact__time">' + time + '</div>';
-	cardslesson = cardslesson + '<div class="contact__tiecher">' + teacher + '</div>';
-	cardslesson = cardslesson + '<div class="contact__office">к.45</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="task">';
-	cardslesson = cardslesson + '<div class="task__title">';
-	cardslesson = cardslesson + '<div class="task__add _active"></div>';
-	cardslesson = cardslesson + '<div class="task__do"> ';
-	cardslesson = cardslesson + '<div class="task__do_progres">0 / 0<span></span></div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="task__list _active">';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-
-	return cardslesson;
-}
-
-function CardLesson_short(num, lesson, teacher, time, classroom, meet, book) {
-	var cardslesson = '';
-
-	cardslesson = cardslesson + '<div class="subject__conteiner">';
-	cardslesson = cardslesson + '<div class="subject__border">';
-	cardslesson = cardslesson + '<div class="description">';
-	cardslesson = cardslesson + '<div class="description__row">';
-	cardslesson = cardslesson + '<div class="description__number">' + num + '</div>';
-	cardslesson = cardslesson + '<div class="description__text">' + lesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__communicator">';
-	cardslesson = cardslesson + '<div class="description__list">';
-	cardslesson = cardslesson + '<div class="description__button"></div>';
-	cardslesson = cardslesson + '<div class="description__links">';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + book + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/book.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + meet + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/meet.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="description__link">';
-	cardslesson = cardslesson + '<a href="' + classroom + '" target="_blank">';
-	cardslesson = cardslesson + '<img src="img/icon_1/classroom.png" alt=""></a>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '<div class="contact">';
-	cardslesson = cardslesson + '<div class="contact__row">';
-	cardslesson = cardslesson + '<div class="contact__time">' + time + '</div>';
-	cardslesson = cardslesson + '<div class="contact__tiecher">' + teacher + '</div>';
-	cardslesson = cardslesson + '<div class="contact__office">к.45</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-	cardslesson = cardslesson + '</div>';
-
-
-	return cardslesson;
-}
-
-//Розклад уроків - Вивід
-function Shedule() {
-	let week__row = document.getElementsByClassName("week__row")[0];
-	//	for (let idU in chPanda.chName)
-	let shedule = '', lessons = '';
-	// Формуємо карточки за весь тиждень
-	for (let d = 0; d < arSсhedule.length; d++) {
-		lessons = '';
-		// Формуємо карточку уроків одного дня
-		for (let l = 0; l < arSсhedule[d].length; l++) {
-			let num = l + 1, idLesson = arSсhedule[d][l], Lesson = chLesson[idLesson];
-			let lesson = Lesson.lesson, teacher = Lesson.teacher, classroom = Lesson.classroom, meet = Lesson.meet, book = Lesson.book;
-			let time = arTime[l];
-			lessons = lessons + CardLesson(num, lesson, teacher, time, classroom, meet, book);
-		}
-		// Формуємо карточку одного дня
-		let nmWeek = arWeek[d];
-		shedule = shedule + CardDay(nmWeek, lessons);
-	}
-	week__row.innerHTML = shedule;
-}
-
-//Розклад уроків - Вивід
-//Shedule();
-
-//Отримуємо домашні завданя
-//GetHomework();
-
-
-//init_inteface();
-
-

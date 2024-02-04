@@ -259,8 +259,10 @@ $PC_logo-size: $PC_header-height - 20px;
 }
 
 
-//ТИЖДЕНЬ - коробка 
+//РОЗКЛАД НА ТИЖДЕНЬ - контейнер
 .week {
+
+	//РОЗКЛАД НА ТИЖДЕНЬ - елемент
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -269,14 +271,14 @@ $PC_logo-size: $PC_header-height - 20px;
 	}
 }
 
-//ДЕНЬ ТИЖНЯ - коробка (рамка)
+//РОЗКЛАД НА ДЕНЬ - контейнер
 .weekday {
 	flex: 1 1 100%;
 	padding: 0 5px;
 	margin: 0 0 10px 0; // зовнішні відступи 
 	//	border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 
-	//ДЕНЬ ТИЖНЯ - поля-контейнер
+	//РОЗКЛАД НА ДЕНЬ - елемент
 	&__conteiner {
 		//margin: 0 0 0px 0; // зовнішні відступи 
 		padding: 0px 10px 0 10px;
@@ -286,7 +288,7 @@ $PC_logo-size: $PC_header-height - 20px;
 		height: 100%;
 	}
 
-	//ДЕНЬ ТИЖНЯ - НАЗВА - коробка
+	//РОЗКЛАД НА ДЕНЬ - день тижня
 	&__date {
 		font-size: 20px;
 		letter-spacing: 0.3px;
@@ -297,21 +299,21 @@ $PC_logo-size: $PC_header-height - 20px;
 		margin: 0 0 0px 0;
 	}
 
-	//ДЕНЬ ТИЖНЯ - ПЕРЕЛІК ПРЕДМЕТІВ - коробка 
+	//РОЗКЛАД НА ДЕНЬ - контейнер
 	&__subject {
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 }
 
-//ПРЕДМЕТ
+//ПРЕДМЕТ - контейнер
 .subject {
 
-	//ПРЕДМЕТ-контейнер	
+	//ПРЕДМЕТ - контейнер	
 	&__conteiner {
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
-	//ПРЕДМЕТ-рамка
+	//ПРЕДМЕТ - елемент
 	&__border {
 		margin: 0 0 0px 0;
 		border-bottom: 1px solid #999; // рамка ДАНИХ ПРЕДМЕТА
@@ -328,11 +330,11 @@ $PS_subject-width: $MB_subject-width;
 
 $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 
-//ПРЕДМЕТ-ОПИС-контейнер 
+//ПРЕДМЕТ-ОПИС - контейнер 
 .description {
 	margin: 0 10px $MB_task_margin 10px;
 
-	//ПРЕДМЕТ-ОПИС-рамка-flex-контейнер
+	//ПРЕДМЕТ-ОПИС - елемент
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -360,12 +362,12 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		text-align: center;
 	}
 
-	//ПРЕДМЕТ-ОПИС-назва
+	//ПРЕДМЕТ-ОПИС - назва
 	&__text {
 		flex: 1 1 auto;
 	}
 
-	//ПРЕДМЕТ-ОПИС-комунікатори-контейнер-flex-контейнер
+	//ПРЕДМЕТ-ОПИС-комунікатори - контейнер
 	&__communicator {
 		flex: 1 1 auto;
 
@@ -374,7 +376,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		margin: 0 -5px;
 	}
 
-	//ПРЕДМЕТ-ОПИС-комунікатори-перелік
+	//ПРЕДМЕТ-ОПИС-комунікатори - елемент
 	&__list {
 		padding: 0; //7px 0 20px;
 		position: relative;
@@ -384,6 +386,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
+	//ПРЕДМЕТ-ОПИС-комунікатори - кнопка згорнути/розгорнути
 	&__button {
 		//flex: 0 0 20px;
 		position: relative;
@@ -426,7 +429,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		}
 	}
 
-	//ПРЕДМЕТ-ОПИС-лінки-коробка-flex-контейнер
+	//ПРЕДМЕТ-ОПИС-лінки - елемент
 	&__links {
 		flex: 1 1 auto;
 
@@ -443,7 +446,7 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		}
 	}
 
-	//ПРЕДМЕТ-ОПИС-ЛІНК
+	//ПРЕДМЕТ-ОПИС-лінк
 	&__link {
 		padding: 0 5px;
 		align-self: center;
@@ -457,14 +460,14 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 	}
 }
 
-//КОНТАКТ-контейнер
+//КОНТАКТИ - контейнер
 $MB_contact-margin: $MB_task_margin + 7px;
 
 .contact {
 	margin: 0 10px $MB_contact-margin 10px;
 	//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати}
 
-	//КОНТАКТ-flex-контейнер
+	//КОНТАКТИ - елемент
 	&__row {
 		display: flex;
 		justify-content: space-between;
@@ -487,17 +490,17 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		//box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 	}
 
-	//КОНТАКТ-час
+	//КОНТАК - час
 	&__time {
 		flex: 0 0 $MB_subject-width;
 	}
 
-	//КОНТАКТ-офіс
+	//КОНТАКТ - офіс
 	&__office {
 		flex: 0 0 40px;
 	}
 
-	//КОНТАКТ-вчитель
+	//КОНТАКТ - вчитель
 	&__tiecher {
 		flex: 1 1 auto;
 
@@ -505,11 +508,11 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 }
 
-//ЗАВДАННЯ-рамка
+//ЗАВДАННЯ - елемен
 .task {
 	margin: 0 10px 0px 10px;
 
-	//ЗАВДАННЯ-заголовок
+	//ЗАВДАННЯ - заголовок
 	&__title {
 		display: flex;
 		margin: 0 -5px 10px -5px;
@@ -524,7 +527,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 	}
 
-	//ЗАВДАННЯ-додати
+	//ЗАВДАННЯ - кнопка ДОДАТИ
 	&__add {
 		flex: 0 0 $MB_subject-width;
 
@@ -552,7 +555,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	//ЗАВДАННЯ-виконання
+	//ЗАВДАННЯ - список завдань - показати/приховати
 	&__do {
 		flex: 1 1 auto;
 		padding: 5px 40px 5px 5px;
@@ -612,7 +615,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	//ЗАВДАННЯ-перелік
+	//ЗАВДАННЯ-СПИСОК - контенер
 	&__list {
 		display: none;
 
@@ -621,7 +624,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		}
 	}
 
-	//ЗАВДАННЯ-зміст
+	//ЗАВДАННЯ - міст
 	&__item {
 		margin: 0 0 10px 0;
 
@@ -644,7 +647,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 		}
 
-		// ЗАВДАННЯ-відмітити
+		// ЗАВДАННЯ - чекбокс ВИКОНАНО
 		&_check {
 			flex: 0 0 $MB_subject-width;
 			position: relative;
@@ -655,7 +658,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				position: absolute;
 			}
 
-			// ЗАВДАННЯ-відмітити - рамка
+			// ЗАВДАННЯ - чекбокс ВИКОНАНО
 			&::before {
 				top: 0px;
 				left: 10px;
@@ -666,7 +669,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				background-color: #fff;
 			}
 
-			// ЗАВДАННЯ-відмітити - відівтка
+			// ЗАВДАННЯ - чекбокс ВИКОНАНО
 			&::after {
 				top: 3px;
 				left: 13px;
@@ -694,7 +697,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			}
 		}
 
-		//ЗАВДАННЯ-редагувати
+		//ЗАВДАННЯ - кнопка редагувати
 		&_edit {
 			flex: 0 0 40px;
 			position: relative;
@@ -711,7 +714,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				position: absolute;
 			}
 
-			//ЗАВДАННЯ-редагувати - рамка
+			//ЗАВДАННЯ - кнопка редагувати
 			&::before {
 				top: 0px;
 				left: 9px;
@@ -721,7 +724,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				//border: 1px solid #999;
 			}
 
-			//ЗАВДАННЯ-редагувати - стрічка
+			//ЗАВДАННЯ - кнопка редагувати
 			&::after {
 				left: 13px;
 				top: 19px;
@@ -730,7 +733,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				border: 1px solid #999;
 			}
 
-			//ЗАВДАННЯ-редагувати - пензлик
+			//ЗАВДАННЯ - кнопка редагувати - пензлик
 			& span {
 				display: block;
 				left: 8px;
@@ -763,7 +766,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			//	border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
 		}
 
-		// ЗАВДАННЯ-видалити
+		// ЗАВДАННЯ - кнопка видалити
 		&_delete {
 			flex: 0 0 $MB_subject-width;
 			position: relative;
@@ -786,12 +789,12 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				background-color: #fff;
 			}
 
-			// ЗАВДАННЯ-видалити - хрестик
+			// ЗАВДАННЯ - кнопка видалити - хрестик
 			&::before {
 				transform: rotate(45deg);
 			}
 
-			// ЗАВДАННЯ-видалити - хрестик
+			// ЗАВДАННЯ - кнопка видалити - хрестик
 			&::after {
 				transform: rotate(-45deg);
 			}
@@ -821,7 +824,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			}
 		}
 
-		// ЗАВДАННЯ-записати
+		// ЗАВДАННЯ - кнопка записати
 		&_save {
 			flex: 0 0 40px;
 			flex: 0 0 40px;
@@ -840,7 +843,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				content: "";
 			}
 
-			//ЗАВДАННЯ-записати
+			//ЗАВДАННЯ - кнопка записати
 			&::before {
 				top: 0px;
 				left: 9px;
@@ -850,7 +853,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				//background-color: #999;
 			}
 
-			//ЗАВДАННЯ-записати
+			//ЗАВДАННЯ - кнопка записати
 			&::after {
 				left: 14px;
 				top: 0px;
@@ -871,129 +874,6 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 		}
 	}
-
-	/*
-	&__check,
-	&__text {
-		padding: 0 5px;
-	}
-
-	&__check {
-		flex: 0 0 $MB_subject-width;
-		position: relative;
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
-
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-		}
-
-		&::before {
-			top: 0px;
-			left: 15px;
-			width: 24px;
-			height: 24px;
-			border-radius: 3px;
-			border: 1px solid #999;
-			background-color: #fff;
-		}
-
-		&::after {
-			top: 3px;
-			left: 18px;
-			width: 18px;
-			height: 18px;
-			border-radius: 3px;
-			border: 1px solid #999;
-			background-color: #fff;
-		}
-
-		&._active::after {
-			background-color: rgb(120, 185, 23);
-		}
-	}
-
-	&__text {
-		flex: 1 1 auto;
-		font-size: 16px;
-		line-height: 18px;
-		position: relative;
-
-		&._active {
-			color: green;
-		}
-
-		//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
-	}
-
-	&__caption {
-		display: flex;
-		margin: 0 -5px;
-
-		//display: none;
-
-		&._action {
-			display: none;
-		}
-
-		&_text,
-		&_button-edit {
-			padding: 0 5px;
-		}
-
-		&_text {
-			flex: 1 1 auto;
-		}
-
-		&_button-edit {
-			flex: 0 0 30px;
-			position: relative;
-			//border: 1px solid red; // !!! монтажна рамка - після верстки прибрати
-			font-size: 14px;
-			font-weight: 700;
-
-			&::before {
-				content: "";
-				position: absolute;
-				top: 0px;
-				left: 3px;
-				width: 24px;
-				height: 24px;
-				border-radius: 3px;
-				border: 1px solid #999;
-				background-color: #fff;
-			}
-
-			&::after {
-				content: "T";
-				position: absolute;
-				font-size: 20px;
-				font-weight: 700;
-				left: 9px;
-				top: 4px;
-				//text-align: center;
-			}
-
-
-		}
-
-
-	}
-
-	textarea {
-		font-size: 16px;
-		line-height: 18px;
-		width: 100%;
-		height: 60px;
-		padding: 2px 10px 2px 5px;
-		border: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
-		display: none;
-
-		&._action {
-			display: block;
-		}
-	}*/
 }
 
 
