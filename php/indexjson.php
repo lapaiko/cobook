@@ -27,24 +27,34 @@
 		return $lesson_json;
 	}
 
-	// j.2.0.3 Дні тижня
-	function weekday($fn_language)	{
+	// j.2.0.3 Дні тижня: $fn_jsphp = "js" or "php"; $fn_language = "uk" or "en"
+	function weekday($fn_jsphp, $fn_language)	{
 		$weekday_data_str = file_get_contents("../data/json/weekday.json");
 		$weekday_data_json = json_decode($weekday_data_str);
-		foreach($weekday_data_json as $language=>$chlanguage) 	
-			foreach($chlanguage as $key=>$arrweekday) 				
-				$weekday_json[$language][$key]=$arrweekday; 		
-		
-		$weekday=$weekday_json[$fn_language];
-		return $weekday;
+		foreach($weekday_data_json as $jsphp=>$chjsphp) 	
+			foreach($chjsphp as $language=>$chlanguage) 	
+				foreach($chlanguage as $key=>$arrweekday) 				
+				$weekday_json[$jsphp][$language][$key]=$arrweekday; 		
+		return $weekday_json[$fn_jsphp][$fn_language];
+	}
+
+//* 1.0 СТОРІНКА - завантаження початкових даних
+//* дні тижня для js
+	if($Action=="week_day_name"){	
+		$language = $_GET['language'];	
+		$chweekday=weekday("js",$language); // j.2.0.3 Дні тижня - для js
+		$strweekday = json_encode($chweekday, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+		echo $strweekday;
 	}
 
 
+//********************************************************************
+// -1 БЛОК ОДНОРАЗОВИХ ФУНКЦІЙ
 
-	// -4 ТИЖДЕНЬ - коробка	
-	// -4.2 ПРЕДМЕТ-контейнер
-	// -4.4 - Завдання
-	function task_json_____()	{
+// -1.1 Пернесення дат завдань з дня отримання на день здачі завдання
+// !!! ВИДАЛАИТИ ПІСЛЯ РОБОТИ БЛОКУ ВИВОДУ / РЕДАГУВАННЯ / ВИДАЛЕННЯ ЗАВДАНЬ
+	if($Action=="task_transfer_dates"){	
+
 		$chsubject=array('uklen'=>'||1. ', 'uklit'=>'||1. ','zarlit'=>'||1. ','eng'=>'||1. ', 'mat'=>'||1. ','mus'=>'||1. ','hist'=>'||1. ','etika'=>'||1. ','fiz'=>'||1. ','pain'=>'||1. ','prog'=>'||1. ','dram'=>'||1. ','oz'=>'||1. ','tec'=>'||1. ','nat'=>'||1. ','geog'=>'||1. ');	
 
 		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");

@@ -13,12 +13,9 @@ function header__burger() {
 
 //********************************************************************
 // m.2.0 РОЗКЛАД НА ТИЖДЕНЬ - елемент
-function week__row() {
+function week__row(week_date) {
 	let week__row = document.getElementsByClassName("week__row")[0];
-	let send = SJAXtext('php/indexmaket.php?Action=week__row&week_date=2024-01-01&language=uk');
-
-	let task_json = SJAXtext('php/indexmaket.php?Action=task_json');
-
+	let send = SJAXtext('php/indexmaket.php?Action=week__row&week_date=' + week_date + '&language=uk');
 	week__row.innerHTML = send;
 }
 
