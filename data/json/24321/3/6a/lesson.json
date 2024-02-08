@@ -6,7 +6,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/qte-iqxy-dcs",
 		"booklink": "https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html",
-		"book": "https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html"
+		"book": "https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html",
+		"office": "-"
 	},
 	"uklit": {
 		"lesson": "Українська література",
@@ -15,7 +16,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/zrm-ipgh-oxb",
 		"booklink": "https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html",
-		"book": "https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html"
+		"book": "https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html",
+		"office": "-"
 	},
 	"zarlit": {
 		"lesson": "Зарубіжна література",
@@ -24,7 +26,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/try-xbxe-eax",
 		"booklink": "https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html",
-		"book": "https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html"
+		"book": "https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html",
+		"office": "-"
 	},
 	"eng": {
 		"lesson": "Англійська мова",
@@ -33,7 +36,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/zvd-crbk-vgb",
 		"booklink": "https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html",
-		"book": "https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html"
+		"book": "https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html",
+		"office": "-"
 	},
 	"mat": {
 		"lesson": "Математика",
@@ -42,7 +46,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/hek-ofcw-uou",
 		"booklink": "https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html",
-		"book": "https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html"
+		"book": "https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html",
+		"office": "-"
 	},
 	"mus": {
 		"lesson": "Музичне мистецтво",
@@ -51,7 +56,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/nfa-usas-xei",
 		"booklink": "-",
-		"book": "-"
+		"book": "-",
+		"office": "-"
 	},
 	"hist": {
 		"lesson": "Історія",
@@ -60,7 +66,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/iqw-yvqg-fbh",
 		"booklink": "https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html",
-		"book": "https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html"
+		"book": "https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html",
+		"office": "-"
 	},
 	"etika": {
 		"lesson": "Етика",
@@ -69,7 +76,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/uob-rwtu-xgf",
 		"booklink": "-",
-		"book": "-"
+		"book": "-",
+		"office": "-"
 	},
 	"fiz": {
 		"lesson": "Фізична культура",
@@ -78,7 +86,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/jbg-aaqq-nbo",
 		"booklink": "-",
-		"book": "-"
+		"book": "-",
+		"office": "-"
 	},
 	"pain": {
 		"lesson": "Образотворче мистецтво",
@@ -87,7 +96,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/ftc-frif-bph",
 		"booklink": "https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html",
-		"book": "https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html"
+		"book": "https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html",
+		"office": "-"
 	},
 	"prog": {
 		"lesson": "Інформатика",
@@ -96,7 +106,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/utt-pwfc-wzk",
 		"booklink": "https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html",
-		"book": "https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html"
+		"book": "https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html",
+		"office": "-"
 	},
 	"dram": {
 		"lesson": "Драматургія і театр",
@@ -105,7 +116,8 @@
 		"homework": "",
 		"meet": "meet.google.com/ref-iyhu-bzk",
 		"booklink": "-",
-		"book": "-"
+		"book": "-",
+		"office": "-"
 	},
 	"oz": {
 		"lesson": "Основи здоров'я",
@@ -114,7 +126,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/uzn-bwwf-zti",
 		"booklink": "https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html",
-		"book": "https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html"
+		"book": "https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html",
+		"office": "-"
 	},
 	"tec": {
 		"lesson": "Технологія",
@@ -123,7 +136,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/uwr-mgkm-nnc",
 		"booklink": "https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html",
-		"book": "https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html"
+		"book": "https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html",
+		"office": "-"
 	},
 	"nat": {
 		"lesson": "Пізнаємо природу",
@@ -132,7 +146,8 @@
 		"homework": "",
 		"meet": "https://meet.google.com/hfo-mkni-seh",
 		"booklink": "https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html",
-		"book": "https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html"
+		"book": "https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html",
+		"office": "-"
 	},
 	"geog": {
 		"lesson": "Географія",
@@ -141,6 +156,7 @@
 		"homework": "",
 		"meet": "https://meet.google.com/pek-tivp-svp",
 		"booklink": "https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html",
-		"book": "https://pidruchnyk.com.ua/2629-geografiia-6-klas-kobernik-2023.html"
+		"book": "https://pidruchnyk.com.ua/2629-geografiia-6-klas-kobernik-2023.html",
+		"office": "-"
 	}
 }

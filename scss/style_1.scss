@@ -356,10 +356,16 @@ $MB_task_margin: 0px; // відступ зверху/знизу ЗАВДАННЯ
 		padding: 5px 5px;
 	}
 
-	//ПРЕДМЕТ-ОПИС-номер
+	//ПРЕДМЕТ-ОПИС-номер description__number
 	&__number {
 		flex: 0 1 $MB_subject-width;
 		text-align: center;
+
+		& span {
+			display: block;
+			font-size: 12px;
+			color: #777;
+		}
 	}
 
 	//ПРЕДМЕТ-ОПИС - назва

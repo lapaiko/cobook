@@ -522,6 +522,12 @@ body._active {
   text-align: center;
 }
 
+.description__number span {
+  display: block;
+  font-size: 12px;
+  color: #777;
+}
+
 .description__text {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;

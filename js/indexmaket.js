@@ -12,12 +12,24 @@ function header__burger() {
 }
 
 //********************************************************************
-// m.2.0 РОЗКЛАД НА ТИЖДЕНЬ - елемент
-function week__row(week_date) {
+// m.2.1 РОЗКЛАД НА ТИЖДЕНЬ - елемент
+function week__row() {
+	let date_str = JSON.stringify(chIndex.chdate);
+	//let date_str =chIndex.chdate.date_week_begin+"|"+chIndex.chdate.date_shedule+"|"+chIndex.chdate.date_now;
 	let week__row = document.getElementsByClassName("week__row")[0];
-	let send = SJAXtext('php/indexmaket.php?Action=week__row&week_date=' + week_date + '&language=uk');
+	let send = SJAXtext('php/indexmaket.php?Action=week__row&date_str=' + date_str + '&language=uk');
 	week__row.innerHTML = send;
 }
+
+//********************************************************************
+// m.2.2 ЗАВДАННЯ СПРИНТА- елемент
+function scrum__row() {
+	let date_str = JSON.stringify(chIndex.chdate);
+	let scrum__row = document.getElementsByClassName("scrum__row")[0];
+	let send = SJAXtext('php/indexmaket.php?Action=scrum__row&date_str=' + date_str + '&language=uk');
+	scrum__row.innerHTML = send;
+}
+
 
 
 // m.3.0 ПРЕДМЕТ-ОПИС-комунікатори - кнопка згорнути/розгорнути
