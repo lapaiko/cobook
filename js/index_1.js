@@ -126,26 +126,31 @@ function getchdate(fn_date) //"yyyy-mm-dd" або ""/"-"/"now"
 
 //---* 1.0 СТОРІНКА - завантаження початкових даних
 function setchIndex() {
-
 	// ДАТА - поточний місяць
 	chIndex.chdate = {};
-	let weekdayname = SJAXtext('php/indexjson.php?Action=week_day_name&language=uk');
 
 	//---* 0.1 ДАТА - хеш дати: рік, місяць(номер;дата-поч/зав;по дням тижня), день, тиждень(хеш дат: понед.; понед./неділя поточного)  
 	let chdate = getchdate('now');
-
 	chIndex.chdate = chdate;
+
+	// дні тижня для js
+	let weekdayname = SJAXtext('php/indexjson.php?Action=week_day_name&language=uk');
 	chIndex.chdate.chweekdayname = JSON.parse(weekdayname);
+
+	// завдання задані сьогодні
+	///!!!!!!!!!!!!!!!!! NOT FINISHED	
+	let jsondate = JSON.stringify(chdate);
+	let jsontask_today = SJAXtext('php/indexjson.php?Action=settask_today&jsondate=' + jsondate);
+	///!!!!!!!!!!!!!!!!! NOT FINISHED	
 }
 
 
 //* 1.1 СТОРІНКА -> РОЗКЛАД / ЗАВДАННЯ -> завантаження
 function init() {
 
-
 	// -1.1 Пернесення дат завдань з дня отримання на день здачі завдання
 	// !!! ВИДАЛАИТИ ПІСЛЯ РОБОТИ БЛОКУ ВИВОДУ / РЕДАГУВАННЯ / ВИДАЛЕННЯ ЗАВДАНЬ
-	task_transfer_dates();
+	//task_transfer_dates();
 
 	//---* 1.0 СТОРІНКА - завантаження початкових даних
 	setchIndex();

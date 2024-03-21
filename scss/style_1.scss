@@ -241,11 +241,20 @@ $PC_logo-size: $PC_header-height - 20px;
 //РОЗКЛАД - коробка (рамка)
 .shedule {
 	padding: 10px 0; // внутрішній-верхній/нижній відступи РОЗКЛАДу у КОНТЕНТІ
+
+	//&__row {
+	//	display: flex;
+	//	justify-content: space-between;
+	//	margin: 0 -10px;
+	//}
 }
 
 
 
 .scrum {
+	//padding: 0 10px 10px 10px;
+	//flex: 0 0 50%;
+
 	margin: 0 0 20px 0;
 	padding: 0 0 10px 0;
 	border-bottom: 1px solid #999;
@@ -261,6 +270,8 @@ $PC_logo-size: $PC_header-height - 20px;
 
 //РОЗКЛАД НА ТИЖДЕНЬ - контейнер
 .week {
+	//flex: 1 1 auto;
+	//padding: 0 10px 10px 10px;
 
 	//РОЗКЛАД НА ТИЖДЕНЬ - елемент
 	&__row {
@@ -281,7 +292,7 @@ $PC_logo-size: $PC_header-height - 20px;
 	//РОЗКЛАД НА ДЕНЬ - елемент
 	&__conteiner {
 		//margin: 0 0 0px 0; // зовнішні відступи 
-		padding: 0px 10px 0 10px;
+		padding: 0px 10px 5px 10px;
 		border: 1px solid #999; // рамка
 		box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 
@@ -536,6 +547,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 	//ЗАВДАННЯ - кнопка ДОДАТИ
 	&__add {
 		flex: 0 0 $MB_subject-width;
+		cursor: pointer;
 
 		&::before,
 		&::after {
@@ -657,6 +669,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		&_check {
 			flex: 0 0 $MB_subject-width;
 			position: relative;
+			cursor: pointer;
 
 			&::before,
 			&::after {
@@ -707,6 +720,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		&_edit {
 			flex: 0 0 40px;
 			position: relative;
+			cursor: pointer;
 
 			&::after,
 			&::before {
@@ -776,6 +790,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 		&_delete {
 			flex: 0 0 $MB_subject-width;
 			position: relative;
+			cursor: pointer;
 
 			&::before,
 			&::after,
@@ -787,31 +802,44 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			&::before,
 			&::after {
 				content: "";
-				top: 11px;
-				left: 7px;
-				width: 30px;
-				height: 2px;
-				border-radius: 3px;
-				background-color: #fff;
+				//background-color: #fff;
+
 			}
 
 			// ЗАВДАННЯ - кнопка видалити - хрестик
 			&::before {
-				transform: rotate(45deg);
+				top: 0px;
+				left: 10px;
+				width: 22px;
+				height: 28px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+				border: 1px solid #777;
+				//border-top: 5px solid #777;
 			}
 
 			// ЗАВДАННЯ - кнопка видалити - хрестик
 			&::after {
-				transform: rotate(-45deg);
+				top: 8px;
+				left: 17px;
+				width: 8px;
+				height: 16px;
+				border: 1px solid #fff;
+				border-left: 1px solid #777;
+				border-right: 1px solid #777;
 			}
 
 			// ЗАВДАННЯ-видалити - рамка
 			& span {
-				//display: block;
-				//top: 0px;
-				//left: 10px;
-				//width: 24px;
-				//height: 24px;
+				display: block;
+				top: 0px;
+				left: 6px;
+				width: 30px;
+				height: 5px;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				border: 1px solid #777;
+				background-color: #fff;
 				//border-radius: 3px;
 			}
 		}
@@ -826,16 +854,64 @@ $MB_contact-margin: $MB_task_margin + 7px;
 				height: 60px;
 				padding: 2px 10px 2px 5px;
 				border: 1px solid #999; // !!! монтажна рамка - після верстки прибрати
-
+				resize: none;
 			}
 		}
 
 		// ЗАВДАННЯ - кнопка записати
+		&_control {
+			flex: 0 0 40px;
+			//			font-size: 14px;
+			//			font-weight: 700;
+
+		}
+
+		// ЗАВДАННЯ - кнопка видалити
+		&_close {
+			flex: 0 0 $MB_subject-width;
+			position: relative;
+			cursor: pointer;
+
+			&::before,
+			&::after,
+			& span {
+				position: absolute;
+				border: 1px solid #999;
+			}
+
+			&::before,
+			&::after {
+				content: "";
+				top: 11px;
+				left: 6px;
+				width: 30px;
+				height: 2px;
+				border-radius: 3px;
+				background-color: #fff;
+			}
+
+			& span {
+				width: 24px;
+				height: 24px;
+				left: 9px;
+				top: 0px;
+				border: 1px solid #fff;
+			}
+
+			// ЗАВДАННЯ - кнопка видалити - хрестик
+			&::before {
+				transform: rotate(45deg);
+			}
+
+			// ЗАВДАННЯ - кнопка видалити - хрестик
+			&::after {
+				transform: rotate(-45deg);
+			}
+
+		}
+
 		&_save {
-			flex: 0 0 40px;
-			flex: 0 0 40px;
-			font-size: 14px;
-			font-weight: 700;
+			cursor: pointer;
 
 			&::before,
 			&::after,
@@ -851,7 +927,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 
 			//ЗАВДАННЯ - кнопка записати
 			&::before {
-				top: 0px;
+				top: 35px;
 				left: 9px;
 				width: 24px;
 				height: 24px;
@@ -862,7 +938,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			//ЗАВДАННЯ - кнопка записати
 			&::after {
 				left: 14px;
-				top: 0px;
+				top: 35px;
 				width: 14px;
 				height: 16px;
 				//background-color: #999;
@@ -872,7 +948,7 @@ $MB_contact-margin: $MB_task_margin + 7px;
 			& span {
 				display: block;
 				left: 17px;
-				top: 3px;
+				top: 38px;
 				width: 5px;
 				height: 10px;
 				//background-color: #999;
@@ -894,18 +970,34 @@ $PC_content-padding: $PC_header-height;
 		padding: $PC_content-padding 0 0 0;
 	}
 
+	.shedule {
+		&__row {
+			display: flex;
+			justify-content: space-between;
+			margin: 0 -10px;
+		}
+	}
+
+	.scrum {
+		padding: 0 10px 10px 10px;
+		flex: 0 0 50%;
+	}
+
+	//РОЗКЛАД НА ТИЖДЕНЬ - контейнер
 	.week {
 		flex-wrap: wrap;
 		//flex-direction: row;
 		//width: 1170px;
 
+		flex: 1 1 auto;
+		padding: 0 10px 10px 10px;
+
 	}
 
 	//ДЕНЬ ТИЖНЯ - коробка (рамка)
 	.weekday {
-		flex: 0 0 50%;
+		//flex: 0 0 50%;
 	}
-
 
 }
 

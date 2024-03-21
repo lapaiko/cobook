@@ -3,11 +3,9 @@
   width: 30px;
   height: 30px;
 }
-
 .arrow__left:hover, .arrow__right:hover {
   cursor: pointer;
 }
-
 .arrow__left::before, .arrow__left::after, .arrow__right::before, .arrow__right::after {
   content: "";
   position: absolute;
@@ -16,29 +14,21 @@
   height: 10%;
   background-color: #555;
 }
-
 .arrow__left::before {
   top: 25%;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
-
 .arrow__left::after {
   bottom: 25%;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
 }
-
 .arrow__right::before {
   top: 25%;
-  -webkit-transform: rotate(60deg);
-          transform: rotate(60deg);
+  transform: rotate(60deg);
 }
-
 .arrow__right::after {
   bottom: 25%;
-  -webkit-transform: rotate(-60deg);
-          transform: rotate(-60deg);
+  transform: rotate(-60deg);
 }
 
 .calendar {
@@ -54,7 +44,6 @@
   font-weight: 700;
   color: #fff;
 }
-
 .calendar::before, .calendar::after {
   content: "";
   position: absolute;
@@ -65,11 +54,9 @@
   border: 2px solid #fff;
   background-color: #999;
 }
-
 .calendar::before {
   left: 3px;
 }
-
 .calendar::after {
   right: 3px;
 }
@@ -78,24 +65,19 @@
   border-bottom: 10px solid transparent;
   border-top: 10px solid transparent;
 }
-
 .triangle__right {
   border-left: 20px solid #777;
 }
-
 .triangle__left {
   border-right: 20px solid #777;
 }
-
 .triangle__top, .triangle__bottom {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
-
 .triangle__top {
   border-bottom: 20px solid #777;
 }
-
 .triangle__bottom {
   border-top: 20px solid #777;
 }
