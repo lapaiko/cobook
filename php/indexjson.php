@@ -4,20 +4,31 @@
 	$Action = $_GET['Action'];
 	$ActionP = $_POST['Action']; 
 
+	$chUserData=array(
+		'fldData'=>'../data/json',
+		'Index'=>'24321',
+		'SchoolNumber'=>'3',
+		'Class'=>'7a'
+	);
+	$SchoolClass=$chUserData['Index']."/".$chUserData['SchoolNumber']."/".$chUserData['Class'];
 
 	//********************************************************************
 	// m.2.0 РОЗКЛАД НА ТИЖДЕНЬ - елемент
 
 	// j.2.0.1 Розклад уроків: $fn_date - дата розкладу 'рік-01-01' або 'рік-09-01';
-	function shedule_json($fn_date)	{
-		$shedule_data_str = file_get_contents("../data/json/24321/3/6a/shedule.json");
+	function shedule_json($chUsDt)	{ $dateshedule=$chUsDt['dateshedule'];
+		$SchoolClass=$chUsDt['Index']."/".$chUsDt['SchoolNumber']."/".$chUsDt['Class'];
+		$shedule_data_str = file_get_contents("../data/json/$SchoolClass/shedule.json");
+//echo $dateshedule.$shedule_data_str;		
 		$shedule_data_json = json_decode($shedule_data_str, true);
-		return $shedule_data_json[$fn_date];
+		return $shedule_data_json[$dateshedule];
 	}
 
 	// j.2.0.2 Предмет, викладач, лінки (комунікатори/книжки)
-	function lesson_json()	{
-		$lesson_data_str = file_get_contents("../data/json/24321/3/6a/lesson.json");
+	function lesson_json($chUsDt)	{
+		$SchoolClass=$chUsDt['Index']."/".$chUsDt['SchoolNumber']."/".$chUsDt['Class'];
+		$lesson_data_str = file_get_contents("../data/json/$SchoolClass/lesson.json");
+//echo $lesson_data_str;		
 		$lesson_data_json = json_decode($lesson_data_str, true);
 		return $lesson_data_json;
 	}
@@ -30,17 +41,21 @@
 	}
 
 	// j.2.0.4 Завдання: усі 
-	function task_json()	{
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+	function task_json($chUsDt)	{
+		$SchoolClass=$chUsDt['Index']."/".$chUsDt['SchoolNumber']."/".$chUsDt['Class'];
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
+//echo $task_data_str;		
 		$task_data_json = json_decode($task_data_str, true);
 		return $task_data_json;
 	}
 
 	// j.2.0.5 Завдання: записати
-	function task_json_save($chlessons_given){
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+	function task_json_save($chUsDt){
+		$SchoolClass=$chUsDt['Index']."/".$chUsDt['SchoolNumber']."/".$chUsDt['Class'];
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
 		$task_data_json = json_decode($task_data_str, true);
-	
+
+		$chlessons_given=$chUsDt['chlessons'];
 			foreach($chlessons_given as $date=>$chlesson)		{
 				foreach($chlesson as $lesson=>$chtask){
 					if ($chtask['status'])	{
@@ -62,9 +77,9 @@
 		$task_data_str= json_encode($task_data_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 	
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 	}
 
 	//---* 1.0 СТОРІНКА - завантаження початкових даних
@@ -81,8 +96,8 @@
 	if($Action=="settask_today") {
 		$jsondate = $_GET['jsondate'];	$chdate = json_decode($jsondate,true);	
 		$date_now=$chdate['date_now'];	$weekday=$chdate['weekday']-1;
-
-		$arrshedule=shedule_json($chdate['date_shedule'])['shedule'];
+		$chUserData['dateshedule']=$chdate['date_shedule']; 
+		$arrshedule=shedule_json($chUserData)['shedule'];
 
 		for($d=0; $d<count($arrshedule); $d++)				{	
 			for($l=0; $l<count($arrshedule[$d]); $l++)	{	$lesson=$arrshedule[$d][$l];
@@ -104,7 +119,8 @@
 			} while (($chlesson[$lesson][$d]==0));
 		}
 		// j.2.0.5 Завдання: записати
-		task_json_save($chlesson_next);
+		$chUserData['chlessons']=$chlesson_next;
+		task_json_save($chUserData);//($chlesson_next);
 		$jsonlesson_next= json_encode($chlesson_next, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		echo $jsonlesson_next;
 	}
@@ -124,7 +140,7 @@
 		$iditem = $_GET['iditem']; $ariditem=explode("_",$iditem); $lesson=$ariditem[0]; $date=$ariditem[1]; $id=$ariditem[2];
 		$value = $_GET['value']; 
 		$chstatus=$_GET['chstatus']; $status=get_status_task($chstatus);
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
 		$task_data_json = json_decode($task_data_str, true);
 	
 			$task_data_json[$date][$lesson]['status'] = $status;
@@ -133,9 +149,9 @@
 		$task_data_str= json_encode($task_data_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 	
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 
 		$send="[$date][$lesson]['check'][$id] = ".$task_data_json[$date][$lesson]['check'][$id];
 		$send.="[$date][$lesson]['status'] = ".$task_data_json[$date][$lesson]['status'];
@@ -146,7 +162,7 @@
 	if($Action=="task__input_save_json"){	
 		$index = $_GET['index']; $ar=explode("_",$index); $lesson=$ar[0]; $date=$ar[1]; $id=$ar[2];
 		$value = $_GET['value'];
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
 		$task_data_json = json_decode($task_data_str, true);
 
 			$task_data_json[$date][$lesson]['task'][$id] = $value;
@@ -154,9 +170,9 @@
 		$task_data_str= json_encode($task_data_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 
 		echo "[$date][$lesson]['task'][$id] = ".$task_data_json[$date][$lesson]['task'][$id];
 	}
@@ -166,7 +182,7 @@
 		$index = $_GET['index']; $ar=explode("_",$index); $lesson=$ar[0]; $date=$ar[1]; $id=$ar[2];
 		$value = $_GET['value'];
 		$chstatus=$_GET['chstatus']; $status=get_status_task($chstatus);
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
 		$task_data_json = json_decode($task_data_str, true);
 
 			$task_data_json[$date][$lesson]['status'] = $status;
@@ -176,9 +192,9 @@
 		$task_data_str= json_encode($task_data_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 
 		echo "[$date][$lesson]['task'][$id] = ".$task_data_json[$date][$lesson]['task'][$id];
 	}
@@ -187,7 +203,7 @@
 	if($Action=="task__delete_save_json"){	
 		$dtitem = $_GET['dtitem']; $ar=explode("_",$dtitem); $lesson=$ar[0]; $date=$ar[1]; $id=intval($ar[2]);
 		$chstatus=$_GET['chstatus']; $status=get_status_task($chstatus);
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task.json");
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task.json");
 		$task_data_json = json_decode($task_data_str, true);
 
 			$task_data_json[$date][$lesson]['status'] = $status;
@@ -197,9 +213,9 @@
 		$task_data_str= json_encode($task_data_json, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 
 		echo "[$date][$lesson]['task'][$id] = ".$task_data_json[$date][$lesson]['task'][$id];
 	}
@@ -215,7 +231,7 @@
 
 		//$chsubject=array('uklen'=>'||1. ', 'uklit'=>'||1. ','zarlit'=>'||1. ','eng'=>'||1. ', 'mat'=>'||1. ','mus'=>'||1. ','hist'=>'||1. ','etika'=>'||1. ','fiz'=>'||1. ','pain'=>'||1. ','prog'=>'||1. ','dram'=>'||1. ','oz'=>'||1. ','tec'=>'||1. ','nat'=>'||1. ','geog'=>'||1. ');	
 
-		$task_data_str = file_get_contents("../data/json/24321/3/6a/task_new.json");
+		$task_data_str = file_get_contents("../data/json/$SchoolClass/task_new.json");
 		$task_data_json = json_decode($task_data_str, true);
 		
 		foreach($task_data_json as $stdate=>$chdate) {
@@ -269,9 +285,9 @@
 		$task_data_str= json_encode($task_data_ch, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 		$task_data_str=str_replace("\/","/",$task_data_str);
 
-		$flJSON=fopen("../data/json/24321/3/6a/task.json",'w');	
+		$flJSON=fopen("../data/json/$SchoolClass/task.json",'w');	
 		fputs($flJSON, $task_data_str);	fclose($flJSON);
-		chmod("../data/json/24321/3/6a/task.json", 0777);
+		chmod("../data/json/$SchoolClass/task.json", 0777);
 
 		return $task_data_str;
 	}	

@@ -675,6 +675,7 @@ body._active {
   width: 15px;
   height: 2px;
   border: 1px solid #999;
+  background-color: #999;
 }
 .task__caption_edit span {
   display: block;

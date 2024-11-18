@@ -1,149 +1,174 @@
 //Перелік уроків
 var chLesson = {
-
-	'uklen': {
-		'lesson': 'Українська мова',
-		'teacher': 'Волк Світлана Віталіївна',
-		'classroom': 'https://classroom.google.com/c/NTQ1MjMyODExMjEy',
-		'homework': '',
-		'meet': 'https://meet.google.com/qte-iqxy-dcs',
-		'booklink': 'https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html',
-		'book': 'https://pidruchnyk.com.ua/2593-ukrmova-6-klas-onatii.html'
+	"uklen": {
+		"lesson": "Українська мова",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMyODExMjEy",
+		"homework": "-",
+		"meet": "https://meet.google.com/dps-jxtn-quk",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3077-ukrainska-mova-7-klas-onatii.html",
+		"office": "46"
 	},
-	'uklit': {
-		'lesson': 'Українська література',
-		'teacher': 'Волк Світлана Віталіївна',
-		'classroom': 'https://classroom.google.com/c/NTQ1MjMzNDAzMDE0',
-		'homework': '',
-		'meet': 'https://meet.google.com/zrm-ipgh-oxb',
-		'booklink': 'https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html',
-		'book': 'https://pidruchnyk.com.ua/2611-ukralit-6-klas-yatsenko.html'
+	"uklit": {
+		"lesson": "Українська література",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMzNDAzMDE0",
+		"homework": "-",
+		"meet": "https://meet.google.com/dps-jxtn-quk",
+		"booklink": "-",
+		"book": "-",
+		"office": "46"
 	},
-	'zarlit': {
-		'lesson': 'Зарубіжна література',
-		'teacher': 'Солодка Ірина Петрівна',
-		'classroom': 'https://classroom.google.com/c/NTQ0NzUwODYxNzA1',
-		'homework': '',
-		'meet': 'https://meet.google.com/try-xbxe-eax',
-		'booklink': 'https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2622-zaralit-6-klas-milianovska-2023.html'
+	"zarlit": {
+		"lesson": "Зарубіжна література",
+		"teacher": "Солодка Ірина Петрівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzUwODYxNzA1",
+		"homework": "-",
+		"meet": "https://meet.google.com/try-xbxe-eax",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/2056-zarubizhna-literatura-7-klas-milianovska-2015.html",
+		"office": "46"
 	},
-	'eng': {
-		'lesson': 'Англійська мова',
-		'teacher': 'Задоянчук Оксана Василівна',
-		'classroom': 'https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5',
-		'homework': '',
-		'meet': 'https://meet.google.com/zvd-crbk-vgb',
-		'booklink': 'https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html',
-		'book': 'https://pidruchnyk.com.ua/2599-angliiska-6-klas-kosta.html'
+	"eng": {
+		"lesson": "Англійська мова",
+		"teacher": "Задоянчук Оксана Василівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5",
+		"homework": "-",
+		"meet": "https://meet.google.com/zvd-crbk-vgb",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3081-anhliiska-mova-7-klas-kosta.html",
+		"office": "46"
 	},
-	'mat': {
-		'lesson': 'Математика',
-		'teacher': 'Карабаджак Ірина Анатоліївна',
-		'classroom': 'https://classroom.google.com/c/NTg5NDAyNzYyNDM5',
-		'homework': '',
-		'meet': 'https://meet.google.com/hek-ofcw-uou',
-		'booklink': 'https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2590-matematyka-6-klas-ister-2023.html'
+	"alg": {
+		"lesson": "Алгебра",
+		"teacher": "Карабаджак Ірина Анатоліївна",
+		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
+		"homework": "-",
+		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/259-alhebra-7-klas-ister.html",
+		"office": "46"
 	},
-	'mus': {
-		'lesson': 'Музичне мистецтво',
-		'teacher': 'Кериченко Наталія Миколаївна',
-		'classroom': 'https://classroom.google.com/c/NTI2OTIxMzY1NjM3',
-		'homework': '',
-		'meet': 'https://meet.google.com/nfa-usas-xei',
-		'booklink': '-',
-		'book': '-'
+	"geom": {
+		"lesson": "Геометрія",
+		"teacher": "Карабаджак Ірина Анатоліївна",
+		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
+		"homework": "-",
+		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/273-heometriia-7-klas-ister.html",
+		"office": "46"
 	},
-	'hist': {
-		'lesson': 'Історія',
-		'teacher': 'Дідур Оксана Володимирівна',
-		'classroom': 'https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw',
-		'homework': '',
-		'meet': 'https://meet.google.com/iqw-yvqg-fbh',
-		'booklink': 'https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2610-istoriia-6-klas-shchupak-2023.html'
+	"art": {
+		"lesson": "Мистецтво",
+		"teacher": "Шклярук Світлана Олександрівна",
+		"classroom": "https://classroom.google.com/c/NjI0NTgxNzQ1ODc0",
+		"homework": "-",
+		"meet": "https://meet.google.com/ftc-frif-bph",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3167-mystetstvo-7-klas-kondratova.html",
+		"office": "46"
 	},
-	'etika': {
-		'lesson': 'Етика',
-		'teacher': 'Дідур Оксана Володимирівна',
-		'classroom': 'https://classroom.google.com/c/NTg1MzQ5ODM1ODQ4',
-		'homework': '',
-		'meet': 'https://meet.google.com/uob-rwtu-xgf',
-		'booklink': '-',
-		'book': '-'
+	"hist": {
+		"lesson": "Історія України",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw",
+		"homework": "-",
+		"meet": "https://meet.google.com/iqw-yvqg-fbh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1433-istoriia-ukrainy-7-klas-dribnytsia-2020.html",
+		"office": "46"
 	},
-	'fiz': {
-		'lesson': 'Фізична культура',
-		'teacher': 'Стеблюк Олександра Вікторівна',
-		'classroom': 'https://classroom.google.com/c/NTI3MjA4NzU0NjU1',
-		'homework': '',
-		'meet': 'https://meet.google.com/jbg-aaqq-nbo',
-		'booklink': '-',
-		'book': '-'
+	"histworld": {
+		"lesson": "Всесвітня історія",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw",
+		"homework": "-",
+		"meet": "https://meet.google.com/iqw-yvqg-fbh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/2035-vsesvitnia-istoriia-7-klas-shchupak-2015.html",
+		"office": "46"
 	},
-	'pain': {
-		'lesson': 'Образотворче мистецтво',
-		'teacher': 'Шклярук Світлана Олександрівна',
-		'classroom': 'https://classroom.google.com/c/NjI0NTgxNzQ1ODc0',
-		'homework': '',
-		'meet': 'https://meet.google.com/ftc-frif-bph',
-		'booklink': 'https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html',
-		'book': 'https://pidruchnyk.com.ua/511-obrazotvorche-mistectvo-zheleznyak-lamonova-6-klas.html'
+	"fiz": {
+		"lesson": "Фізична культура",
+		"teacher": "Стеблюк Олександра Вікторівна",
+		"classroom": "https://classroom.google.com/c/NTI3MjA4NzU0NjU1",
+		"homework": "",
+		"meet": "https://meet.google.com/jbg-aaqq-nbo",
+		"booklink": "-",
+		"book": "-",
+		"office": "1"
 	},
-	'prog': {
-		'lesson': 'Інформатика',
-		'teacher': 'Литвинюк Тетяна Ігорівна',//'Шевчук Андрій Григорович',
-		'classroom': 'https://classroom.google.com/c/NjUxMjkyMjA1ODgy',
-		'homework': '',
-		'meet': 'https://meet.google.com/utt-pwfc-wzk',
-		'booklink': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2685-informatyka-6-klas-morze-2023.html'
+	"prog": {
+		"lesson": "Інформатика",
+		"teacher": "Литвинюк Тетяна Ігорівна",
+		"classroom": "https://classroom.google.com/c/NjUxMjkyMjA1ODgy",
+		"homework": "-",
+		"meet": "https://meet.google.com/utt-pwfc-wzk",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1427-informatyka-7-klas-morze-2020.html",
+		"office": "49/29"
 	},
-	'dram': {
-		'lesson': 'Драматургія і театр',
-		'teacher': 'Рахнянська Наталія Федорівна',
-		'classroom': 'https://classroom.google.com/c/NTI3MTI3NTg1MjMx',
-		'homework': '',
-		'meet': 'meet.google.com/ref-iyhu-bzk',
-		'booklink': '-',
-		'book': '-'
+	"oz": {
+		"lesson": "Здоров'я, безпека та добробут",
+		"teacher": "Щепанська Алла Борисівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDE1NTYzNDM2",
+		"homework": "",
+		"meet": "https://meet.google.com/uzn-bwwf-zti",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3128-zdorov-ia-bezpeka-ta-dobrobut-7-klas-vorontsova.html",
+		"office": "46"
 	},
-	'oz': {
-		'lesson': 'Основи здоров\'я',
-		'teacher': 'Щепанська Алла Борисівна',
-		'classroom': 'https://classroom.google.com/c/NTQ1MDE1NTYzNDM2',
-		'homework': '',
-		'meet': 'https://meet.google.com/uzn-bwwf-zti',
-		'booklink': 'https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2644-zdorovia-6-klas-vorontsova-2023.html'
+	"tec": {
+		"lesson": "Технологія",
+		"teacher": "Іванова Алла Опанасівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTc3MDc3MTYz",
+		"homework": "",
+		"meet": "https://meet.google.com/uwr-mgkm-nnc",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3122-tekhnolohii-7-klas-khodzytska.html",
+		"office": "28"
 	},
-	'tec': {
-		'lesson': 'Технологія',
-		'teacher': 'Іванова Алла Опанасівна',
-		'classroom': 'https://classroom.google.com/c/NTQ1NTc3MDc3MTYz',
-		'homework': '',
-		'meet': 'https://meet.google.com/uwr-mgkm-nnc',
-		'booklink': 'https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html',
-		'book': 'https://pidruchnyk.com.ua/2693-tehnologii-6-klas-hodzytska.html'
+	"biol": {
+		"lesson": "Біологія",
+		"teacher": "Касяненко Світлана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDc1MDgxMzg1",
+		"homework": "",
+		"meet": "https://meet.google.com/hfo-mkni-seh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3094-biolohiia-7-klas-balan.html",
+		"office": "46"
 	},
-	'nat': {
-		'lesson': 'Пізнаємо природу',
-		'teacher': 'Касяненко Світлана Володимирівна',
-		'classroom': 'https://classroom.google.com/c/NTQ1MDc1MDgxMzg1',
-		'homework': '',
-		'meet': 'https://meet.google.com/hfo-mkni-seh',
-		'booklink': 'https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html',
-		'book': 'https://pidruchnyk.com.ua/2653-piznaiemo-pryrodu-6-klas-bida.html'
+	"geog": {
+		"lesson": "Географія",
+		"teacher": "Шитова Тетяна Василівна",
+		"classroom": "https://classroom.google.com/c/NjU4MjUzNzIwOTY2",
+		"homework": "",
+		"meet": "https://meet.google.com/izc-fvvx-fae",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/268-heohrafiia-7-klas-kobernik.html",
+		"office": "43"
 	},
-	'geog': {
-		'lesson': 'Географія',
-		'teacher': 'Шитова Тетяна Василівна',
-		'classroom': 'https://classroom.google.com/c/NjU4MjUzNzIwOTY2',
-		'homework': '',
-		'meet': 'https://meet.google.com/izc-fvvx-fae', //'meet': 'https://meet.google.com/pek-tivp-svp',
-		'booklink': 'https://shkola.in.ua/2833-heohrafiia-6-klas-kobernik-2023.html',
-		'book': 'https://pidruchnyk.com.ua/2629-geografiia-6-klas-kobernik-2023.html'
+	"chem": {
+		"lesson": "Хімія",
+		"teacher": "Олена Вікторівна",
+		"classroom": "-",
+		"homework": "-",
+		"meet": "-",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3104-khimiia-7-klas-midak.html",
+		"office": "38"
+	},
+	"phis": {
+		"lesson": "Фізика",
+		"teacher": "Ганна Олександрівна",
+		"classroom": "-",
+		"homework": "",
+		"meet": "-",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1453-fizyka-7-klas-bar-iakhtar-2015.html",
+		"office": "48"
 	}
 };
 
@@ -161,11 +186,11 @@ var chLesson = {
 
 //2024
 var arSсhedule = [
-	['fiz', 'prog', 'eng', 'nat', 'uklen', 'uklen'],
-	['pain', 'geog', 'uklen', 'hist', 'mat', 'eng', 'fiz'],
-	['mus', 'mat', 'hist', 'eng', 'fiz', 'uklit', 'uklit'],
-	['oz', 'zarlit', 'prog', 'mat', 'dram', 'geog'],
-	['uklen', 'mat', 'mat', 'eng', 'nat', 'tec', 'tec']
+	['uklen', 'uklit', 'eng', 'chem', 'geog', 'prog', 'biol'],
+	['uklen', 'uklit', 'geom', 'geom', 'art', 'phis', 'biol'],
+	['phis', 'art', 'alg', 'alg', 'biol', 'eng', 'fiz'],
+	['zarlit', 'eng', 'alg', 'geog', 'fiz', 'hist', 'oz'],
+	['uklen', 'tec', 'hist', 'fiz', 'prog', 'eng']
 ];
 
 

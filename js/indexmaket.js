@@ -226,7 +226,8 @@ function task__delete_save_json(dtitem, chstatus) {
 
 // m.9.0.1 ЗАВДАННЯ - видалити - зміщення id
 function task__delete_setid(chid) {
-	let Nitem = document.getElementById(chid['idtask'] + "__list").classList.length;
+	//let Nitem = document.getElementById(chid['idtask'] + "__list").classList.length;
+	let Nitem = document.getElementById(chid['idtask'] + "__list").childElementCount;
 	let arrpresentation = ["scrum", "week"];
 	let arritem = ["item", "check", "caption", "edit", "delete", "text", "close", "save"];
 	if (chid['number'] < Nitem) {

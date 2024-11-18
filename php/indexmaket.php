@@ -4,27 +4,34 @@
 
 	$Action = $_GET['Action'];
 	$ActionP = $_POST['Action']; 
-
-	
+/*
+	$chUserData=array(
+		'fldData'=>'../data/json',
+		'Index'=>'24321',
+		'SchoolNumber'=>'3',
+		'Class'=>'7a'
+	);
+*/
 	//********************************************************************
 	// m.2.1 РОЗКЛАД НА ТИЖДЕНЬ - елемент
 
 	if($Action=="week__row"){
 		$language = $_GET['language'];	$date_str = $_GET['date_str'];	
 		$date_json = json_decode($date_str,true);	$date_week=$date_json['date_week_begin'];
+		$chUserData['dateshedule']=$date_json['date_shedule']; // дата розкладу 1 або 2 півряччя
 		$htmlweek="" ;
 		
 		$chweekday=weekday("php",$language);	// j.2.0.3 Дні тижня - для php
 		$arrweekday=$chweekday['weekday'];
 
-		$chlesson=lesson_json();					// j.2.0.2 Предмет, викладач, лінки (комунікатори/книжки)
+		$chlesson=lesson_json($chUserData);					// j.2.0.2 Предмет, викладач, лінки (комунікатори/книжки)
 		
 		// j.2.0.1 Розклад уроків
-		$shedule_data_json=shedule_json($date_json['date_shedule']);
+		$shedule_data_json=shedule_json($chUserData);
 		$arrshedule=$shedule_data_json['shedule'];
 		$arrtime=$shedule_data_json['time'];
 
-		$task_json=task_json();			// j.2.0.4 Завдання: усі 
+		$task_json=task_json($chUserData);			// j.2.0.4 Завдання: усі 
 	
 		for($w=0; $w<2; $w++)									{	
 			for($d=0; $d<count($arrshedule); $d++)			{	
@@ -67,8 +74,8 @@
 	// m.2.2 ЗАВДАННЯ СПРИНТА- елемент
 	if($Action=="scrum__row"){
 		$language = $_GET['language'];	$date_str = $_GET['date_str'];	$htmlscrum="" ;
-		$task_json=task_json();			// j.2.0.4 Завдання: усі 
-		$lesson_json=lesson_json();		// j.2.0.2 Предмет, викладач, лінки (комунікатори/книжки)
+		$task_json=task_json($chUserData);			// j.2.0.4 Завдання: усі 
+		$lesson_json=lesson_json($chUserData);		// j.2.0.2 Предмет, викладач, лінки (комунікатори/книжки)
 		
 		foreach($task_json as $date=>$chlesson){
 			foreach($chlesson as $lesson=>$chtask){

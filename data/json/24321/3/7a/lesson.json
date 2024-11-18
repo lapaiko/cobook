@@ -1,0 +1,172 @@
+{
+	"uklen": {
+		"lesson": "Українська мова",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMyODExMjEy",
+		"homework": "-",
+		"meet": "https://meet.google.com/qte-iqxy-dcs",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3077-ukrainska-mova-7-klas-onatii.html",
+		"office": "46"
+	},
+	"uklit": {
+		"lesson": "Українська література",
+		"teacher": "Волк Світлана Віталіївна",
+		"classroom": "https://classroom.google.com/c/NTQ1MjMzNDAzMDE0",
+		"homework": "-",
+		"meet": "https://meet.google.com/zrm-ipgh-oxb",
+		"booklink": "-",
+		"book": "-",
+		"office": "46"
+	},
+	"zarlit": {
+		"lesson": "Зарубіжна література",
+		"teacher": "Солодка Ірина Петрівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzUwODYxNzA1",
+		"homework": "-",
+		"meet": "https://meet.google.com/try-xbxe-eax",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/2056-zarubizhna-literatura-7-klas-milianovska-2015.html",
+		"office": "46"
+	},
+	"eng": {
+		"lesson": "Англійська мова",
+		"teacher": "Задоянчук Оксана Василівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTY3Mjk4ODQ5",
+		"homework": "-",
+		"meet": "https://meet.google.com/zvd-crbk-vgb",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3081-anhliiska-mova-7-klas-kosta.html",
+		"office": "46"
+	},
+	"alg": {
+		"lesson": "Алгебра",
+		"teacher": "Карабаджак Ірина Анатоліївна",
+		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
+		"homework": "-",
+		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/259-alhebra-7-klas-ister.html",
+		"office": "46"
+	},
+	"geom": {
+		"lesson": "Геометрія",
+		"teacher": "Карабаджак Ірина Анатоліївна",
+		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
+		"homework": "-",
+		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/273-heometriia-7-klas-ister.html",
+		"office": "46"
+	},
+	"art": {
+		"lesson": "Мистецтво",
+		"teacher": "Шклярук Світлана Олександрівна",
+		"classroom": "https://classroom.google.com/c/NjI0NTgxNzQ1ODc0",
+		"homework": "-",
+		"meet": "https://meet.google.com/ftc-frif-bph",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3167-mystetstvo-7-klas-kondratova.html",
+		"office": "46"
+	},
+	"hist": {
+		"lesson": "Історія України",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw",
+		"homework": "-",
+		"meet": "https://meet.google.com/iqw-yvqg-fbh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1433-istoriia-ukrainy-7-klas-dribnytsia-2020.html",
+		"office": "46"
+	},
+	"histworld": {
+		"lesson": "Всесвітня історія",
+		"teacher": "Дідур Оксана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ0NzkyOTQ2MTgw",
+		"homework": "-",
+		"meet": "https://meet.google.com/iqw-yvqg-fbh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/2035-vsesvitnia-istoriia-7-klas-shchupak-2015.html",
+		"office": "46"
+	},
+	"fiz": {
+		"lesson": "Фізична культура",
+		"teacher": "Стеблюк Олександра Вікторівна",
+		"classroom": "https://classroom.google.com/c/NTI3MjA4NzU0NjU1",
+		"homework": "",
+		"meet": "https://meet.google.com/jbg-aaqq-nbo",
+		"booklink": "-",
+		"book": "-",
+		"office": "1"
+	},
+	"prog": {
+		"lesson": "Інформатика",
+		"teacher": "Литвинюк Тетяна Ігорівна",
+		"classroom": "https://classroom.google.com/c/NjUxMjkyMjA1ODgy",
+		"homework": "-",
+		"meet": "https://meet.google.com/utt-pwfc-wzk",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1427-informatyka-7-klas-morze-2020.html",
+		"office": "49/29"
+	},
+	"oz": {
+		"lesson": "Здоров'я, безпека та добробут",
+		"teacher": "Щепанська Алла Борисівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDE1NTYzNDM2",
+		"homework": "",
+		"meet": "https://meet.google.com/uzn-bwwf-zti",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3128-zdorov-ia-bezpeka-ta-dobrobut-7-klas-vorontsova.html",
+		"office": "46"
+	},
+	"tec": {
+		"lesson": "Технологія",
+		"teacher": "Іванова Алла Опанасівна",
+		"classroom": "https://classroom.google.com/c/NTQ1NTc3MDc3MTYz",
+		"homework": "",
+		"meet": "https://meet.google.com/uwr-mgkm-nnc",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3122-tekhnolohii-7-klas-khodzytska.html",
+		"office": "28"
+	},
+	"biol": {
+		"lesson": "Біологія",
+		"teacher": "Касяненко Світлана Володимирівна",
+		"classroom": "https://classroom.google.com/c/NTQ1MDc1MDgxMzg1",
+		"homework": "",
+		"meet": "https://meet.google.com/hfo-mkni-seh",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3094-biolohiia-7-klas-balan.html",
+		"office": "46"
+	},
+	"geog": {
+		"lesson": "Географія",
+		"teacher": "Шитова Тетяна Василівна",
+		"classroom": "https://classroom.google.com/c/NjU4MjUzNzIwOTY2",
+		"homework": "",
+		"meet": "https://meet.google.com/izc-fvvx-fae",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/268-heohrafiia-7-klas-kobernik.html",
+		"office": "43"
+	},
+	"chem": {
+		"lesson": "Хімія",
+		"teacher": "Олена Вікторівна",
+		"classroom": "-",
+		"homework": "-",
+		"meet": "-",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/3104-khimiia-7-klas-midak.html",
+		"office": "38"
+	},
+	"phis": {
+		"lesson": "Фізика",
+		"teacher": "Ганна Олександрівна",
+		"classroom": "-",
+		"homework": "",
+		"meet": "-",
+		"booklink": "-",
+		"book": "https://shkola.in.ua/1453-fizyka-7-klas-bar-iakhtar-2015.html",
+		"office": "48"
+	}
+}
