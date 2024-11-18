@@ -145,7 +145,7 @@ var chLesson = {
 		"teacher": "Шитова Тетяна Василівна",
 		"classroom": "https://classroom.google.com/c/NjU4MjUzNzIwOTY2",
 		"homework": "",
-		"meet": "https://meet.google.com/izc-fvvx-fae",
+		"meet": "http://meet.google.com/okf-cgnt-zvr",
 		"booklink": "-",
 		"book": "https://shkola.in.ua/268-heohrafiia-7-klas-kobernik.html",
 		"office": "43"
