@@ -55,7 +55,7 @@ var chLesson = {
 		"teacher": "Карабаджак Ірина Анатоліївна",
 		"classroom": "https://classroom.google.com/c/NTg5NDAyNzYyNDM5",
 		"homework": "-",
-		"meet": "https://meet.google.com/hek-ofcw-uou",
+		"meet": "https://meet.google.com/bxr-btaa-aog",
 		"booklink": "-",
 		"book": "https://shkola.in.ua/273-heometriia-7-klas-ister.html",
 		"office": "46"
