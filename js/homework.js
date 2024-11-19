@@ -17,7 +17,7 @@ var chLesson = {
 		"homework": "-",
 		"meet": "https://meet.google.com/dps-jxtn-quk",
 		"booklink": "-",
-		"book": "-",
+		"book": "https://shkola.in.ua/301-ukrainska-literatura-7-klas-avramenko.html",
 		"office": "46"
 	},
 	"zarlit": {

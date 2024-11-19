@@ -3667,21 +3667,21 @@
     },
     "2024-11-20": {
         "phis": {
-            "status": "Set",
+            "status": "Done",
             "task": [
-                "-"
+                "Лабораторна робота №2"
             ],
             "check": [
-                "no"
+                "ok"
             ]
         },
         "art": {
-            "status": "Set",
+            "status": "Done",
             "task": [
-                "-"
+                "Стор. 75 дати відповідь на запитання"
             ],
             "check": [
-                "no"
+                "ok"
             ]
         },
         "alg": {
@@ -3696,7 +3696,7 @@
         "biol": {
             "status": "Set",
             "task": [
-                "-"
+                "Параг. 27 опрацювати"
             ],
             "check": [
                 "no"
@@ -3796,12 +3796,12 @@
     },
     "2024-11-22": {
         "uklen": {
-            "status": "Set",
+            "status": "Done",
             "task": [
                 "Впр. 155"
             ],
             "check": [
-                "no"
+                "ok"
             ]
         },
         "tec": {
@@ -3939,12 +3939,12 @@
             ]
         },
         "geom": {
-            "status": "Set",
+            "status": "Done",
             "task": [
-                "-"
+                "№ 217"
             ],
             "check": [
-                "no"
+                "ok"
             ]
         },
         "art": {
